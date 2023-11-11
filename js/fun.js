@@ -10,17 +10,17 @@ function selectEquip(item, selectedItemId) {
   
 
 function updateTextFields() {
-    const text1Input = document.getElementById('text1');
-    const text2Input = document.getElementById('text2');
-    const text3Input = document.getElementById('text3');
+    const text1Input = document.getElementById('atkText');
+    const text2Input = document.getElementById('defText');
+    const text3Input = document.getElementById('HPText');
 
-    const selectedItem1 = document.getElementById('selected-item1').textContent;
-    const selectedItem2 = document.getElementById('selected-item2').textContent;
-    const selectedItem3 = document.getElementById('selected-item3').textContent;
+    const selectedShield = document.getElementById('shieldSelect').value;
+    const selectedJewelry = document.getElementById('jewelrySelect').value;
+    const selectedPeripheral = document.getElementById('peripheralSelect').value;
 
-    const shieldValues = shieldAttributes[selectedItem1];
-    const jewelryValues = jewelryAttributes[selectedItem2];
-    const peripheralValues = peripheralAttributes[selectedItem3];
+    const shieldValues = shieldAttributes[selectedShield];
+    const jewelryValues = jewelryAttributes[selectedJewelry];
+    const peripheralValues = peripheralAttributes[selectedPeripheral];
 
     const text1Print = shieldValues.addAtk + jewelryValues.addAtk + peripheralValues.addAtk
     text1Input.value = text1Print;
@@ -85,3 +85,62 @@ radioButtonsOccupation.forEach((radioButton) => {
 });
 
 filterTableOptions();
+
+function displayWeaponInfo() {
+  const weaponTypeInput = document.getElementById('weaponTypeInput').value;
+  const tableBody = document.getElementById('weaponTableBody');
+
+  tableBody.innerHTML = '';
+
+  let weaponAttributes = {};
+
+  if (weaponTypeInput === '双手剑') {
+    weaponAttributes = twoWeaponAttributes;
+  } else if (weaponTypeInput === '单手剑') {
+    weaponAttributes = oneWeaponAttributes;
+  } else if (weaponTypeInput === '弓') {
+    weaponAttributes = archWeaponAttributes;
+  } else if (weaponTypeInput === '篮子') {
+    weaponAttributes = basketWeaponAttributes;
+  } else if (weaponTypeInput === '爪') {
+    weaponAttributes = clawWeaponAttributes;
+  } else if (weaponTypeInput === '手套') {
+    weaponAttributes = gloveWeaponAttributes;
+  } else if (weaponTypeInput === '步枪') {
+    weaponAttributes = rifleWeaponAttributes;
+  } else if (weaponTypeInput === '权杖') {
+    weaponAttributes = scepterWeaponAttributes;
+  }
+
+  for (const weaponName in weaponAttributes) {
+    const weaponData = weaponAttributes[weaponName];
+
+    const row = document.createElement('tr');
+
+    const nameCell = document.createElement('td');
+    nameCell.textContent = weaponName;
+    row.appendChild(nameCell);
+
+    const rolePropertiesCell = document.createElement('td');
+    rolePropertiesCell.textContent =weaponData.roleProperties;
+    row.appendChild(rolePropertiesCell);
+
+    const atkCell = document.createElement('td');
+    atkCell.textContent = weaponData.basicAtk * weaponData.weaponCoefficient;
+    row.appendChild(atkCell);
+
+    const critCell = document.createElement('td');
+    critCell.textContent = weaponData.crit;
+    row.appendChild(critCell);
+
+    const defCell = document.createElement('td');
+    defCell.textContent = weaponData.addDef;
+    row.appendChild(defCell);
+
+    const hpCell = document.createElement('td');
+    hpCell.textContent = weaponData.addHP;
+    row.appendChild(hpCell);
+
+    tableBody.appendChild(row);
+  }
+}

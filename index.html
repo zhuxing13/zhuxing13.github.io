@@ -358,66 +358,97 @@
 
       </table>
   </div>
+  
+  <br>
+
+  <label for="weaponTypeInput">武器类型：</label>
+  <input type="text" id="weaponTypeInput">
+  <button onclick="displayWeaponInfo()">显示武器信息</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>名称</th>
+        <th>属性</th>
+        <th>秒伤(除去暴击)</th>
+        <th>暴击率%</th>
+        <th>防御加成</th>
+        <th>生命加成</th>
+      </tr>
+    </thead>
+    <tbody id="weaponTableBody"></tbody>
+  </table>
 
   <br>
-  
-  <div class="dropdown">
-    <span id="selected-item1">无盾牌</span>
-    <div id="dropdown1-list" class="dropdown-content">
-      <b href="#" onclick="selectEquip('无盾牌', 'selected-item1')">无盾牌</b>
-      <b href="#" onclick="selectEquip('军长魔镜盾牌', 'selected-item1')">军长魔镜盾牌</b>
-      <b href="#" onclick="selectEquip('保护之盾', 'selected-item1')">保护之盾</b>
-      <b href="#" onclick="selectEquip('牛头人之盾', 'selected-item1')">牛头人之盾</b>
-      <b href="#" onclick="selectEquip('镜盾', 'selected-item1')">镜盾</b>
-    </div>
-  </div>
-  <div class="dropdown">
-    <span id="selected-item2">无饰品</span>
-    <div id="dropdown2-list" class="dropdown-content">
-      <b href="#" onclick="selectEquip('无饰品', 'selected-item2')">无饰品</b>
-      <b href="#" onclick="selectEquip('魔镜', 'selected-item2')">魔镜</b>
-      <b href="#" onclick="selectEquip('疯狂熊猫胸针', 'selected-item2')">疯狂熊猫胸针</b>
-      <b href="#" onclick="selectEquip('牛头人项链', 'selected-item2')">牛头人项链</b>
-      <b href="#" onclick="selectEquip('殉道魔镜项链', 'selected-item2')">殉道魔镜项链</b>
-      <b href="#" onclick="selectEquip('大地项链', 'selected-item2')">大地项链</b>
-      <b href="#" onclick="selectEquip('冰雪女王指环', 'selected-item2')">冰雪女王指环</b>
-      <b href="#" onclick="selectEquip('海洋耳环', 'selected-item2')">海洋耳环</b>
-      <b href="#" onclick="selectEquip('狙击镜', 'selected-item2')">狙击镜</b>
-    </div>
-  </div>
-  <div class="dropdown">
-    <span id="selected-item3">无周边</span>
-    <div id="dropdown3-list" class="dropdown-content">
-      <b href="#" onclick="selectEquip('无周边', 'selected-item3')">无周边</b>
-      <b href="#" onclick="selectEquip('双子or母舰', 'selected-item3')">双子or母舰</b>
-      <b href="#" onclick="selectEquip('坦杀', 'selected-item3')">坦杀</b>
-      <b href="#" onclick="selectEquip('小公主', 'selected-item3')">小公主</b>
-      <b href="#" onclick="selectEquip('熊猫奖杯', 'selected-item3')">熊猫奖杯</b>
-      <b href="#" onclick="selectEquip('奈莉or狼T', 'selected-item3')">奈莉or狼T</b>
-      <b href="#" onclick="selectEquip('老板娘', 'selected-item3')">老板娘</b>
-      <b href="#" onclick="selectEquip('售货机', 'selected-item3')">售货机</b>
-      <b href="#" onclick="selectEquip('二星属性周边', 'selected-item3')">二星属性周边</b>
-      <b href="#" onclick="selectEquip('梅丽尔坐垫', 'selected-item3')">梅丽尔坐垫</b>
-    </div>
-  </div>
+
+    <label for="jewelrySelect">选择饰品：</label>
+    <select id="jewelrySelect">
+        <option value='无饰品'>无饰品</option>
+        <option value='魔镜'>魔镜</option>
+        <option value='疯狂熊猫胸针'>疯狂熊猫胸针</option>
+        <option value='牛头人项链'>牛头人项链</option>
+        <option value='殉道魔镜项链'>殉道魔镜项链</option>
+        <option value='大地项链'>大地项链</option>
+        <option value='冰雪女王指环'>冰雪女王指环</option>
+        <option value='海洋耳环'>海洋耳环</option>
+        <option value='狙击镜'>狙击镜</option>
+    </select>
+
+    <label for="peripheralSelect">选择周边：</label>
+    <select id="peripheralSelect">
+        <option value='无周边'>无周边</option>
+        <option value='双子or母舰'>双子or母舰</option>
+        <option value='坦杀'>坦杀</option>
+        <option value='小公主'>小公主</option>
+        <option value='熊猫奖杯'>熊猫奖杯</option>
+        <option value='奈莉or狼T'>奈莉or狼T</option>
+        <option value='老板娘'>老板娘</option>
+        <option value='售货机'>售货机</option>
+        <option value='二星属性周边'>二星属性周边</option>
+        <option value='梅丽尔坐垫'>梅丽尔坐垫</option>
+    </select>
+
+    <label for="shieldSelect">选择盾牌：</label>
+    <select id="shieldSelect">
+        <option value='无盾牌'>无盾牌</option>
+        <option value='军长魔镜盾牌'>军长魔镜盾牌</option>
+        <option value='保护之盾'>保护之盾</option>
+        <option value='牛头人之盾'>牛头人之盾</option>
+        <option value='镜盾'>镜盾</option>
+    </select>
 
   <br>
   <span>攻击加成</span>
-  <input type="text" id="text1" readonly>
+  <input type="text" id="atkText" readonly>
   <br>
   <span>防御加成</span>
-  <input type="text" id="text2" readonly>
+  <input type="text" id="defText" readonly>
   <br>
   <span>生命加成</span>
-  <input type="text" id="text3" readonly>
+  <input type="text" id="HPText" readonly>
   <br>
 
   <button onclick="updateTextFields()">更新文本框</button>
 
   <p>如果数据有错误，可以联系：<br>bilibili: space.bilibili.com/495999638 | QQ: 1217505768</p>
-  <script src="datajs/equip/jewelry.js"></script>
-  <script src="datajs/equip/peripheral.js"></script>
-  <script src="datajs/equip/shield.js"></script>
   <script src="js/fun.js"></script>
+  <script src="js/datajs/character/basic.js"></script>
+  <script src="js/datajs/character/dark.js"></script>
+  <script src="js/datajs/character/earth.js"></script>
+  <script src="js/datajs/character/fire.js"></script>
+  <script src="js/datajs/character/light.js"></script>
+  <script src="js/datajs/character/water.js"></script>
+  <script src="js/datajs/equip/jewelry.js"></script>
+  <script src="js/datajs/equip/peripheral.js"></script>
+  <script src="js/datajs/equip/shield.js"></script>
+  <script src="js/datajs/weapon/arch.js"></script>
+  <script src="js/datajs/weapon/basket.js"></script>
+  <script src="js/datajs/weapon/claw.js"></script>
+  <script src="js/datajs/weapon/glove.js"></script>
+  <script src="js/datajs/weapon/one_handed_sword.js"></script>
+  <script src="js/datajs/weapon/rifle.js"></script>
+  <script src="js/datajs/weapon/scepter.js"></script>
+  <script src="js/datajs/weapon/two_handed_sword.js"></script>
+
 </body>
 </html>
