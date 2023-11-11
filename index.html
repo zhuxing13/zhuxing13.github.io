@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>坎公面板计算器</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <h1 align="center">坎公面板计算器</h1>
+  <h4 align="center">作者：逐星亦逐心</h4>     
+
+  <div>
+    <button id="fullValuesButton">图鉴默认最大值</button>
+
+    <table>
+      <tbody>
+        <tr>
+          <td><b>加成种类</b></td>
+          <td><b>攻击加成</b></td>
+          <td><b>防御加成</b></td>
+          <td><b>生命加成</b></td>
+        </tr>
+        <tr>
+          <td>角色收集图鉴</td>
+          <td><input type="textAtlas" id="atk1" value="0">/<a id="atk1full" data-atlas>53.0</a></td>
+          <td><input type="textAtlas" id="def1" value="0">/<a id="def1full" data-atlas>27.9</a></td>
+          <td><input type="textAtlas" id="hp1" value="0">/<a id="hp1full" data-atlas>30.8</a></td>
+        </tr>
+        <tr>
+          <td>道具羁绊图鉴</td>
+          <td><input type="textAtlas" id="atk2" value="0">/<a id="atk2full" data-atlas>59.2</a></td>
+          <td><input type="textAtlas" id="def2" value="0">/<a id="def2full" data-atlas>34.1</a></td>
+          <td><input type="textAtlas" id="hp2" value="0">/<a id="hp2full" data-atlas>32.6</a></td>
+        </tr>
+        <tr>
+          <td>武器饰品盾牌</td>
+          <td><input type="textAtlas" id="atk3" value="0">/<a id="atk3full" data-atlas>10.0</a></td>
+          <td><input type="textAtlas" id="def3" value="0">/<a id="def3full" data-atlas>7.9</a></td>
+          <td><input type="textAtlas" id="hp3" value="0">/<a id="hp3full" data-atlas>8.2</a></td>
+        </tr>
+        <tr>
+          <td>普皮武皮超皮</td>
+          <td><input type="textAtlas" id="atk4" value="0">/<a id="atk4full" data-atlas>12.1</a></td>
+          <td>N/A</td>
+          <td><input type="textAtlas" id="hp4" value="0">/<a id="hp4full" data-atlas>10.0</a></td>
+        </tr>
+        <tr>
+          <td>遗物图鉴</td>
+          <td><input type="textAtlas" id="atk5" value="0">/<a id="atk5full" data-atlas>2.0</a></td>
+          <td>N/A</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>魔卡图鉴</td>
+          <td><input type="textAtlas" id="atk6" value="0">/<a id="atk6full" data-atlas>10.0</a></td>
+          <td>N/A</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>周边图鉴</td>
+          <td><input type="textAtlas" id="atk7" value="0">/<a id="atk7full" data-atlas>4.0</a></td>
+          <td>N/A</td>
+          <td>N/A</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <input type="radio" name="roleProperties" value="all" checked> 全部
+  <input type="radio" name="roleProperties" value="光"> 光
+  <input type="radio" name="roleProperties" value="暗"> 暗
+  <input type="radio" name="roleProperties" value="虚"> 虚
+  <input type="radio" name="roleProperties" value="火"> 火
+  <input type="radio" name="roleProperties" value="土"> 土
+  <input type="radio" name="roleProperties" value="水"> 水
+
+  <br>
+
+  <input type="radio" name="roleOccupation" value="all" checked> 全部
+  <input type="radio" name="roleOccupation" value="战士"> 战士
+  <input type="radio" name="roleOccupation" value="射手"> 射手
+  <input type="radio" name="roleOccupation" value="辅助"> 辅助
+  <input type="radio" name="roleOccupation" value="坦克"> 坦克
+
+
+  <br>
+
+  <span id="selectedCharacter">选择角色</span>
+
+  <div style="overflow-y: scroll; height: 200px; width: 200px;">
+      <table class="charactertable">
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="光" onclick="selectCharacter('拉碧丝（一专）')">拉碧丝（一专）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="光" onclick="selectCharacter('拉碧丝（二专）')">拉碧丝（二专）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="光" onclick="selectCharacter('尤金')">尤金</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="坦克" roleProperties="光" onclick="selectCharacter('未来公主')">未来公主</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="辅助" roleProperties="光" onclick="selectCharacter('加百列')">加百列</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="射手" roleProperties="光" onclick="selectCharacter('MK.99')">MK.99</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="辅助" roleProperties="光" onclick="selectCharacter('埃莉诺')">埃莉诺</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="光" onclick="selectCharacter('卡洛儿')">卡洛儿</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="射手" roleProperties="光" onclick="selectCharacter('普利希拉')">普利希拉</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="光" onclick="selectCharacter('瓦伦西亚')">瓦伦西亚</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="光" onclick="selectCharacter('凯伊')">凯伊</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="射手" roleProperties="光" onclick="selectCharacter('千虑')">千虑</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="光" onclick="selectCharacter('夏皮拉（泳装）')">夏皮拉（泳装）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="光" onclick="selectCharacter('高里')">高里</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="光" onclick="selectCharacter('梅儿佩儿（二星）')">梅儿佩儿（二星）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="光" onclick="selectCharacter('梅儿佩儿（三星）')">梅儿佩儿（三星）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="射手" roleProperties="暗" onclick="selectCharacter('阿拉贝尔')">阿拉贝尔</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="暗" onclick="selectCharacter('瑞皮娜')">瑞皮娜</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="坦克" roleProperties="暗" onclick="selectCharacter('欧格玛（一专）')">欧格玛（一专）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="坦克" roleProperties="暗" onclick="selectCharacter('欧格玛（二专）')">欧格玛（二专）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="暗" onclick="selectCharacter('贝丝')">贝丝</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="辅助" roleProperties="暗" onclick="selectCharacter('诺克希亚')">诺克希亚</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="暗" onclick="selectCharacter('莉莉丝')">莉莉丝</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="射手" roleProperties="暗" onclick="selectCharacter('MK.2')">MK.2</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="射手" roleProperties="暗" onclick="selectCharacter('克劳德')">克劳德</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="辅助" roleProperties="暗" onclick="selectCharacter('克罗赛尔')">克罗赛尔</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="暗" onclick="selectCharacter('堇')">堇</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="射手" roleProperties="暗" onclick="selectCharacter('第1军团军长')">第1军团军长</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="辅助" roleProperties="暗" onclick="selectCharacter('杰洛士')">杰洛士</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="辅助" roleProperties="暗" onclick="selectCharacter('卡瑞娜（二星）')">卡瑞娜（二星）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="辅助" roleProperties="暗" onclick="selectCharacter('卡瑞娜（三星）')">卡瑞娜（三星）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="辅助" roleProperties="虚" onclick="selectCharacter('伊娃（偶像）')">伊娃（偶像）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="虚" onclick="selectCharacter('兰儿（一专）')">兰儿（一专）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="虚" onclick="selectCharacter('兰儿（二专）')">兰儿（二专）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="射手" roleProperties="虚" onclick="selectCharacter('奈莉')">奈莉</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="虚" onclick="selectCharacter('未来骑士（一专）')">未来骑士（一专）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="虚" onclick="selectCharacter('未来骑士（二专）')">未来骑士（二专）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="虚" onclick="selectCharacter('索菲（泳装）')">索菲（泳装）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="坦克" roleProperties="虚" onclick="selectCharacter('埃里娜')">埃里娜</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="虚" onclick="selectCharacter('康娜')">康娜</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="射手" roleProperties="虚" onclick="selectCharacter('罗兰茵（泳装）')">罗兰茵（泳装）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="射手" roleProperties="虚" onclick="selectCharacter('克罗姆小姐')">克罗姆小姐</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="射手" roleProperties="虚" onclick="selectCharacter('银河')">银河</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="虚" onclick="selectCharacter('达伊')">达伊</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="虚" onclick="selectCharacter('骑士（一专）')">骑士（一专）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="虚" onclick="selectCharacter('骑士（二专）')">骑士（二专）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="火" onclick="selectCharacter('普利特维采（一专）')">普利特维采（一专）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="火" onclick="selectCharacter('普利特维采（二专）')">普利特维采（二专）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="火" onclick="selectCharacter('比什巴赫（一专）')">比什巴赫（一专）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="火" onclick="selectCharacter('比什巴赫（二专）')">比什巴赫（二专）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="辅助" roleProperties="火" onclick="selectCharacter('美娅')">美娅</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="火" onclick="selectCharacter('琳')">琳</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="射手" roleProperties="火" onclick="selectCharacter('罗茜')">罗茜</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="火" onclick="selectCharacter('辛缇拉')">辛缇拉</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="射手" roleProperties="火" onclick="selectCharacter('克拉拉')">克拉拉</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="火" onclick="selectCharacter('蕾伊')">蕾伊</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="坦克" roleProperties="火" onclick="selectCharacter('拜蒙')">拜蒙</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="火" onclick="selectCharacter('艾米（泳装）')">艾米（泳装）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="射手" roleProperties="火" onclick="selectCharacter('莉娜')">莉娜</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="射手" roleProperties="火" onclick="selectCharacter('波普')">波普</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="射手" roleProperties="火" onclick="selectCharacter('埃尔韦拉（二星）')">埃尔韦拉（二星）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="射手" roleProperties="火" onclick="selectCharacter('埃尔韦拉（三星）')">埃尔韦拉（三星）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="火" onclick="selectCharacter('赤雪')">赤雪</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="射手" roleProperties="土" onclick="selectCharacter('芭莉')">芭莉</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="射手" roleProperties="土" onclick="selectCharacter('蒂尼亚')">蒂尼亚</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="土" onclick="selectCharacter('阿勒夫')">阿勒夫</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="土" onclick="selectCharacter('鲁（一专）')">鲁（一专）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="土" onclick="selectCharacter('鲁（二专）')">鲁（二专）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="辅助" roleProperties="土" onclick="selectCharacter('梅丽尔')">梅丽尔</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="辅助" roleProperties="土" onclick="selectCharacter('卡麦尔')">卡麦尔</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="土" onclick="selectCharacter('帕尔瓦蒂')">帕尔瓦蒂</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="土" onclick="selectCharacter('疯狂熊猫团')">疯狂熊猫团</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="射手" roleProperties="土" onclick="selectCharacter('罗塞塔')">罗塞塔</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="射手" roleProperties="土" onclick="selectCharacter('爱梅莉丝')">爱梅莉丝</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="辅助" roleProperties="土" onclick="selectCharacter('玛姆')">玛姆</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="坦克" roleProperties="土" onclick="selectCharacter('克雷格（二星）')">克雷格（二星）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="坦克" roleProperties="土" onclick="selectCharacter('克雷格（三星）')">克雷格（三星）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="坦克" roleProperties="水" onclick="selectCharacter('玛丽娜')">玛丽娜</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="射手" roleProperties="水" onclick="selectCharacter('比安卡')">比安卡</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="射手" roleProperties="水" onclick="selectCharacter('佳岚')">佳岚</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="辅助" roleProperties="水" onclick="selectCharacter('维罗妮卡')">维罗妮卡</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="水" onclick="selectCharacter('柚子（泳装）')">柚子（泳装）</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="射手" roleProperties="水" onclick="selectCharacter('奥尔卡')">奥尔卡</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="水" onclick="selectCharacter('哈娜')">哈娜</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="辅助" roleProperties="水" onclick="selectCharacter('娅拉')">娅拉</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="射手" roleProperties="水" onclick="selectCharacter('AA72')">AA72</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="射手" roleProperties="水" onclick="selectCharacter('安德拉斯')">安德拉斯</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="战士" roleProperties="水" onclick="selectCharacter('白雪')">白雪</td>
+          </tr>
+          <tr>
+              <td id="cha" roleOccupation="辅助" roleProperties="水" onclick="selectCharacter('汐雅')">汐雅</td>
+
+      </table>
+  </div>
+
+  <br>
+  
+  <div class="dropdown">
+    <span id="selected-item1">无盾牌</span>
+    <div id="dropdown1-list" class="dropdown-content">
+      <b href="#" onclick="selectEquip('无盾牌', 'selected-item1')">无盾牌</b>
+      <b href="#" onclick="selectEquip('军长魔镜盾牌', 'selected-item1')">军长魔镜盾牌</b>
+      <b href="#" onclick="selectEquip('保护之盾', 'selected-item1')">保护之盾</b>
+      <b href="#" onclick="selectEquip('牛头人之盾', 'selected-item1')">牛头人之盾</b>
+      <b href="#" onclick="selectEquip('镜盾', 'selected-item1')">镜盾</b>
+    </div>
+  </div>
+  <div class="dropdown">
+    <span id="selected-item2">无饰品</span>
+    <div id="dropdown2-list" class="dropdown-content">
+      <b href="#" onclick="selectEquip('无饰品', 'selected-item2')">无饰品</b>
+      <b href="#" onclick="selectEquip('魔镜', 'selected-item2')">魔镜</b>
+      <b href="#" onclick="selectEquip('疯狂熊猫胸针', 'selected-item2')">疯狂熊猫胸针</b>
+      <b href="#" onclick="selectEquip('牛头人项链', 'selected-item2')">牛头人项链</b>
+      <b href="#" onclick="selectEquip('殉道魔镜项链', 'selected-item2')">殉道魔镜项链</b>
+      <b href="#" onclick="selectEquip('大地项链', 'selected-item2')">大地项链</b>
+      <b href="#" onclick="selectEquip('冰雪女王指环', 'selected-item2')">冰雪女王指环</b>
+      <b href="#" onclick="selectEquip('海洋耳环', 'selected-item2')">海洋耳环</b>
+      <b href="#" onclick="selectEquip('狙击镜', 'selected-item2')">狙击镜</b>
+    </div>
+  </div>
+  <div class="dropdown">
+    <span id="selected-item3">无周边</span>
+    <div id="dropdown3-list" class="dropdown-content">
+      <b href="#" onclick="selectEquip('无周边', 'selected-item3')">无周边</b>
+      <b href="#" onclick="selectEquip('双子or母舰', 'selected-item3')">双子or母舰</b>
+      <b href="#" onclick="selectEquip('坦杀', 'selected-item3')">坦杀</b>
+      <b href="#" onclick="selectEquip('小公主', 'selected-item3')">小公主</b>
+      <b href="#" onclick="selectEquip('熊猫奖杯', 'selected-item3')">熊猫奖杯</b>
+      <b href="#" onclick="selectEquip('奈莉or狼T', 'selected-item3')">奈莉or狼T</b>
+      <b href="#" onclick="selectEquip('老板娘', 'selected-item3')">老板娘</b>
+      <b href="#" onclick="selectEquip('售货机', 'selected-item3')">售货机</b>
+      <b href="#" onclick="selectEquip('二星属性周边', 'selected-item3')">二星属性周边</b>
+      <b href="#" onclick="selectEquip('梅丽尔坐垫', 'selected-item3')">梅丽尔坐垫</b>
+    </div>
+  </div>
+
+  <br>
+  <span>攻击加成</span>
+  <input type="text" id="text1" readonly>
+  <br>
+  <span>防御加成</span>
+  <input type="text" id="text2" readonly>
+  <br>
+  <span>生命加成</span>
+  <input type="text" id="text3" readonly>
+  <br>
+
+  <button onclick="updateTextFields()">更新文本框</button>
+
+  <p>如果数据有错误，可以联系：<br>bilibili: space.bilibili.com/495999638 | QQ: 1217505768</p>
+  <script src="datajs/equip/jewelry.js"></script>
+  <script src="datajs/equip/peripheral.js"></script>
+  <script src="datajs/equip/shield.js"></script>
+  <script src="js/fun.js"></script>
+</body>
+</html>
