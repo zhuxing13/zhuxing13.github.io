@@ -3,7 +3,7 @@ const characterAttributes = {
         roleProperties: '虚',       /* 角色属性 */
         roleOccupation: '战士',     /* 角色职业 */
         weaponType: '单手剑',       /* 主武器类型 */
-        shieldPortability: true,    /* 是否可以带盾 */
+        shieldPortability: '无',    /* 副武器 */
         crit: 1,                    /* 满破自带暴击 */
         addAtk: 1,                  /* 满破攻击觉醒 */
         addDef: 1,                  /* 满破防御觉醒 */
@@ -21,7 +21,25 @@ const characterAttributes = {
         roleProperties: '火',       
         roleOccupation: '战士',     
         weaponType: '双手剑',      
-        shieldPortability: false,    
+        shieldPortability: '无',    
+        crit: 3,                    
+        addAtk: 67,                  
+        addDef: 39,                  
+        addHP: 39,                   
+        addHeal: 0,                 
+        reduceDamage: 0,            
+        basicAtk: 116,                
+        basicDef: 32,                
+        basicHP: 1071,                 
+        basicHeal: 0,                
+        skill: 15,                  
+        cdSkill: 0                  
+    },
+    '普利特维采（二专）':{
+        roleProperties: '火',       
+        roleOccupation: '战士',     
+        weaponType: '单手剑',      
+        shieldPortability: '无',    
         crit: 3,                    
         addAtk: 67,                  
         addDef: 39,                  
@@ -39,7 +57,7 @@ const characterAttributes = {
         roleProperties: '水',       
         roleOccupation: '坦克',     
         weaponType: '单手剑',      
-        shieldPortability: false,    
+        shieldPortability: '无',    
         crit: 0,                    
         addAtk: 45,                  
         addDef: 41,                  

@@ -10,17 +10,6 @@ const jewelryAttributes = {
     skill: 0,
     cdSkill: 0
   },
-  '魔镜': {
-    crit: 0,
-    addAtk: 15,
-    addDef: 17,
-    addHP: 12,
-    reduceDamage: 0,
-    basicDef: 27,
-    addHeal: 20,
-    skill: 20,
-    cdSkill: 12
-  },
   '疯狂熊猫胸针': {
     crit: 0,
     addAtk: 5,
@@ -42,6 +31,17 @@ const jewelryAttributes = {
     addHeal: 0,
     skill: 15,
     cdSkill: 10
+  },
+  '魔镜': {
+    crit: 0,
+    addAtk: 15,
+    addDef: 17,
+    addHP: 12,
+    reduceDamage: 0,
+    basicDef: 27,
+    addHeal: 20,
+    skill: 20,
+    cdSkill: 12
   },
   '殉道魔镜项链': {
     crit: 0,
@@ -76,6 +76,28 @@ const jewelryAttributes = {
     skill: 15,
     cdSkill: 10
   },
+  '信念指环': {
+    crit: 2,
+    addAtk: 10,
+    addDef: 5,
+    addHP: 16,
+    reduceDamage: 0,
+    basicDef: 28,
+    addHeal: 0,
+    skill: 10,
+    cdSkill: 0
+  },
+  '黑皇冠指环': {
+    crit: 0,
+    addAtk: 0,
+    addDef: 13,
+    addHP: 14,
+    reduceDamage: 35,
+    basicDef: 29,
+    addHeal: 0,
+    skill: 0,
+    cdSkill: 6
+  },
   '海洋耳环': {
     crit: 0,
     addAtk: 10,
@@ -87,6 +109,17 @@ const jewelryAttributes = {
     skill: 0,
     cdSkill: 0
   },
+  '黄昏指环': {
+    crit: 0,
+    addAtk: 8,
+    addDef: 0,
+    addHP: 14,
+    reduceDamage: 0,
+    basicDef: 26,
+    addHeal: 0,
+    skill: 5,
+    cdSkill: 8
+  },
   '狙击镜': {
     crit: 10,
     addAtk: 12,
@@ -97,5 +130,7 @@ const jewelryAttributes = {
     addHeal: 0,
     skill: 18,
     cdSkill: 0
-  }
+  },
+
+  
 };

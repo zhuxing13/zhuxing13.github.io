@@ -22,46 +22,49 @@ window.onload = function() {
   });
 }
 
-const optionElements = document.querySelectorAll('table td');
+const selectedCharacter = document.getElementById('selectedCharacter');
+const charSelect = document.getElementById('charSelect');
 const radioButtonsProperties = document.getElementsByName('roleProperties');
 const radioButtonsOccupation = document.getElementsByName('roleOccupation');
-const selectedCharacter = document.getElementById('selectedCharacter');
 
-function filterTableOptions() {
-  const selectedValueProperties = document.querySelector('input[name="roleProperties"]:checked').value;
-  const selectedValueOccupation = document.querySelector('input[name="roleOccupation"]:checked').value;
-
-  optionElements.forEach((optionElement) => {
-    const roleProperties = optionElement.getAttribute('roleProperties');
-    const roleOccupation = optionElement.getAttribute('roleOccupation');
-
-    const showProperties = (selectedValueProperties === 'all' || selectedValueProperties === roleProperties);
-    const showOccupation = (selectedValueOccupation === 'all' || selectedValueOccupation === roleOccupation);
-
-    if (optionElement.id === 'cha') {
-      if (showProperties && showOccupation) {
-        optionElement.parentNode.style.display = '';
-      } else {
-        optionElement.parentNode.style.display = 'none';
-      }
-    }
-  });
+function selectCharacter() {
+    const selectedItem = charSelect.options[charSelect.selectedIndex];
+    const item = selectedItem.textContent;
+    selectedCharacter.textContent = item;
 }
 
+function filterSelectOptions() {
+    const selectedValueProperties = document.querySelector('input[name="roleProperties"]:checked').value;
+    const selectedValueOccupation = document.querySelector('input[name="roleOccupation"]:checked').value;
 
-function selectCharacter(item) {
-  selectedCharacter.textContent = item;
+    Array.from(charSelect.options).forEach((option) => {
+        const roleProperties = option.getAttribute('data-properties');
+        const roleOccupation = option.getAttribute('data-occupation');
+
+        const showProperties = (selectedValueProperties === 'all' || selectedValueProperties === roleProperties);
+        const showOccupation = (selectedValueOccupation === 'all' || selectedValueOccupation === roleOccupation);
+
+        if (option.value !== '') {
+            if (showProperties && showOccupation) {
+                option.style.display = '';
+            } else {
+                option.style.display = 'none';
+            }
+        }
+    });
 }
+
+charSelect.addEventListener('change', selectCharacter);
 
 radioButtonsProperties.forEach((radioButton) => {
-  radioButton.addEventListener('click', filterTableOptions);
+    radioButton.addEventListener('click', filterSelectOptions);
 });
 
 radioButtonsOccupation.forEach((radioButton) => {
-  radioButton.addEventListener('click', filterTableOptions);
+    radioButton.addEventListener('click', filterSelectOptions);
 });
 
-filterTableOptions();
+filterSelectOptions();
 
 (function() {
   const levelInput = document.getElementById('levelInput');
