@@ -1,14 +1,4 @@
-function toggleDropdown(id) {
-    const dropdownList = document.getElementById(id + '-list');
-    dropdownList.style.display = (dropdownList.style.display === 'none') ? 'block' : 'none';
-}
-
-function selectEquip(item, selectedItemId) {
-    const selectedItem = document.getElementById(selectedItemId);
-    selectedItem.textContent = item;
-  }
-  
-
+// 将图鉴自动填满
 window.onload = function() {
   const fullValuesButton = document.getElementById("fullValuesButton");
   
@@ -22,50 +12,115 @@ window.onload = function() {
   });
 }
 
+
+
+// 筛选角色
 const selectedCharacter = document.getElementById('selectedCharacter');
 const charSelect = document.getElementById('charSelect');
 const radioButtonsProperties = document.getElementsByName('roleProperties');
 const radioButtonsOccupation = document.getElementsByName('roleOccupation');
 
-function selectCharacter() {
-    const selectedItem = charSelect.options[charSelect.selectedIndex];
-    const item = selectedItem.textContent;
-    selectedCharacter.textContent = item;
+function updateSelectedCharacter() {
+  const selectedItem = charSelect.options[charSelect.selectedIndex];
+  const item = selectedItem.textContent;
+  selectedCharacter.textContent = item;
 }
 
+
+
 function filterSelectOptions() {
-    const selectedValueProperties = document.querySelector('input[name="roleProperties"]:checked').value;
-    const selectedValueOccupation = document.querySelector('input[name="roleOccupation"]:checked').value;
+  const selectedValueProperties = document.querySelector('input[name="roleProperties"]:checked').value;
+  const selectedValueOccupation = document.querySelector('input[name="roleOccupation"]:checked').value;
 
-    Array.from(charSelect.options).forEach((option) => {
-        const roleProperties = option.getAttribute('data-properties');
-        const roleOccupation = option.getAttribute('data-occupation');
+  Array.from(charSelect.options).forEach((option) => {
+    const roleProperties = option.getAttribute('data-properties');
+    const roleOccupation = option.getAttribute('data-occupation');
 
-        const showProperties = (selectedValueProperties === 'all' || selectedValueProperties === roleProperties);
-        const showOccupation = (selectedValueOccupation === 'all' || selectedValueOccupation === roleOccupation);
+    const showProperties = (selectedValueProperties === 'all' || selectedValueProperties === roleProperties);
+    const showOccupation = (selectedValueOccupation === 'all' || selectedValueOccupation === roleOccupation);
 
-        if (option.value !== '') {
-            if (showProperties && showOccupation) {
-                option.style.display = '';
-            } else {
-                option.style.display = 'none';
-            }
-        }
-    });
+    if (option.value !== '') {
+      if (showProperties && showOccupation) {
+        option.style.display = '';
+      } else {
+        option.style.display = 'none';
+      }
+    }
+  });
+
+  updateSelectedCharacter(); 
+}
+
+// 更新选定的角色
+function selectCharacter() {
+  updateSelectedCharacter();
+  setTimeout(updateSelectedWeapon, 100);
 }
 
 charSelect.addEventListener('change', selectCharacter);
 
 radioButtonsProperties.forEach((radioButton) => {
-    radioButton.addEventListener('click', filterSelectOptions);
+  radioButton.addEventListener('click', filterSelectOptions);
 });
 
 radioButtonsOccupation.forEach((radioButton) => {
-    radioButton.addEventListener('click', filterSelectOptions);
+  radioButton.addEventListener('click', filterSelectOptions);
 });
 
 filterSelectOptions();
 
+
+
+
+// 主武器更新
+const oneSelect = document.getElementById('oneSelect');
+const twoSelect = document.getElementById('twoSelect');
+const rifleSelect = document.getElementById('rifleSelect');
+const scepterSelect = document.getElementById('scepterSelect');
+const basketSelect = document.getElementById('basketSelect');
+const archSelect = document.getElementById('archSelect');
+const gloveSelect = document.getElementById('gloveSelect');
+const clawSelect = document.getElementById('clawSelect');
+
+
+function updateSelectedWeapon() {
+  const weaponType = document.getElementById('weaponType');
+  const selectedWeapon = document.getElementById('selectedWeapon');
+  const weaponValue = weaponType.value;
+  if (weaponValue === '未选择角色') {
+    selectedWeapon.textContent = '未装备';
+  } else if (weaponValue === '单手剑') {
+    selectedWeapon.textContent = oneSelect.value;
+  } else if (weaponValue === '双手剑') {
+    selectedWeapon.textContent = twoSelect.value;
+  } else if (weaponValue === '步枪') {
+    selectedWeapon.textContent = rifleSelect.value;
+  } else if (weaponValue === '权杖') {
+    selectedWeapon.textContent = scepterSelect.value;
+  } else if (weaponValue === '篮子') {
+    selectedWeapon.textContent = basketSelect.value;
+  } else if (weaponValue === '弓') {
+    selectedWeapon.textContent = archSelect.value;
+  } else if (weaponValue === '手套') {
+    selectedWeapon.textContent = gloveSelect.value;
+  } else if (weaponValue === '爪') {
+    selectedWeapon.textContent = clawSelect.value;
+  }
+
+}
+
+oneSelect.addEventListener('change', updateSelectedWeapon);
+twoSelect.addEventListener('change', updateSelectedWeapon);
+rifleSelect.addEventListener('change', updateSelectedWeapon);
+scepterSelect.addEventListener('change', updateSelectedWeapon);
+basketSelect.addEventListener('change', updateSelectedWeapon);
+archSelect.addEventListener('change', updateSelectedWeapon);
+gloveSelect.addEventListener('change', updateSelectedWeapon);
+clawSelect.addEventListener('change', updateSelectedWeapon);
+
+updateSelectedWeapon();
+
+// 显示等级滚动条的当前等级
 (function() {
   const levelInput = document.getElementById('levelInput');
   const levelValue = document.getElementById('levelValue');
@@ -73,50 +128,10 @@ filterSelectOptions();
   levelInput.addEventListener('input', function() {
     levelValue.textContent = levelInput.value;
   });
+    const level2Input = document.getElementById('level2Input');
+  const level2Value = document.getElementById('level2Value');
+
+  level2Input.addEventListener('input', function() {
+    level2Value.textContent = level2Input.value;
+  });
 })();
-
-
-  const levelValue = document.getElementById('levelValue');
-  const basicAtkCharacter = document.getElementById('basicAtkCharacter');
-  const basicDefCharacter = document.getElementById('basicDefCharacter');
-  const basicHPCharacter = document.getElementById('basicHPCharacter');
-
-  // 监听 selectedCharacter 和 levelValue 的变化
-  selectedCharacter.addEventListener('DOMSubtreeModified', updateCharacterAttributes);
-  levelValue.addEventListener('DOMSubtreeModified', updateCharacterAttributes);
-
-  // 更新角色属性值
-  function updateCharacterAttributes() {
-    const character = selectedCharacter.textContent;
-    const level = parseInt(levelValue.textContent);
-
-    let atkCoefficient, defCoefficient, hpCoefficient;
-
-    if (level <= 83) {
-      atkCoefficient = Math.pow(1.02, level - 1);
-      defCoefficient = Math.pow(1.02, level - 1);
-      hpCoefficient = Math.pow(1.0404, level - 1);
-    } else {
-      const lvl83AtkCoefficient = Math.pow(1.02, 82);
-      const lvl83DefCoefficient = Math.pow(1.02, 82);
-      const lvl83HpCoefficient = Math.pow(1.0404, 82);
-      atkCoefficient = lvl83AtkCoefficient * Math.pow(1.026, level - 83);
-      defCoefficient = lvl83DefCoefficient * Math.pow(1.018, level - 83);
-      hpCoefficient = lvl83HpCoefficient * Math.pow(1.0363, level - 83);
-    }
-
-    if (character === '选择角色') {
-      basicAtkCharacter.value = '未选择角色';
-      basicDefCharacter.value = '未选择角色';
-      basicHPCharacter.value = '未选择角色';
-    } else {
-      const roleProperties = character.toLowerCase();
-      const basicAtk = characterAttributes[roleProperties].basicAtk;
-      const basicDef = characterAttributes[roleProperties].basicDef;
-      const basicHP = characterAttributes[roleProperties].basicHP;
-
-      basicAtkCharacter.value = Math.floor(basicAtk * atkCoefficient);
-      basicDefCharacter.value = Math.floor(basicDef * defCoefficient);
-      basicHPCharacter.value = Math.floor(basicHP * hpCoefficient);
-    }
-  }

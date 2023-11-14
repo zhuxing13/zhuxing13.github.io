@@ -26,6 +26,15 @@ const shieldAttributes = {
       skill: 0,
       cdSkill: 0
     },
+    '审判者之盾': {
+      addAtk: 23,
+      addDef: 0,
+      addHP: 10,
+      reduceDamage: 58,
+      basicDef: 39,
+      skill: 20,
+      cdSkill: 0
+    },
     '牛头人之盾': {
       addAtk: 0,
       addDef: 8,
@@ -34,6 +43,60 @@ const shieldAttributes = {
       basicDef: 48,
       skill: 10,
       cdSkill: 6
+    },
+    '哥布林族长盾牌': {
+      addAtk: 0,
+      addDef: 8,
+      addHP: 17,
+      reduceDamage: 86,
+      basicDef: 48,
+      skill: 0,
+      cdSkill: 0
+    },
+    '前进之盾': {
+      addAtk: 15,
+      addDef: 8,
+      addHP: 10,
+      reduceDamage: 52,
+      basicDef: 46,
+      skill: 0,
+      cdSkill: 8
+    },
+    '狮心之盾': {
+      addAtk: 0,
+      addDef: 10,
+      addHP: 15,
+      reduceDamage: 49,
+      basicDef: 47,
+      skill: 15,
+      cdSkill: 0
+    },
+    '艾芙芭的微笑∧生命': {
+      addAtk: 0,
+      addDef: 0,
+      addHP: 18,
+      reduceDamage: 101,
+      basicDef: 37,
+      skill: 15,
+      cdSkill: 12
+    },
+    '艾芙芭的微笑∧击杀': {
+      addAtk: 0,
+      addDef: 0,
+      addHP: 8,
+      reduceDamage: 101,
+      basicDef: 37,
+      skill: 15,
+      cdSkill: 12
+    },
+    '刀刃之盾': {
+      addAtk: 20,
+      addDef: 10,
+      addHP: 8,
+      reduceDamage: 65,
+      basicDef: 26,
+      skill: 0,
+      cdSkill: 0
     },
     '镜盾': {
       addAtk: 0,
