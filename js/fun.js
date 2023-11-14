@@ -55,6 +55,7 @@ function filterSelectOptions() {
 function selectCharacter() {
   updateSelectedCharacter();
   setTimeout(updateSelectedWeapon, 100);
+  setTimeout(updateSelectedWeapon2, 100);
 }
 
 charSelect.addEventListener('change', selectCharacter);
@@ -120,18 +121,43 @@ clawSelect.addEventListener('change', updateSelectedWeapon);
 
 updateSelectedWeapon();
 
+// 副武器更新
+const shieldSelect = document.getElementById('shieldSelect');
+const rifle2Select = document.getElementById('rifle2Select');
+
+function updateSelectedWeapon2() {
+  const weapon2Type = document.getElementById('weapon2Type');
+  if (weapon2Type.value === '无') {
+    selectedWeapon2.textContent = '未装备';
+  }else if (weapon2Type.value === '盾牌') {
+    selectedWeapon2.textContent = shieldSelect.value;
+  } else if (weapon2Type.value === '步枪') {
+    selectedWeapon2.textContent = rifle2Select.value;
+  }
+}
+shieldSelect.addEventListener('change', updateSelectedWeapon2);
+rifle2Select.addEventListener('change', updateSelectedWeapon2);
+
+updateSelectedWeapon2();
+
+
 // 显示等级滚动条的当前等级
 (function() {
   const levelInput = document.getElementById('levelInput');
   const levelValue = document.getElementById('levelValue');
-
   levelInput.addEventListener('input', function() {
     levelValue.textContent = levelInput.value;
   });
-    const level2Input = document.getElementById('level2Input');
-  const level2Value = document.getElementById('level2Value');
 
+  const level2Input = document.getElementById('level2Input');
+  const level2Value = document.getElementById('level2Value');
   level2Input.addEventListener('input', function() {
     level2Value.textContent = level2Input.value;
+  });
+
+  const level3Input = document.getElementById('level3Input');
+  const level3Value = document.getElementById('level3Value');
+  level3Input.addEventListener('input', function() {
+    level3Value.textContent = level3Input.value;
   });
 })();

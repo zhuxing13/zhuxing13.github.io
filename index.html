@@ -4,7 +4,7 @@
     <title>坎公面板计算器</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body style="overflow-y: scroll;">
     <h1 align="center">坎公面板计算器</h1>
     <h4 align="center">作者：逐星亦逐心</h4>
     <h4 align="center">维护日期:23/11/15</h4>     
@@ -178,6 +178,7 @@
 
     <div style="height: 240px; width: 100%; display: flex;">
         <div>
+            <label for="selectedCharacter">角色名称：</label>
             <span id="selectedCharacter">选择角色</span>
             <br>
             <label for="levelInput">角色等级：</label>
@@ -384,7 +385,7 @@
                 <tr>
                     <td colspan="2">副武器选择</td>
                     <td><label for="weapon2Type">角色副武器类型：</label></td>
-                    <td><input type="text" id="weapon2Type" value="未选择角色" readonly></td>
+                    <td><input type="text" id="weapon2Type" value="无" readonly></td>
                 </tr>
                 <tr>
                     <td><label for="shieldSelect">盾牌选择</label></td>
@@ -423,6 +424,17 @@
                             <option value="蓝玫瑰">蓝玫瑰</option>
                             <option value="神奇激光风暴">神奇激光风暴</option>
                         </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <label for="ogmNO2Shield">欧格玛∧二专勾选</label>
+                        <input type="checkbox" id="ogmNO2Shield">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <span>勾选该选项后盾牌的防御白值只生效20%</span>
                     </td>
                 </tr>
                 <tr>
@@ -468,6 +480,7 @@
         </div>
         
         <div>
+            <label for="selectedWeapon">主武器名称：</label>
             <span id="selectedWeapon">未装备</span>
             <br>
             <label for="level2Input">主武器等级：</label>
@@ -503,6 +516,32 @@
             <label for="addHealWeapon">主武器回血值加成：</label>
             <input type="text" id="addHealWeapon" value="" readonly>
         </div>
+        <div>
+            <label for="selectedWeapon2">副武器名称：</label>
+            <span id="selectedWeapon2">未装备</span>
+            <br>
+            <label for="level3Input">副武器等级：</label>
+            <span id="level3Value">92</span>
+            <br>
+            <input type="range" id="level3Input" name="level3select" min="1" max="98" step="1" value="92">
+            <br>
+            <label for="basicDefWeapon2">副武器防御白值：</label>
+            <input type="text" id="basicDefWeapon2" value="" readonly>
+            <br>
+            <label for="critWeapon2">副武器暴击：</label>
+            <input type="text" id="critWeapon2" value="" readonly>
+            <br>
+            <label for="addAtkWeapon2">副武器攻击加成：</label>
+            <input type="text" id="addAtkWeapon2" value="" readonly>
+            <br>
+            <label for="addDefWeapon2">副武器防御加成：</label>
+            <input type="text" id="addDefWeapon2" value="" readonly>
+            <br>
+            <label for="addHPWeapon2">副武器生命加成：</label>
+            <input type="text" id="addHPWeapon2" value="" readonly>
+            <br>
+
+        </div>
     </div>    
 
     <br>
@@ -528,6 +567,7 @@
   <script src="js/fun.js"></script>
   <script src="js/updateCharacterAttributes.js"></script>
   <script src="js/updateWeaponAttributes.js"></script>
+  <script src="js/updateWeapon2Attributes.js"></script>
 
 </body>
 </html>
