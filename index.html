@@ -7,58 +7,144 @@
 <body style="overflow-y: scroll;">
     <h1 align="center">坎公面板计算器</h1>
     <h4 align="center">作者：逐星亦逐心</h4>
-    <h4 align="center">维护日期:23/11/15</h4>     
-    <h4 align="center">主要功能还未完善，敬请期待</h4>
+    <p align="center" style="font-size: smaller;">B站关注逐星亦逐心谢谢喵</p>
+    <h4 align="center">维护日期:23/11/18</h4>     
+    <h4 align="center">使用前请先查看左下作者的话</h4>
+    <br>
+    <button id="fullValuesButton">图鉴默认最大值</button>
+    <div style="display: flex;"> 
 
-    <div>
-        <button id="fullValuesButton">图鉴默认最大值</button>
+        <div>
 
-        <table>
-            <tbody>
-                <tr><td><b>加成种类</b></td>
-                    <td><b>攻击加成</b></td>
-                    <td><b>防御加成</b></td>
-                    <td><b>生命加成</b></td>
-                </tr>
-                <tr><td>角色收集图鉴</td>
-                    <td><input type="textAtlas" id="atk1" value="0">/<a id="atk1full" data-atlas>53.0</a></td>
-                    <td><input type="textAtlas" id="def1" value="0">/<a id="def1full" data-atlas>27.9</a></td>
-                    <td><input type="textAtlas" id="hp1" value="0">/<a id="hp1full" data-atlas>30.8</a></td>
-                </tr>
-                <tr><td>道具羁绊图鉴</td>
-                    <td><input type="textAtlas" id="atk2" value="0">/<a id="atk2full" data-atlas>59.2</a></td>
-                    <td><input type="textAtlas" id="def2" value="0">/<a id="def2full" data-atlas>34.1</a></td>
-                    <td><input type="textAtlas" id="hp2" value="0">/<a id="hp2full" data-atlas>32.6</a></td>
-                </tr>
-                <tr><td>武器饰品盾牌</td>
-                    <td><input type="textAtlas" id="atk3" value="0">/<a id="atk3full" data-atlas>10.0</a></td>
-                    <td><input type="textAtlas" id="def3" value="0">/<a id="def3full" data-atlas>7.9</a></td>
-                    <td><input type="textAtlas" id="hp3" value="0">/<a id="hp3full" data-atlas>8.2</a></td>
-                </tr>
-                <tr><td>普皮武皮超皮</td>
-                    <td><input type="textAtlas" id="atk4" value="0">/<a id="atk4full" data-atlas>12.1</a></td>
-                    <td>N/A</td>
-                    <td><input type="textAtlas" id="hp4" value="0">/<a id="hp4full" data-atlas>10.0</a></td>
-                </tr>
-                <tr><td>遗物图鉴</td>
-                    <td><input type="textAtlas" id="atk5" value="0">/<a id="atk5full" data-atlas>2.0</a></td>
-                    <td>N/A</td>
-                    <td>N/A</td>
-                </tr>
-                <tr><td>魔卡图鉴</td>
-                    <td><input type="textAtlas" id="atk6" value="0">/<a id="atk6full" data-atlas>10.0</a></td>
-                    <td>N/A</td>
-                    <td>N/A</td>
-                </tr>
-                <tr><td>周边图鉴</td>
-                    <td><input type="textAtlas" id="atk7" value="0">/<a id="atk7full" data-atlas>4.0</a></td>
-                    <td>N/A</td>
-                    <td>N/A</td>
-                </tr>
-            </tbody>
-        </table>
+
+            <table>
+                <tbody>
+                    <tr><td><b>加成种类</b></td>
+                        <td><b>攻击加成</b></td>
+                        <td><b>防御加成</b></td>
+                        <td><b>生命加成</b></td>
+                    </tr>
+                    <tr><td>角色收集图鉴</td>
+                        <td><input type="number" min="0" max="53" id="atk1" value="0">/<a id="atk1full" data-atlas>53.0</a></td>
+                        <td><input type="number" min="0" max="27.9" id="def1" value="0">/<a id="def1full" data-atlas>27.9</a></td>
+                        <td><input type="number" min="0" max="30.8" id="hp1" value="0">/<a id="hp1full" data-atlas>30.8</a></td>
+                    </tr>
+                    <tr><td>道具羁绊图鉴</td>
+                        <td><input type="number" min="0" max="59.2" id="atk2" value="0">/<a id="atk2full" data-atlas>59.2</a></td>
+                        <td><input type="number" min="0" max="34.1" id="def2" value="0">/<a id="def2full" data-atlas>34.1</a></td>
+                        <td><input type="number" min="0" max="32.6" id="hp2" value="0">/<a id="hp2full" data-atlas>32.6</a></td>
+                    </tr>
+                    <tr><td>武器饰品盾牌</td>
+                        <td><input type="number" min="0" max="10" id="atk3" value="0">/<a id="atk3full" data-atlas>10.0</a></td>
+                        <td><input type="number" min="0" max="7.9" id="def3" value="0">/<a id="def3full" data-atlas>7.9</a></td>
+                        <td><input type="number" min="0" max="8.2" id="hp3" value="0">/<a id="hp3full" data-atlas>8.2</a></td>
+                    </tr>
+                    <tr><td>皮肤与浮游城</td>
+                        <td><input type="number" min="0" max="22.1" id="atk4" value="0">/<a id="atk4full" data-atlas>22.1</a></td>
+                        <td>N/A</td>
+                        <td><input type="number" min="0" max="20" id="hp4" value="0">/<a id="hp4full" data-atlas>20.0</a></td>
+                    </tr>
+                    <tr><td>遗物图鉴</td>
+                        <td><input type="number" min="0" max="2" id="atk5" value="0">/<a id="atk5full" data-atlas>2.0</a></td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr><td>魔卡图鉴</td>
+                        <td><input type="number" min="0" max="10" id="atk6" value="0">/<a id="atk6full" data-atlas>10.0</a></td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr><td>周边图鉴</td>
+                        <td><input type="number" min="0" max="4" id="atk7" value="0">/<a id="atk7full" data-atlas>4.0</a></td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td colspan="2"><b>守护者基地加成</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>攻击加成</b></td>
+                        <td><input type="number" min="0" max="39.8" id="atk99" value="39.8">/<a id="atk99full" data-atlas>39.8</a></td>
+                    </tr>
+                    <tr>
+                        <td><b>防御加成</b></td>
+                        <td><input type="number" min="0" max="10.7" id="def99" value="10.7">/<a id="def99full" data-atlas>10.7</a></td>
+                    </tr>
+                    <tr>
+                        <td><b>生命加成</b></td>
+                        <td><input type="number" min="0" max="10.7" id="hp99" value="10.7">/<a id="hp99full" data-atlas>10.7</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>基础白值</td>
+                        <td>总加成</td>
+                        <td>最终结果</td>
+                    </tr>
+                    <tr>
+                        <td>攻击</td>
+                        <td><input type="text" id="basicAtkAll" value="0" readonly></td>
+                        <td><input type="text" id="addAtkAll" value="0" readonly></td>
+                        <td><input type="text" id="resultAtk" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>防御</td>
+                        <td><input type="text" id="basicDefAll" value="0" readonly></td>
+                        <td><input type="text" id="addDefAll" value="0" readonly></td>
+                        <td><input type="text" id="resultDef" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>生命</td>
+                        <td><input type="text" id="basicHPAll" value="0" readonly></td>
+                        <td><input type="text" id="addHPAll" value="0" readonly></td>
+                        <td><input type="text" id="resultHP" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>回血值</td>
+                        <td><input type="text" id="basicHealAll" value="0" readonly></td>
+                        <td><input type="text" id="addHealAll" value="0" readonly></td>
+                        <td><input type="text" id="resultHeal" value="0" readonly></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>暴击</td>
+                        <td colspan="3"><input type="text" id="critAll" value="0" readonly></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td colspan="2">秒伤（无暴击）</td>
+                        <td colspan="2"><input type="text" id="dpsNoCrit" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">秒伤（带暴击）</td>
+                        <td colspan="2"><input type="text" id="dpsGetCrit" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">韧性</td>
+                        <td colspan="2"><input type="text" id="toughness" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" align="center">
+                            <button onclick="CalculationResults()">计算当前角色面板</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-
     <label>属性筛选
         <input type="radio" name="roleProperties" value="all" checked> 全部
         <input type="radio" name="roleProperties" value="光"> 光
@@ -176,7 +262,7 @@
         <option data-occupation="辅助" data-properties="水" value='汐雅'>汐雅</option>
     </select>
 
-    <div style="height: 240px; width: 100%; display: flex;">
+    <div style="width: 100%; display: flex;">
         <div>
             <label for="selectedCharacter">角色名称：</label>
             <span id="selectedCharacter">选择角色</span>
@@ -391,7 +477,7 @@
                     <td><label for="shieldSelect">盾牌选择</label></td>
                     <td>
                         <select id="shieldSelect">
-                            <option value='无盾牌'>无盾牌</option>
+                            <option value='未装备'>未装备</option>
                             <option value='军长魔镜盾牌'>军长魔镜盾牌</option>
                             <option value='保护之盾'>保护之盾</option>
                             <option value='审判者之盾'>审判者之盾</option>
@@ -427,24 +513,28 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="4">
+                    <td colspan="2">
                         <label for="ogmNO2Shield">欧格玛∧二专勾选</label>
                         <input type="checkbox" id="ogmNO2Shield">
                     </td>
-                </tr>
-                <tr>
-                    <td colspan="4">
-                        <span>勾选该选项后盾牌的防御白值只生效20%</span>
+                    <td colspan="2">
+                        <label for="sameProperties">武器角色同属性勾选</label>
+                        <input type="checkbox" id="sameProperties" checked>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="4">遗物周边选择</td>
+                    <td colspan="4">
+                        <span>盾牌的防御白值只生效20%</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">饰品选择</td>
                 </tr>
                 <tr>
                     <td><label for="jewelrySelect">选择饰品：</label></td>
                     <td>
                         <select id="jewelrySelect">
-                            <option value='无饰品'>无饰品</option>
+                            <option value='未装备'>未装备</option>
                             <option value='疯狂熊猫胸针'>疯狂熊猫胸针</option>
                             <option value='牛头人项链'>牛头人项链</option>
                             <option value='魔镜'>魔镜</option>
@@ -458,10 +548,16 @@
                             <option value='狙击镜'>狙击镜</option>
                         </select>
                     </td>
+                    
+                </tr>
+                <tr>
+                    <td colspan="4">周边遗物选择</td>
+                </tr>
+                <tr>
                     <td><label for="peripheralSelect">选择周边：</label></td>
                     <td>
                         <select id="peripheralSelect">
-                            <option value='无周边'>无周边</option>
+                            <option value='未装备'>未装备</option>
                             <option value='牺牲石像样品'>牺牲石像样品</option>
                             <option value='侵略者航天母舰模型'>侵略者航天母舰模型</option>
                             <option value='欧格玛手办'>欧格玛手办</option>
@@ -475,99 +571,262 @@
                             <option value='梅丽尔坐垫'>梅丽尔坐垫</option>
                         </select>
                     </td>
+                    <td><label for="relicSelect">选择遗物：</label></td>
+                    <td>
+                        <select id="relicSelect">
+                            <option value="未装备">未装备</option>
+                            <option value="★★★★★三暴">★★★★★三暴</option>
+                            <option value="★★★★☆三暴">★★★★☆三暴</option>
+                            <option value="★★★☆☆双暴">★★★☆☆双暴</option>
+                            <option value="★★★★★三攻">★★★★★三攻</option>
+                            <option value="★★★★☆三攻">★★★★☆三攻</option>
+                            <option value="★★★☆☆双攻">★★★☆☆双攻</option>
+                            <option value="★★★★★三防">★★★★★三防</option>
+                            <option value="★★★★☆三防">★★★★☆三防</option>
+                            <option value="★★★☆☆双防">★★★☆☆双防</option>
+                            <option value="★★★★★三生命">★★★★★三生命</option>
+                            <option value="★★★★☆三生命">★★★★☆三生命</option>
+                            <option value="★★★☆☆双生命">★★★☆☆双生命</option>
+                            <option value="★★★★★三回血">★★★★★三回血</option>
+                            <option value="★★★★☆三回血">★★★★☆三回血</option>
+                            <option value="★★★☆☆双回血">★★★☆☆双回血</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">魔卡选择</td>
+                </tr>
+                <tr>
+                    <td><label for="magicCard1">魔卡1：</label></td>
+                    <td>
+                        <select id="magicCard1">
+                            <option value="未装备">未装备</option>
+                            <option value="3暴卡">3暴卡</option>
+                            <option value="7攻卡">7攻卡</option>
+                            <option value="5攻卡">5攻卡</option>
+                            <option value="7防卡">7防卡</option>
+                            <option value="6血卡">6血卡</option>
+                            <option value="10回血卡">10回血卡</option>
+                        </select>
+                    </td>
+
+                    <td><label for="magicCard2">魔卡2：</label></td>
+                    <td>
+                        <select id="magicCard2">
+                            <option value="未装备">未装备</option>
+                            <option value="3暴卡">3暴卡</option>
+                            <option value="7攻卡">7攻卡</option>
+                            <option value="5攻卡">5攻卡</option>
+                            <option value="7防卡">7防卡</option>
+                            <option value="6血卡">6血卡</option>
+                            <option value="10回血卡">10回血卡</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">装备选择生效加成</td>
+                </tr>
+                <tr>
+                    <td>加成种类</td>
+                    <td>攻击加成</td>
+                    <td>防御加成</td>
+                    <td>生命加成</td>
+                </tr>
+                <tr>
+                    <td>加成总和</td>
+                    <td><input type="text" value="" id="addAtkGet"></td>
+                    <td><input type="text" value="" id="addDefGet"></td>
+                    <td><input type="text" value="" id="addHPGet"></td>
                 </tr>
             </table>
         </div>
         
         <div>
-            <label for="selectedWeapon">主武器名称：</label>
-            <span id="selectedWeapon">未装备</span>
-            <br>
-            <label for="level2Input">主武器等级：</label>
-            <span id="level2Value">92</span>
-            <br>
-            <input type="range" id="level2Input" name="level2select" min="1" max="98" step="1" value="92">
-            <br>
 
-            <label for="basicAtkWeapon">主武器攻击白值：</label>
-            <input type="text" id="basicAtkWeapon" value="" readonly>
-            <br>
-            <label for="weaponCoefficient">主武器系数：</label>
-            <input type="text" id="weaponCoefficient" value="" readonly>
-            <br>
-            <label for="basicDefWeapon">主武器防御白值：</label>
-            <input type="text" id="basicDefWeapon" value="" readonly>
-            <br>
-            <label for="basicHealWeapon">主武器回血白值：</label>
-            <input type="text" id="basicHealWeapon" value="" readonly>
-            <br>
-            <label for="critWeapon">主武器暴击：</label>
-            <input type="text" id="critWeapon" value="" readonly>
-            <br>
-            <label for="addAtkWeapon">主武器攻击加成：</label>
-            <input type="text" id="addAtkWeapon" value="" readonly>
-            <br>
-            <label for="addDefWeapon">主武器防御加成：</label>
-            <input type="text" id="addDefWeapon" value="" readonly>
-            <br>
-            <label for="addHPWeapon">主武器生命加成：</label>
-            <input type="text" id="addHPWeapon" value="" readonly>
-            <br>
-            <label for="addHealWeapon">主武器回血值加成：</label>
-            <input type="text" id="addHealWeapon" value="" readonly>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label for="selectedWeapon">主武器名称：</label></td>
+                        <td><span id="selectedWeapon">未装备</span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="level2Input">主武器等级：</label></td>
+                        <td><span id="level2Value">92</span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="range" id="level2Input" name="level2select" min="1" max="98" step="1" value="92"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="basicAtkWeapon">主武器攻击白值：</label></td>
+                        <td><input type="text" id="basicAtkWeapon" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="weaponCoefficient">主武器系数：</label></td>
+                        <td><input type="text" id="weaponCoefficient" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="basicDefWeapon">主武器防御白值：</label></td>
+                        <td><input type="text" id="basicDefWeapon" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="basicHealWeapon">主武器回血白值：</label></td>
+                        <td><input type="text" id="basicHealWeapon" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="critWeapon">主武器暴击：</label></td>
+                        <td><input type="text" id="critWeapon" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="addAtkWeapon">主武器攻击加成：</label></td>
+                        <td><input type="text" id="addAtkWeapon" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="addDefWeapon">主武器防御加成：</label></td>
+                        <td><input type="text" id="addDefWeapon" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="addHPWeapon">主武器生命加成：</label></td>
+                        <td><input type="text" id="addHPWeapon" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="addHealWeapon">主武器回血值加成：</label></td>
+                        <td><input type="text" id="addHealWeapon" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><span>杂项(周边遗物魔卡)加成总和</span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="critOthers">杂项暴击：</label></td>
+                        <td><input type="text" id="critOthers" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="addAtkOthers">杂项攻击加成：</label></td>
+                        <td><input type="text" id="addAtkOthers" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="addDefOthers">杂项防御加成：</label></td>
+                        <td><input type="text" id="addDefOthers" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="addHPOthers">杂项生命加成：</label></td>
+                        <td><input type="text" id="addHPOthers" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="addHealOthers">杂项回血值加成：</label></td>
+                        <td><input type="text" id="addHealOthers" value="0" readonly></td>
+                    </tr>
+                </tbody>
+            </table>
+
+
         </div>
         <div>
-            <label for="selectedWeapon2">副武器名称：</label>
-            <span id="selectedWeapon2">未装备</span>
-            <br>
-            <label for="level3Input">副武器等级：</label>
-            <span id="level3Value">92</span>
-            <br>
-            <input type="range" id="level3Input" name="level3select" min="1" max="98" step="1" value="92">
-            <br>
-            <label for="basicDefWeapon2">副武器防御白值：</label>
-            <input type="text" id="basicDefWeapon2" value="" readonly>
-            <br>
-            <label for="critWeapon2">副武器暴击：</label>
-            <input type="text" id="critWeapon2" value="" readonly>
-            <br>
-            <label for="addAtkWeapon2">副武器攻击加成：</label>
-            <input type="text" id="addAtkWeapon2" value="" readonly>
-            <br>
-            <label for="addDefWeapon2">副武器防御加成：</label>
-            <input type="text" id="addDefWeapon2" value="" readonly>
-            <br>
-            <label for="addHPWeapon2">副武器生命加成：</label>
-            <input type="text" id="addHPWeapon2" value="" readonly>
-            <br>
-
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label for="selectedWeapon2">副武器名称：</label></td>
+                        <td><span id="selectedWeapon2">未装备</span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="level3Input">副武器等级：</label></td>
+                        <td><span id="level3Value">92</span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="range" id="level3Input" name="level3select" min="1" max="98" step="1" value="92"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="basicDefWeapon2">副武器防御白值：</label></td>
+                        <td><input type="text" id="basicDefWeapon2" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="critWeapon2">副武器暴击：</label></td>
+                        <td><input type="text" id="critWeapon2" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="addAtkWeapon2">副武器攻击加成：</label></td>
+                        <td><input type="text" id="addAtkWeapon2" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="addDefWeapon2">副武器防御加成：</label></td>
+                        <td><input type="text" id="addDefWeapon2" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="addHPWeapon2">副武器生命加成：</label></td>
+                        <td><input type="text" id="addHPWeapon2" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="selectedJewelry">饰品名称：</label></td>
+                        <td><span id="selectedJewelry">未装备</span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="level4Input">饰品等级：</label></td>
+                        <td><span id="level4Value">92</span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="range" id="level4Input" name="level4select" min="1" max="98" step="1" value="92"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="basicDefJewelry">饰品防御白值：</label></td>
+                        <td><input type="text" id="basicDefJewelry" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="critJewelry">饰品暴击：</label></td>
+                        <td><input type="text" id="critJewelry" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="addAtkJewelry">饰品攻击加成：</label></td>
+                        <td><input type="text" id="addAtkJewelry" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="addDefJewelry">饰品防御加成：</label></td>
+                        <td><input type="text" id="addDefJewelry" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="addHPJewelry">饰品生命加成：</label></td>
+                        <td><input type="text" id="addHPJewelry" value="0" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><label for="addHealJewelry">饰品回血值加成：</label></td>
+                        <td><input type="text" id="addHealJewelry" value="0" readonly></td>
+                    </tr>
+        
+                </tbody>
+            </table>
+            
         </div>
     </div>    
 
     <br>
+    <p>目前录入有效的角色有：凤凰、光伞、船长、水壶、克罗姆、未来爷，需要录入什么角色可以联系我更新，联系方式在最下方</p>
+    <p>角色默认满破、满觉醒，装备默认满破、满洗练，伤害减免暂不计入计算</p>
+    <p>角色与装备的防御数值与实际防御数值并不完全精确（因为kongs图鉴不显示小数），所以在较高等级下会有一定程度的偏差</p>
+    <p>为了网页稳定性对输入部分做了较多限制，未来将会陆续开放自定义角色数值、自定义装备数值功能，敬请期待</p>
+    <p>如果数据有错误需要反馈或想要对此页面提出建议，请联系：<br>bilibili: space.bilibili.com/495999638 | QQ: 1217505768</p>
 
-    <br>
+    <script src="js/datajs/character/character.js"></script>
 
-  <p>如果数据有错误需要反馈或想要对此页面提出建议，可以联系：<br>bilibili: space.bilibili.com/495999638 | QQ: 1217505768</p>
+    <script src="js/datajs/equip/jewelry.js"></script>
+    <script src="js/datajs/equip/peripheral.js"></script>
+    <script src="js/datajs/equip/rifle2.js"></script>
+    <script src="js/datajs/equip/shield.js"></script>
+    <script src="js/datajs/equip/relic.js"></script>
+    <script src="js/datajs/equip/magicCard.js"></script>
+    
+    <script src="js/datajs/weapon/arch.js"></script>
+    <script src="js/datajs/weapon/basket.js"></script>
+    <script src="js/datajs/weapon/claw.js"></script>
+    <script src="js/datajs/weapon/glove.js"></script>
+    <script src="js/datajs/weapon/one_handed_sword.js"></script>
+    <script src="js/datajs/weapon/rifle.js"></script>
+    <script src="js/datajs/weapon/scepter.js"></script>
+    <script src="js/datajs/weapon/two_handed_sword.js"></script>
 
-  <script src="js/datajs/character/character.js"></script>
-  <script src="js/datajs/equip/jewelry.js"></script>
-  <script src="js/datajs/equip/peripheral.js"></script>
-  <script src="js/datajs/equip/rifle2.js"></script>
-  <script src="js/datajs/equip/shield.js"></script>
-  <script src="js/datajs/weapon/arch.js"></script>
-  <script src="js/datajs/weapon/basket.js"></script>
-  <script src="js/datajs/weapon/claw.js"></script>
-  <script src="js/datajs/weapon/glove.js"></script>
-  <script src="js/datajs/weapon/one_handed_sword.js"></script>
-  <script src="js/datajs/weapon/rifle.js"></script>
-  <script src="js/datajs/weapon/scepter.js"></script>
-  <script src="js/datajs/weapon/two_handed_sword.js"></script>
-
-  <script src="js/fun.js"></script>
-  <script src="js/updateCharacterAttributes.js"></script>
-  <script src="js/updateWeaponAttributes.js"></script>
-  <script src="js/updateWeapon2Attributes.js"></script>
-
+    <script src="js/fun.js"></script>
+    <script src="js/updateCharacterAttributes.js"></script>
+    <script src="js/updateWeaponAttributes.js"></script>
+    <script src="js/updateWeapon2Attributes.js"></script>
+    <script src="js/updateJewelryAttributes.js"></script>
+    <script src="js/updateOthersAttributes.js"></script>
+    <script src="js/calculationResults.js"></script>
 </body>
 </html>

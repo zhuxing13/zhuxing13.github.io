@@ -1,5 +1,5 @@
 const jewelryAttributes = {
-  '无饰品': {
+  '未装备': {
     crit: 0,
     addAtk: 0,
     addDef: 0,

@@ -1,6 +1,5 @@
 // 主武器数据随等级变化
 const level2Value = document.getElementById('level2Value');
-const selectedWeapon = document.getElementById('selectedWeapon');
 
 const basicAtkWeapon = document.getElementById("basicAtkWeapon");
 const weaponCoefficient = document.getElementById("weaponCoefficient");

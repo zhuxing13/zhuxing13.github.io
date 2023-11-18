@@ -1,5 +1,5 @@
 const shieldAttributes = {
-    '无盾牌': {
+    '未装备': {
       addAtk: 0,
       addDef: 0,
       addHP: 0,

@@ -1,6 +1,5 @@
 // 副武器数据随等级变化
 const level3Value = document.getElementById('level3Value');
-const selectedWeapon2 = document.getElementById('selectedWeapon2');
 
 const basicDefWeapon2 = document.getElementById('basicDefWeapon2');
 const critWeapon2 = document.getElementById('critWeapon2');
@@ -29,6 +28,7 @@ function updateWeapon2Attributes() {
         addAtkWeapon2.value = 0;
         addDefWeapon2.value = 0;
         addHPWeapon2.value = 0;
+        return
     } else if (weapon2Type === "步枪") {
         weapon2Attributes = rifle2Attributes[selectedWeapon2];
     } else if (weapon2Type === "盾牌") {
@@ -48,7 +48,7 @@ function updateWeapon2Attributes() {
         defCoefficient3 = lvl83DefCoefficient * Math.pow(1.018, level3 - 83);
       }
 
-      basicDefWeapon2.value = Math.floor((weapon2Attributes.basicDef || 0) * defCoefficient3 * DefCoefficient);
+      basicDefWeapon2.value = Math.floor(((weapon2Attributes.basicDef) || 0) * defCoefficient3 * DefCoefficient);
       critWeapon2.value = weapon2Attributes.crit || 0;
 
       addAtkWeapon2.value = weapon2Attributes.addAtk;

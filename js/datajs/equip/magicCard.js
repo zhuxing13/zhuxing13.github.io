@@ -1,0 +1,51 @@
+const magicCardAttributes = {
+    '未装备':{
+        crit: 0,
+        addAtk: 0,
+        addDef: 0,
+        addHP: 0,
+        addHeal: 0,
+    },
+    '3暴卡':{
+        crit: 3,
+        addAtk: 0,
+        addDef: 0,
+        addHP: 0,
+        addHeal: 0,
+    },
+    '7攻卡':{
+        crit: 0,
+        addAtk: 7,
+        addDef: 0,
+        addHP: 0,
+        addHeal: 0,
+    },
+    '5攻卡':{
+        crit: 0,
+        addAtk: 5,
+        addDef: 0,
+        addHP: 0,
+        addHeal: 0,
+    },
+    '7防卡':{
+        crit: 0,
+        addAtk: 0,
+        addDef: 7,
+        addHP: 0,
+        addHeal: 0,
+    },
+    '6血卡':{
+        crit: 0,
+        addAtk: 0,
+        addDef: 0,
+        addHP: 6,
+        addHeal: 0,
+    },
+    '10回血卡':{
+        crit: 0,
+        addAtk: 0,
+        addDef: 0,
+        addHP: 0,
+        addHeal: 10,
+    },
+}

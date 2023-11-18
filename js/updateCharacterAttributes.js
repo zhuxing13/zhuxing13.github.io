@@ -9,7 +9,7 @@ const addAtkCharacter = document.getElementById('addAtkCharacter');
 const addDefCharacter = document.getElementById('addDefCharacter');
 const addHPCharacter = document.getElementById('addHPCharacter');
 const addHealCharacter = document.getElementById('addHealCharacter');
-const weapon2Type = document.getElementById('weapon2Type');
+
 
 const observer = new MutationObserver(updateCharacterAttributes);
 const config = { attributes: true, childList: true, subtree: true };
