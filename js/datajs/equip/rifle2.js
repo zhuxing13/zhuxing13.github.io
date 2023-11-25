@@ -100,6 +100,15 @@ const rifle2Attributes = {
         cdSkill: 20,            
         reduceDamage: 0,         
     },
+    '维涅特（专）':{
+        crit: 3,                 
+        addAtk: 10,               
+        addDef: 18,               
+        addHP: 18,                                      
+        skill: 22,              
+        cdSkill: 0,            
+        reduceDamage: 0,         
+    },
     '捣蛋鬼':{
         crit: 2,                 
         addAtk: 10,               
@@ -136,5 +145,13 @@ const rifle2Attributes = {
         cdSkill: 20,            
         reduceDamage: 0,         
     },
-    
+    '协商者':{
+        crit: 30,                 
+        addAtk: 0,               
+        addDef: 8,               
+        addHP: 10,                                 
+        skill: 24,              
+        cdSkill: 18,            
+        reduceDamage: 0,         
+    },
 }
