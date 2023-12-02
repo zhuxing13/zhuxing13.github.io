@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试</title>
+</head>
+<body>
+    <h1>测试</h1>
+    <span id="span">0</span>
+    <button onclick="dun()">bbutton</button>
+    <script src="fun1.js"></script>
+    <script src="fun2.js"></script>
+    <script src="do.js"></script>
+</body>
+</html>
