@@ -3,12 +3,18 @@
 <head>
     <title>坎公面板计算器</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- <style>
+        body{
+            background-image: url('image/logo_black.png'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+        }
+    </style> -->
 </head>
 <body style="overflow-y: scroll;">
     <h1 align="center">坎公面板计算器</h1>
     <h4 align="center">作者：逐星亦逐心</h4>
-    <p align="center" style="font-size: smaller;">B站关注逐星亦逐心谢谢喵</p>
-    <h4 align="center">维护日期:23/11/26</h4>     
+    <h4 align="center">维护日期:23/12/7</h4>     
     <h4 align="center">使用前请先查看左下作者的话</h4>
     <br>
     <button id="fullValuesButton">图鉴默认最大值</button>
@@ -213,7 +219,7 @@
         <option data-occupation="射手" data-properties="虚" value='罗兰茵∧泳装'>罗兰茵∧泳装</option>
         <option data-occupation="射手" data-properties="虚" value='克罗姆小姐'>克罗姆小姐</option>
         <option data-occupation="射手" data-properties="虚" value='银河'>银河</option>
-        <option data-occupation="射手" data-properties="虚" value='米可'>米可</option>
+        <option data-occupation="战士" data-properties="虚" value='米可'>米可</option>
         <option data-occupation="战士" data-properties="虚" value='达伊'>达伊</option>
         <option data-occupation="战士" data-properties="虚" value='骑士∧单手剑'>骑士∧单手剑</option>
         <option data-occupation="战士" data-properties="虚" value='骑士∧双手剑'>骑士∧双手剑</option>
@@ -237,7 +243,14 @@
         <option data-occupation="射手" data-properties="火" value='埃尔韦拉∧二星'>埃尔韦拉∧二星</option>
         <option data-occupation="射手" data-properties="火" value='埃尔韦拉∧三星'>埃尔韦拉∧三星</option>
         <option data-occupation="战士" data-properties="火" value='赤雪'>赤雪</option>
-        <option data-occupation="射手" data-properties="土" value='芭莉'>芭莉</option>
+        <option data-occupation="射手" data-properties="土" value='芭莉∧篮子'>芭莉∧篮子</option>
+        <option data-occupation="射手" data-properties="土" value='芭莉+单手剑+盾'>demo芭莉+单手剑+盾</option>
+        <option data-occupation="射手" data-properties="土" value='芭莉+双手剑'>demo芭莉+双手剑</option>
+        <option data-occupation="射手" data-properties="土" value='芭莉+步枪+步枪'>demo芭莉+步枪+步枪</option>
+        <option data-occupation="射手" data-properties="土" value='芭莉+权杖'>demo芭莉+权杖</option>
+        <option data-occupation="射手" data-properties="土" value='芭莉+爪'>demo芭莉+爪</option>
+        <option data-occupation="射手" data-properties="土" value='芭莉+手套'>demo芭莉+手套</option>
+        <option data-occupation="射手" data-properties="土" value='芭莉+弓'>demo芭莉+弓</option>
         <option data-occupation="射手" data-properties="土" value='蒂尼亚'>蒂尼亚</option>
         <option data-occupation="战士" data-properties="土" value='阿勒夫'>阿勒夫</option>
         <option data-occupation="战士" data-properties="土" value='鲁∧步枪'>鲁∧步枪</option>
@@ -248,7 +261,7 @@
         <option data-occupation="战士" data-properties="土" value='疯狂熊猫团'>疯狂熊猫团</option>
         <option data-occupation="射手" data-properties="土" value='罗塞塔'>罗塞塔</option>
         <option data-occupation="射手" data-properties="土" value='爱梅莉丝'>爱梅莉丝</option>
-        <option data-occupation="射手" data-properties="土" value='莫莉安'>莫莉安</option>
+        <option data-occupation="坦克" data-properties="土" value='莫莉安'>莫莉安</option>
         <option data-occupation="辅助" data-properties="土" value='玛姆'>玛姆</option>
         <option data-occupation="坦克" data-properties="土" value='克雷格∧二星'>克雷格∧二星</option>
         <option data-occupation="坦克" data-properties="土" value='克雷格∧三星'>克雷格∧三星</option>
@@ -265,6 +278,8 @@
         <option data-occupation="射手" data-properties="水" value='安德拉斯'>安德拉斯</option>
         <option data-occupation="战士" data-properties="水" value='白雪'>白雪</option>
         <option data-occupation="辅助" data-properties="水" value='汐雅'>汐雅</option>
+        <option data-occupation="射手" data-properties="水" value='可可∧二星'>可可∧二星</option>
+        <option data-occupation="射手" data-properties="水" value='可可∧三星'>可可∧三星</option>
     </select>
 
     <div style="width: 100%; display: flex;">
@@ -328,7 +343,7 @@
                             <option value="光环">光环</option>
                             <option value="杜兰尔德">杜兰尔德</option>
                             <option value="帕拉苏">帕拉苏</option>
-                            <option value="莫莉安（专）">莫莉安（专）</option>
+                            <option value="爱娜温">爱娜温</option>
                             <option value="米可（专）">米可（专）</option>
                             <option value="达伊之剑">达伊之剑</option>
                             <option value="村雨">村雨</option>
@@ -811,7 +826,8 @@
     <br>
     <p>11/19录入暗系角色</p>
     <p>11/26录入光系、土系角色、二升三角色</p>
-    <p>其他录入有效的角色有：凤凰、船长、水壶、克罗姆、未来爷、银河，需要录入什么角色可以联系我更新，联系方式在最下方</p>
+    <p>112/7录入虚系角色</p>
+    <p>其他录入有效的角色有：凤凰、船长、水壶，需要录入什么角色可以联系我更新，联系方式在最下方</p>
     <p>角色默认满破、满觉醒，装备默认满破、满洗练，伤害减免暂不计入计算，优先取韩服最新数据</p>
     <p>角色与装备的防御数值与实际防御数值并不完全精确（因为kongs图鉴不显示小数），所以在较高等级下会有一定程度的偏差</p>
     <p>为了网页稳定性对输入部分做了较多限制，未来将会陆续开放自定义角色数值、自定义装备数值功能，敬请期待</p>

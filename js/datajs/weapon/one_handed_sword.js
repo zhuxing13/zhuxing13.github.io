@@ -193,7 +193,7 @@ const oneWeaponAttributes = {
         cdSkill: 10,            
         reduceDamage: 0,         
     },
-    '莫莉安（专）':{
+    '爱娜温':{
         roleProperties: '土',    
         weaponType: '单手剑',    
         weaponCoefficient: 3,    

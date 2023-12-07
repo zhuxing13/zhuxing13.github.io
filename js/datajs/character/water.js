@@ -306,25 +306,44 @@ characterAttributes['瑞秋'] = {
     basicHeal: 0,       
     skill: 0,           
     cdSkill: 0          
-};
-characterAttributes['可可'] = {
+};*/
+characterAttributes['可可∧二星'] = {
     roleProperties: '水',      
-    roleOccupation: '战士',    
-    weaponType: '单手剑',      
+    roleOccupation: '射手',    
+    weaponType: '权杖',      
     weapon2Type: '无',  
-    crit: 0,            
-    addAtk: 0,          
-    addDef: 0,          
-    addHP: 0,           
+    crit: 5,            
+    addAtk: 60,          
+    addDef: 36,          
+    addHP: 42,           
     addHeal: 0,         
     reduceDamage: 0,    
-    basicAtk: 0,        
-    basicDef: 0,        
-    basicHP: 0,         
+    basicAtk: 116,        
+    basicDef: 16,        
+    basicHP: 850,         
     basicHeal: 0,       
-    skill: 0,           
+    skill: 10,           
     cdSkill: 0          
 };
+characterAttributes['可可∧三星'] = {
+    roleProperties: '水',      
+    roleOccupation: '射手',    
+    weaponType: '权杖',      
+    weapon2Type: '无',  
+    crit: 5,            
+    addAtk: 64,          
+    addDef: 39,          
+    addHP: 45,           
+    addHeal: 0,         
+    reduceDamage: 0,    
+    basicAtk: 125,        
+    basicDef: 18,        
+    basicHP: 978,         
+    basicHeal: 0,       
+    skill: 10,           
+    cdSkill: 0          
+};
+/*
 characterAttributes['凯瑟琳'] = {
     roleProperties: '水',      
     roleOccupation: '战士',    
