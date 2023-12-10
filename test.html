@@ -1,19 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Device Redirect</title>
-    <script type="text/javascript">
-        function redirectBasedOnDevice() {
-            // 使用正则表达式检测移动设备
-            if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                // 如果是移动设备，重定向到页面1.html
-                window.location.href = "index.html";
-            }
-            // 如果是PC端，不执行任何操作，用户将看到当前页面（index.html）
-        }
-    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weapon Selector</title>
+<style>
+  .hidden {
+    display: none;
+  }
+
+  #weapon-container {
+    display: none;
+    background: rgba(211, 211, 211, 0.5); /* 浅色且透明的背景 */
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50px; /* 调整为按钮下方的合适位置 */
+    left: 0;
+    right: 0;
+    height: 200px;
+    width: 200px;
+  }
+  /* 可以添加更多样式来美化界面 */
+</style>
 </head>
-<body onload="redirectBasedOnDevice();">
-    <h1>测试</h1>
+<body>
+
+<!-- 已有的表格和组件 -->
+<table id="weapon-table">
+  <!-- 假设每个 label 和 select 都有类似的结构 -->
+  <tr>
+    <td><label for="weapon1">Weapon 1:</label></td>
+    <td><select id="weapon1"><option value="sword">Sword</option></select></td>
+    <td><label for="weapon2">Weapon 2:</label></td>
+    <td><select id="weapon2"><option value="bow">Bow</option></select></td>
+  </tr>
+  <!-- 其他行和列 -->
+</table>
+
+<!-- 新建的按钮 -->
+<button id="toggle-button">选择武器</button>
+
+<!-- 用于显示隐藏组件的容器 -->
+<div id="weapon-container">
+  <!-- 此处将包含隐藏的 label 和 select -->
+</div>
+<p>123123</p>
+<p>456456</p>
+<script>
+  // 获取按钮和容器元素
+  const toggleButton = document.getElementById('toggle-button');
+  const weaponContainer = document.getElementById('weapon-container');
+  const weaponTable = document.getElementById('weapon-table');
+  const weaponElements = weaponTable.querySelectorAll('label, select');
+
+  // 初始化时隐藏表格中的 label 和 select
+  weaponElements.forEach(function(element) {
+    element.classList.add('hidden');
+  });
+
+  // 按钮点击事件处理函数
+  toggleButton.addEventListener('click', function() {
+    // 检查容器的显示状态
+    if (weaponContainer.style.display === 'none') {
+      // 显示容器，并将按钮文本改为“收起”
+      weaponContainer.style.display = 'block';
+      toggleButton.textContent = '收起';
+      // 将 label 和 select 移动到容器中并显示
+      weaponElements.forEach(function(element) {
+        weaponContainer.appendChild(element);
+        element.classList.remove('hidden');
+      });
+    } else {
+      // 隐藏容器，并将按钮文本改为“选择武器”
+      weaponContainer.style.display = 'none';
+      toggleButton.textContent = '选择武器';
+      // 将 label 和 select 移回表格中并隐藏
+      weaponElements.forEach(function(element) {
+        weaponTable.appendChild(element);
+        element.classList.add('hidden');
+      });
+    }
+  });
+</script>
+
 </body>
 </html>
