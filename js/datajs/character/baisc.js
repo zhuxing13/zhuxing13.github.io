@@ -17,16 +17,16 @@ characterAttributes['模板'] = {
     skill: 0,           
     cdSkill: 0          
 };
-*//*
+*/
 characterAttributes['偶像'] = {
     roleProperties: '虚',      
     roleOccupation: '辅助',    
     weaponType: '权杖',      
     weapon2Type: '无',  
     crit: 6,            
-    addAtk: 0,          
-    addDef: 0,          
-    addHP: 0,           
+    addAtk: 52,          
+    addDef: 34,          
+    addHP: 44,           
     addHeal: 0,         
     reduceDamage: 24,    
     basicAtk: 123,        
@@ -35,7 +35,7 @@ characterAttributes['偶像'] = {
     basicHeal: 0,       
     skill: 0,           
     cdSkill: 0          
-};*/
+};
 characterAttributes['兰儿∧手套'] = {
     roleProperties: '虚',      
     roleOccupation: '战士',    

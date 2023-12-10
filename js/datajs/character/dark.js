@@ -108,7 +108,7 @@ characterAttributes['欧格玛∧二专'] = {
     skill: 0,                   /* 满破总技伤 */
     cdSkill: 4                  /* 角色自带cd */
 };
-characterAttributes['贝斯'] = {
+characterAttributes['贝丝'] = {
     roleProperties: '暗',      
     roleOccupation: '战士',    
     weaponType: '双手剑',      
@@ -326,59 +326,57 @@ characterAttributes['卡瑞娜∧三星'] = {
     skill: 0,           
     cdSkill: 0          
 };
-/*
 characterAttributes['吉蒙里'] = {
     roleProperties: '暗',      
-    roleOccupation: '战士',    
-    weaponType: '单手剑',      
+    roleOccupation: '射手',    
+    weaponType: '篮子',      
     weapon2Type: '无',  
-    crit: 0,            
-    addAtk: 0,          
-    addDef: 0,          
-    addHP: 0,           
+    crit: 7,            
+    addAtk: 55,          
+    addDef: 34,          
+    addHP: 43,           
     addHeal: 0,         
     reduceDamage: 0,    
-    basicAtk: 0,        
-    basicDef: 0,        
-    basicHP: 0,         
+    basicAtk: 106,        
+    basicDef: 22,        
+    basicHP: 922,         
     basicHeal: 0,       
-    skill: 0,           
+    skill: 4,           
     cdSkill: 0          
 };
 characterAttributes['柚子'] = {
     roleProperties: '暗',      
     roleOccupation: '战士',    
-    weaponType: '单手剑',      
+    weaponType: '双手剑',      
     weapon2Type: '无',  
-    crit: 0,            
-    addAtk: 0,          
-    addDef: 0,          
-    addHP: 0,           
+    crit: 6,            
+    addAtk: 57,          
+    addDef: 39,          
+    addHP: 39,           
     addHeal: 0,         
     reduceDamage: 0,    
-    basicAtk: 0,        
-    basicDef: 0,        
-    basicHP: 0,         
+    basicAtk: 99,        
+    basicDef: 29,        
+    basicHP: 1019,         
     basicHeal: 0,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 5          
 };
 characterAttributes['夏皮拉'] = {
     roleProperties: '暗',      
     roleOccupation: '战士',    
-    weaponType: '单手剑',      
+    weaponType: '双手剑',      
     weapon2Type: '无',  
-    crit: 0,            
-    addAtk: 0,          
-    addDef: 0,          
-    addHP: 0,           
+    crit: 10,            
+    addAtk: 62,          
+    addDef: 39,          
+    addHP: 38,           
     addHeal: 0,         
     reduceDamage: 0,    
-    basicAtk: 0,        
-    basicDef: 0,        
-    basicHP: 0,         
+    basicAtk: 103,        
+    basicDef: 38,        
+    basicHP: 960,         
     basicHeal: 0,       
-    skill: 0,           
+    skill: 3,           
     cdSkill: 0          
 };
-*/

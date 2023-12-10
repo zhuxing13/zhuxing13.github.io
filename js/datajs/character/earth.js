@@ -36,7 +36,7 @@ characterAttributes['芭莉∧篮子'] = {
     skill: 0,           
     cdSkill: 0          
 };
-characterAttributes['芭莉+单手剑+盾'] = {
+characterAttributes['芭莉∧单手剑∧盾'] = {
     roleProperties: '土',      
     roleOccupation: '射手',    
     weaponType: '单手剑',      
@@ -54,7 +54,7 @@ characterAttributes['芭莉+单手剑+盾'] = {
     skill: 0,           
     cdSkill: 0          
 };
-characterAttributes['芭莉+双手剑'] = {
+characterAttributes['芭莉∧双手剑'] = {
     roleProperties: '土',      
     roleOccupation: '射手',    
     weaponType: '双手剑',      
@@ -72,7 +72,7 @@ characterAttributes['芭莉+双手剑'] = {
     skill: 0,           
     cdSkill: 0          
 };
-characterAttributes['芭莉+步枪+步枪'] = {
+characterAttributes['芭莉∧步枪∧步枪'] = {
     roleProperties: '土',      
     roleOccupation: '射手',    
     weaponType: '步枪',      
@@ -90,11 +90,11 @@ characterAttributes['芭莉+步枪+步枪'] = {
     skill: 0,           
     cdSkill: 0          
 };
-characterAttributes['芭莉+权杖'] = {
+characterAttributes['芭莉∧权杖∧盾牌'] = {
     roleProperties: '土',      
     roleOccupation: '射手',    
     weaponType: '权杖',      
-    weapon2Type: '无',  
+    weapon2Type: '盾牌',  
     crit: 4,            
     addAtk: 62,          
     addDef: 37,          
@@ -108,7 +108,7 @@ characterAttributes['芭莉+权杖'] = {
     skill: 0,           
     cdSkill: 0          
 };
-characterAttributes['芭莉+弓'] = {
+characterAttributes['芭莉∧弓'] = {
     roleProperties: '土',      
     roleOccupation: '射手',    
     weaponType: '弓',      
@@ -126,7 +126,7 @@ characterAttributes['芭莉+弓'] = {
     skill: 0,           
     cdSkill: 0          
 };
-characterAttributes['芭莉+手套'] = {
+characterAttributes['芭莉∧手套'] = {
     roleProperties: '土',      
     roleOccupation: '射手',    
     weaponType: '手套',      
@@ -144,7 +144,7 @@ characterAttributes['芭莉+手套'] = {
     skill: 0,           
     cdSkill: 0          
 };
-characterAttributes['芭莉+爪'] = {
+characterAttributes['芭莉∧爪'] = {
     roleProperties: '土',      
     roleOccupation: '射手',    
     weaponType: '爪',      
@@ -380,80 +380,78 @@ characterAttributes['玛姆'] = {
     skill: 4,           
     cdSkill: 0          
 };
-/*
 characterAttributes['青叶'] = {
     roleProperties: '土',      
-    roleOccupation: '战士',    
-    weaponType: '单手剑',      
+    roleOccupation: '辅助',    
+    weaponType: '弓',      
     weapon2Type: '无',  
-    crit: 0,            
-    addAtk: 0,          
-    addDef: 0,          
-    addHP: 0,           
-    addHeal: 0,         
+    crit: 5,            
+    addAtk: 50,          
+    addDef: 29,          
+    addHP: 38,           
+    addHeal: 22,         
     reduceDamage: 0,    
-    basicAtk: 0,        
-    basicDef: 0,        
-    basicHP: 0,         
-    basicHeal: 0,       
+    basicAtk: 111,        
+    basicDef: 28,        
+    basicHP: 960,         
+    basicHeal: 1306,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 5          
 };
 characterAttributes['赫卡忒'] = {
     roleProperties: '土',      
-    roleOccupation: '战士',    
-    weaponType: '单手剑',      
+    roleOccupation: '射手',    
+    weaponType: '步枪',      
     weapon2Type: '无',  
-    crit: 0,            
-    addAtk: 0,          
-    addDef: 0,          
-    addHP: 0,           
+    crit: 13,            
+    addAtk: 73,          
+    addDef: 28.5,          
+    addHP: 33,           
     addHeal: 0,         
     reduceDamage: 0,    
-    basicAtk: 0,        
-    basicDef: 0,        
-    basicHP: 0,         
+    basicAtk: 130,        
+    basicDef: 20,        
+    basicHP: 850,         
     basicHeal: 0,       
-    skill: 0,           
+    skill: 7,           
     cdSkill: 0          
 };
 characterAttributes['玛丽安'] = {
     roleProperties: '土',      
-    roleOccupation: '战士',    
-    weaponType: '单手剑',      
+    roleOccupation: '射手',    
+    weaponType: '步枪',      
     weapon2Type: '无',  
-    crit: 0,            
-    addAtk: 0,          
-    addDef: 0,          
-    addHP: 0,           
+    crit: 5,            
+    addAtk: 56,          
+    addDef: 38,          
+    addHP: 47,           
     addHeal: 0,         
     reduceDamage: 0,    
-    basicAtk: 0,        
-    basicDef: 0,        
-    basicHP: 0,         
+    basicAtk: 109,        
+    basicDef: 33,        
+    basicHP: 960,         
     basicHeal: 0,       
-    skill: 0,           
+    skill: 4,           
     cdSkill: 0          
 };
 characterAttributes['马修'] = {
     roleProperties: '土',      
     roleOccupation: '战士',    
-    weaponType: '单手剑',      
+    weaponType: '手套',      
     weapon2Type: '无',  
-    crit: 0,            
-    addAtk: 0,          
-    addDef: 0,          
-    addHP: 0,           
+    crit: 3,            
+    addAtk: 66,          
+    addDef: 34,          
+    addHP: 44,           
     addHeal: 0,         
     reduceDamage: 0,    
-    basicAtk: 0,        
-    basicDef: 0,        
-    basicHP: 0,         
+    basicAtk: 96,        
+    basicDef: 26,        
+    basicHP: 1090,         
     basicHeal: 0,       
-    skill: 0,           
+    skill: 4,           
     cdSkill: 0          
 };
-*/
 characterAttributes['克雷格∧二星'] = {
     roleProperties: '土',      
     roleOccupation: '坦克',    

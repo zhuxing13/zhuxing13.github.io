@@ -14,7 +14,7 @@
 <body style="overflow-y: scroll;">
     <h1 align="center">坎公面板计算器</h1>
     <h4 align="center">作者：逐星亦逐心</h4>
-    <h4 align="center">维护日期:23/12/7</h4>     
+    <h4 align="center">维护日期:23/12/11</h4>     
     <h4 align="center">使用前请先查看左下作者的话</h4>
     <br>
     <button id="fullValuesButton">图鉴默认最大值</button>
@@ -33,12 +33,12 @@
                     <tr><td>角色收集图鉴</td>
                         <td><input type="number" min="0" max="53" id="atk1" value="0">/<a id="atk1full" data-atlas>53.0</a></td>
                         <td><input type="number" min="0" max="27.9" id="def1" value="0">/<a id="def1full" data-atlas>27.9</a></td>
-                        <td><input type="number" min="0" max="30.8" id="hp1" value="0">/<a id="hp1full" data-atlas>30.8</a></td>
+                        <td><input type="number" min="0" max="31.8" id="hp1" value="0">/<a id="hp1full" data-atlas>31.8</a></td>
                     </tr>
                     <tr><td>道具羁绊图鉴</td>
                         <td><input type="number" min="0" max="59.7" id="atk2" value="0">/<a id="atk2full" data-atlas>59.7</a></td>
                         <td><input type="number" min="0" max="34.1" id="def2" value="0">/<a id="def2full" data-atlas>34.1</a></td>
-                        <td><input type="number" min="0" max="32.6" id="hp2" value="0">/<a id="hp2full" data-atlas>32.6</a></td>
+                        <td><input type="number" min="0" max="33.6" id="hp2" value="0">/<a id="hp2full" data-atlas>33.6</a></td>
                     </tr>
                     <tr><td>武器饰品盾牌</td>
                         <td><input type="number" min="0" max="10" id="atk3" value="0">/<a id="atk3full" data-atlas>10.0</a></td>
@@ -186,8 +186,12 @@
         <option data-occupation="战士" data-properties="光" value='夏皮拉∧泳装'>夏皮拉∧泳装</option>
         <option data-occupation="战士" data-properties="光" value='奥迪尔'>奥迪尔</option>
         <option data-occupation="战士" data-properties="光" value='高里'>高里</option>
+        <option data-occupation="射手" data-properties="光" value='伊娃'>伊娃</option>
+        <option data-occupation="射手" data-properties="光" value='索菲'>索菲</option>
         <option data-occupation="战士" data-properties="光" value='梅儿佩儿∧二星'>梅儿佩儿∧二星</option>
         <option data-occupation="战士" data-properties="光" value='梅儿佩儿∧三星'>梅儿佩儿∧三星</option>
+        <option data-occupation="辅助" data-properties="光" value='阿依莎'>阿依莎</option>
+        <option data-occupation="战士" data-properties="光" value='奈娃'>奈娃</option>
         <option data-occupation="射手" data-properties="暗" value='阿拉贝尔'>阿拉贝尔</option>
         <option data-occupation="战士" data-properties="暗" value='瑞皮娜'>瑞皮娜</option>                
         <option data-occupation="坦克" data-properties="暗" value='欧格玛∧单手剑'>欧格玛∧单手剑</option>
@@ -205,6 +209,9 @@
         <option data-occupation="辅助" data-properties="暗" value='杰洛士'>杰洛士</option>
         <option data-occupation="辅助" data-properties="暗" value='卡瑞娜∧二星'>卡瑞娜∧二星</option>
         <option data-occupation="辅助" data-properties="暗" value='卡瑞娜∧三星'>卡瑞娜∧三星</option>
+        <option data-occupation="射手" data-properties="暗" value='吉蒙里'>吉蒙里</option>
+        <option data-occupation="战士" data-properties="暗" value='柚子'>柚子</option>
+        <option data-occupation="战士" data-properties="暗" value='夏皮拉'>夏皮拉</option>
         <option data-occupation="辅助" data-properties="虚" value='偶像伊娃'>偶像伊娃</option>
         <option data-occupation="战士" data-properties="虚" value='兰儿∧手套'>兰儿∧手套</option>
         <option data-occupation="战士" data-properties="虚" value='兰儿∧篮子'>兰儿∧篮子</option>
@@ -225,6 +232,10 @@
         <option data-occupation="战士" data-properties="虚" value='骑士∧双手剑'>骑士∧双手剑</option>
         <option data-occupation="战士" data-properties="虚" value='骑士∧步枪'>骑士∧步枪</option>
         <option data-occupation="战士" data-properties="虚" value='骑士∧弓'>骑士∧弓</option>
+        <option data-occupation="辅助" data-properties="虚" value='罗兰茵'>罗兰茵</option>
+        <option data-occupation="坦克" data-properties="虚" value='岚芳'>岚芳</option>
+        <option data-occupation="战士" data-properties="虚" value='艾米'>艾米</option>
+        <option data-occupation="射手" data-properties="虚" value='莉耶'>莉耶</option>
         <option data-occupation="战士" data-properties="火" value='普利特维采∧双手剑'>普利特维采∧双手剑</option>
         <option data-occupation="战士" data-properties="火" value='普利特维采∧单手剑'>普利特维采∧单手剑</option>
         <option data-occupation="战士" data-properties="火" value='比什巴赫∧爪'>比什巴赫∧爪</option>
@@ -242,15 +253,18 @@
         <option data-occupation="射手" data-properties="火" value='波普'>波普</option>
         <option data-occupation="射手" data-properties="火" value='埃尔韦拉∧二星'>埃尔韦拉∧二星</option>
         <option data-occupation="射手" data-properties="火" value='埃尔韦拉∧三星'>埃尔韦拉∧三星</option>
+        <option data-occupation="坦克" data-properties="火" value='拉比'>拉比</option>
         <option data-occupation="战士" data-properties="火" value='赤雪'>赤雪</option>
+        <option data-occupation="射手" data-properties="火" value='道尔夫'>道尔夫</option>
+        <option data-occupation="射手" data-properties="火" value='吉尔瓦斯'>吉尔瓦斯</option>
         <option data-occupation="射手" data-properties="土" value='芭莉∧篮子'>芭莉∧篮子</option>
-        <option data-occupation="射手" data-properties="土" value='芭莉+单手剑+盾'>demo芭莉+单手剑+盾</option>
-        <option data-occupation="射手" data-properties="土" value='芭莉+双手剑'>demo芭莉+双手剑</option>
-        <option data-occupation="射手" data-properties="土" value='芭莉+步枪+步枪'>demo芭莉+步枪+步枪</option>
-        <option data-occupation="射手" data-properties="土" value='芭莉+权杖'>demo芭莉+权杖</option>
-        <option data-occupation="射手" data-properties="土" value='芭莉+爪'>demo芭莉+爪</option>
-        <option data-occupation="射手" data-properties="土" value='芭莉+手套'>demo芭莉+手套</option>
-        <option data-occupation="射手" data-properties="土" value='芭莉+弓'>demo芭莉+弓</option>
+        <option data-occupation="射手" data-properties="土" value='芭莉∧单手剑∧盾'>芭莉∧单手剑∧盾</option>
+        <option data-occupation="射手" data-properties="土" value='芭莉∧双手剑'>芭莉∧双手剑</option>
+        <option data-occupation="射手" data-properties="土" value='芭莉∧步枪∧步枪'>芭莉∧步枪∧步枪</option>
+        <option data-occupation="射手" data-properties="土" value='芭莉∧权杖∧盾牌'>芭莉∧权杖∧盾牌</option>
+        <option data-occupation="射手" data-properties="土" value='芭莉∧爪'>芭莉∧爪</option>
+        <option data-occupation="射手" data-properties="土" value='芭莉∧手套'>芭莉∧手套</option>
+        <option data-occupation="射手" data-properties="土" value='芭莉∧弓'>芭莉∧弓</option>
         <option data-occupation="射手" data-properties="土" value='蒂尼亚'>蒂尼亚</option>
         <option data-occupation="战士" data-properties="土" value='阿勒夫'>阿勒夫</option>
         <option data-occupation="战士" data-properties="土" value='鲁∧步枪'>鲁∧步枪</option>
@@ -263,6 +277,10 @@
         <option data-occupation="射手" data-properties="土" value='爱梅莉丝'>爱梅莉丝</option>
         <option data-occupation="坦克" data-properties="土" value='莫莉安'>莫莉安</option>
         <option data-occupation="辅助" data-properties="土" value='玛姆'>玛姆</option>
+        <option data-occupation="辅助" data-properties="土" value='青叶'>青叶</option>
+        <option data-occupation="射手" data-properties="土" value='赫卡忒'>赫卡忒</option>
+        <option data-occupation="射手" data-properties="土" value='玛丽安'>玛丽安</option>
+        <option data-occupation="战士" data-properties="土" value='马修'>马修</option>
         <option data-occupation="坦克" data-properties="土" value='克雷格∧二星'>克雷格∧二星</option>
         <option data-occupation="坦克" data-properties="土" value='克雷格∧三星'>克雷格∧三星</option>
         <option data-occupation="坦克" data-properties="水" value='玛丽娜'>玛丽娜</option>
@@ -278,8 +296,12 @@
         <option data-occupation="射手" data-properties="水" value='安德拉斯'>安德拉斯</option>
         <option data-occupation="战士" data-properties="水" value='白雪'>白雪</option>
         <option data-occupation="辅助" data-properties="水" value='汐雅'>汐雅</option>
+        <option data-occupation="战士" data-properties="水" value='白兽'>白兽</option>
+        <option data-occupation="辅助" data-properties="水" value='帕比'>帕比</option>
+        <option data-occupation="射手" data-properties="水" value='瑞秋'>瑞秋</option>
         <option data-occupation="射手" data-properties="水" value='可可∧二星'>可可∧二星</option>
         <option data-occupation="射手" data-properties="水" value='可可∧三星'>可可∧三星</option>
+        <option data-occupation="射手" data-properties="水" value='凯瑟琳'>凯瑟琳</option>
     </select>
 
     <div style="width: 100%; display: flex;">
@@ -288,9 +310,9 @@
             <span id="selectedCharacter">选择角色</span>
             <br>
             <label for="levelInput">角色等级：</label>
-            <span id="levelValue">92</span>
+            <span id="levelValue">95</span>
             <br>
-            <input type="range" id="levelInput" name="levelselect" min="1" max="98" step="1" value="92">
+            <input type="range" id="levelInput" name="levelselect" min="1" max="98" step="1" value="95">
             <br>
 
             <label for="basicAtkCharacter">角色攻击白值：</label>
@@ -678,10 +700,10 @@
                     </tr>
                     <tr>
                         <td><label for="level2Input">主武器等级：</label></td>
-                        <td><span id="level2Value">92</span></td>
+                        <td><span id="level2Value">95</span></td>
                     </tr>
                     <tr>
-                        <td><input type="range" id="level2Input" name="level2select" min="1" max="98" step="1" value="92"></td>
+                        <td><input type="range" id="level2Input" name="level2select" min="1" max="98" step="1" value="95"></td>
                     </tr>
                     <tr>
                         <td><label for="basicAtkWeapon">主武器攻击白值：</label></td>
@@ -756,10 +778,10 @@
                     </tr>
                     <tr>
                         <td><label for="level3Input">副武器等级：</label></td>
-                        <td><span id="level3Value">92</span></td>
+                        <td><span id="level3Value">95</span></td>
                     </tr>
                     <tr>
-                        <td><input type="range" id="level3Input" name="level3select" min="1" max="98" step="1" value="92"></td>
+                        <td><input type="range" id="level3Input" name="level3select" min="1" max="98" step="1" value="95"></td>
                     </tr>
                     <tr>
                         <td><label for="basicDefWeapon2">副武器防御白值：</label></td>
@@ -787,10 +809,10 @@
                     </tr>
                     <tr>
                         <td><label for="level4Input">饰品等级：</label></td>
-                        <td><span id="level4Value">92</span></td>
+                        <td><span id="level4Value">95</span></td>
                     </tr>
                     <tr>
-                        <td><input type="range" id="level4Input" name="level4select" min="1" max="98" step="1" value="92"></td>
+                        <td><input type="range" id="level4Input" name="level4select" min="1" max="98" step="1" value="95"></td>
                     </tr>
                     <tr>
                         <td><label for="basicDefJewelry">饰品防御白值：</label></td>
@@ -824,13 +846,9 @@
     </div>    
 
     <br>
-    <p>11/19录入暗系角色</p>
-    <p>11/26录入光系、土系角色、二升三角色</p>
-    <p>112/7录入虚系角色</p>
-    <p>其他录入有效的角色有：凤凰、船长、水壶，需要录入什么角色可以联系我更新，联系方式在最下方</p>
+    <p>12/11已录入所有韩服已实装稀有、传奇角色及其专武</p>
     <p>角色默认满破、满觉醒，装备默认满破、满洗练，伤害减免暂不计入计算，优先取韩服最新数据</p>
     <p>角色与装备的防御数值与实际防御数值并不完全精确（因为kongs图鉴不显示小数），所以在较高等级下会有一定程度的偏差</p>
-    <p>为了网页稳定性对输入部分做了较多限制，未来将会陆续开放自定义角色数值、自定义装备数值功能，敬请期待</p>
     <p>如果数据有错误需要反馈或想要对此页面提出建议，请联系：<br>bilibili: space.bilibili.com/495999638 | QQ: 1217505768</p>
 
     <script src="js/datajs/character/character.js"></script>

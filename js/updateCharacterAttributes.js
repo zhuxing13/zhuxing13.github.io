@@ -47,16 +47,16 @@ function updateCharacterAttributes() {
     addHPCharacter.value = '未选择角色';
     addHealCharacter.value = '未选择角色';
   } else {
-    const roleProperties = character.toLowerCase();
-    const basicAtkA = characterAttributes[roleProperties].basicAtk;
-    const basicDefA = characterAttributes[roleProperties].basicDef;
-    const basicHPA = characterAttributes[roleProperties].basicHP;
-    const basicHealA = characterAttributes[roleProperties].basicHeal;
-    const critA = characterAttributes[roleProperties].crit;
-    const addAtkA = characterAttributes[roleProperties].addAtk;
-    const addDefA = characterAttributes[roleProperties].addDef;
-    const addHPA = characterAttributes[roleProperties].addHP;
-    const addHealA = characterAttributes[roleProperties].addHeal;
+    // const roleProperties = character.toLowerCase();
+    const basicAtkA = characterAttributes[character].basicAtk;
+    const basicDefA = characterAttributes[character].basicDef;
+    const basicHPA = characterAttributes[character].basicHP;
+    const basicHealA = characterAttributes[character].basicHeal;
+    const critA = characterAttributes[character].crit;
+    const addAtkA = characterAttributes[character].addAtk;
+    const addDefA = characterAttributes[character].addDef;
+    const addHPA = characterAttributes[character].addHP;
+    const addHealA = characterAttributes[character].addHeal;
 
     basicAtkCharacter.value = Math.floor(basicAtkA * atkCoefficient);
     basicDefCharacter.value = Math.floor(basicDefA * defCoefficient);
@@ -67,8 +67,8 @@ function updateCharacterAttributes() {
     addDefCharacter.value = addDefA;
     addHPCharacter.value = addHPA;
     addHealCharacter.value = addHealA;
-    weaponType.value = characterAttributes[roleProperties].weaponType;
-    weapon2Type.value = characterAttributes[roleProperties].weapon2Type;
+    weaponType.value = characterAttributes[character].weaponType;
+    weapon2Type.value = characterAttributes[character].weapon2Type;
   }
 
 }
