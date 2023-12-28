@@ -252,6 +252,24 @@ characterAttributes['汐雅'] = {
     skill: 0,           
     cdSkill: 0          
 };
+characterAttributes['安吉'] = {
+    roleProperties: '水',      
+    roleOccupation: '战士',    
+    weaponType: '单手剑',      
+    weapon2Type: '盾牌',  
+    crit: 5,            
+    addAtk: 66,          
+    addDef: 40,          
+    addHP: 42,           
+    addHeal: 0,         
+    reduceDamage: 0,    
+    basicAtk: 134,        
+    basicDef: 18,        
+    basicHP: 920,         
+    basicHeal: 0,       
+    skill: 8,           
+    cdSkill: 0          
+};
 // characterAttributes['？？？']
 // characterAttributes['？？？']
 characterAttributes['白兽'] = {

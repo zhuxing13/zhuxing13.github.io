@@ -177,7 +177,7 @@ const rifleWeaponAttributes = {
         cdSkill: 20,            
         reduceDamage: 0,         
     },
-    '维涅特（专）':{
+    '纳米粒子加速器':{
         roleProperties: '暗',    
         weaponType: '步枪',    
         weaponCoefficient: 2.5,    

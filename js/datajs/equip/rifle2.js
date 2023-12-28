@@ -100,7 +100,7 @@ const rifle2Attributes = {
         cdSkill: 20,            
         reduceDamage: 0,         
     },
-    '维涅特（专）':{
+    '纳米粒子加速器':{
         crit: 3,                 
         addAtk: 10,               
         addDef: 18,               
