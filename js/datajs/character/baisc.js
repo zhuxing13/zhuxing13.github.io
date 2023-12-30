@@ -24,16 +24,16 @@ characterAttributes['偶像'] = {
     weaponType: '权杖',      
     weapon2Type: '无',  
     crit: 6,            
-    addAtk: 52,          
-    addDef: 34,          
-    addHP: 44,           
+    addAtk: 58,          
+    addDef: 38,          
+    addHP: 48,           
     addHeal: 0,         
-    reduceDamage: 24,    
+    reduceDamage: 0,    
     basicAtk: 123,        
     basicDef: 12,        
     basicHP: 1234,         
     basicHeal: 0,       
-    skill: 0,           
+    skill: 3,           
     cdSkill: 0          
 };
 characterAttributes['兰儿∧手套'] = {

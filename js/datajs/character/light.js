@@ -138,8 +138,8 @@ characterAttributes['埃莉诺'] = {
     addHeal: 0,         
     reduceDamage: 0,    
     basicAtk: 124,        
-    basicDef: 27,        
-    basicHP: 1058,         
+    basicDef: 30,        
+    basicHP: 1121,         
     basicHeal: 1658,       
     skill: 10,           
     cdSkill: 2          
