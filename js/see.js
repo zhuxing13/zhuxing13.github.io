@@ -4,7 +4,7 @@ const add1 = document.getElementById('add1');
 seeadd1.addEventListener('click', function() {
   const isHidden = add1.style.display === 'none';
   add1.style.display = isHidden ? 'block' : 'none';
-  seeadd1.textContent = isHidden ? '收起图鉴信息' : '显示当前图鉴';
+  seeadd1.textContent = isHidden ? '收起图鉴信息' : '查看当前图鉴';
 });
 
 const seeadd2 = document.getElementById('seeadd2');
@@ -13,7 +13,7 @@ const add2 = document.getElementById('add2');
 seeadd2.addEventListener('click', function() {
   const isHidden = add2.style.display === 'none';
   add2.style.display = isHidden ? 'block' : 'none';
-  seeadd2.textContent = isHidden ? '收起守护者基地' : '显示守护者基地';
+  seeadd2.textContent = isHidden ? '收起守护者基地' : '查看守护者基地';
 });
 
 const seeCharacterAttributes = document.getElementById('seeCharacterAttributes');
@@ -46,4 +46,12 @@ seeJewelryAttributes.addEventListener('click', function() {
   const isHidden = JewelryAttributes.style.display === 'none';
   JewelryAttributes.style.display = isHidden ? 'block' : 'none';
   seeJewelryAttributes.textContent = isHidden ? '收起饰品属性' : '查看饰品属性';
+});
+
+const seeOthersAttributes = document.getElementById('seeOthersAttributes');
+const OthersAttributes = document.getElementById('OthersAttributes');
+seeOthersAttributes.addEventListener('click', function() {
+  const isHidden = OthersAttributes.style.display === 'none';
+  OthersAttributes.style.display = isHidden ? 'block' : 'none';
+  seeOthersAttributes.textContent = isHidden ? '收起杂项属性' : '查看杂项属性';
 });

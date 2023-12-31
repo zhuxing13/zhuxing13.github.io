@@ -57,6 +57,10 @@ function updateWeaponAttributes() {
             healCoefficient2 = lvl83HealCoefficient * Math.pow(1.0363, level2 - 83);
           }
         
+        if (typeof weaponAttributes === 'undefined') {
+            console.log('当前主武器不存在（忽略）');
+            return; // 提前退出函数
+          }
         basicAtkWeapon.value = Math.floor(weaponAttributes.basicAtk * atkCoefficient2);
         weaponCoefficient.value = weaponAttributes.weaponCoefficient;
         basicDefWeapon.value = Math.floor(weaponAttributes.basicDef * defCoefficient2);

@@ -147,14 +147,111 @@ function filterSelectOptions() {
   updateSelectedCharacter(); 
 }
 
-// 更新选定的角色
+
+// 更新选定的角色，并且移动select元素
 function selectCharacter() {
+  // 首先更新角色
   updateSelectedCharacter();
+  // 然后移动select元素
+  setTimeout(moveWeaponSelect, 100);
+  // 最后，异步更新武器，确保它们在select元素移动之后进行
   setTimeout(updateSelectedWeapon, 100);  // 更新主武器
   setTimeout(updateSelectedWeapon2, 100); // 更新副武器
 }
 
+// 移动主副武器select位置
+function moveWeaponSelect() {
+  var selectedCharacter = charSelect.value;
+  var weaponType = characterAttributes[selectedCharacter].weaponType;
+  var weapon2Type = characterAttributes[selectedCharacter].weapon2Type;
+  var selectElement = document.getElementById(weaponType + "Select");
+  var selectElement2 = document.getElementById(weapon2Type + "Select");
+
+  switch (weaponType) {
+    case "弓":
+      selectElement = document.getElementById("archSelect");
+      break;
+    case "单手剑":
+      selectElement = document.getElementById("oneSelect");
+      break;
+    case "双手剑":
+      selectElement = document.getElementById("twoSelect");
+      break;
+    case "步枪":
+      selectElement = document.getElementById("rifleSelect");
+      break;
+    case "权杖":
+      selectElement = document.getElementById("scepterSelect");
+      break;
+    case "篮子":
+      selectElement = document.getElementById("basketSelect");
+      break;
+    case "手套":
+      selectElement = document.getElementById("gloveSelect");
+      break;
+    case "爪":
+      selectElement = document.getElementById("clawSelect");
+      break;
+    default:
+      selectElement = null;
+  }
+
+  switch (weapon2Type) {
+    case "盾牌":
+      selectElement2 = document.getElementById("shieldSelect");
+      break
+    case "步枪":
+      selectElement2 = document.getElementById("rifle2Select");
+      break
+    default:
+      selectElement2 = null;
+  }
+
+  var weaponSelect = document.getElementById("WeaponSelect");
+  var weapon2Select = document.getElementById("Weapon2Select");
+  var select2 = document.getElementById("select2");
+
+  if (weaponSelect && weaponSelect.firstChild) {
+    // 将WeaponSelect中的select元素移动到select2元素中
+    select2.appendChild(weaponSelect.firstChild);
+  } else {
+    // selectElement不存在，或者没有firstChild
+    console.log("表格内无主武器(忽略)")
+  }
+  if (weapon2Select && weapon2Select.firstChild) {
+    // 将WeaponSelect中的select元素移动到select2元素中
+    select2.appendChild(weapon2Select.firstChild);
+  } else {
+    // selectElement不存在，或者没有firstChild
+    console.log("表格内无副武器(忽略)")
+  }
+
+  if (selectElement) {
+    // 将新的select元素移动到WeaponSelect中
+    weaponSelect.appendChild(selectElement);
+  } else {
+    console.log("主武器类型不存在（忽略）");
+  }
+  if (selectElement2) {
+    // 将新的select元素移动到WeaponSelect中
+    weapon2Select.appendChild(selectElement2);
+  } else {
+    console.log("副武器类型不存在（忽略）");
+  }
+
+  // 更新selectedWeapon的文本
+  document.getElementById("selectedWeapon").textContent = weaponType;
+  document.getElementById("selectedWeapon2").textContent = weapon2Type;
+}
+
+
+// charSelect改变时的事件处理程序
 charSelect.addEventListener('change', selectCharacter);
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  // DOM完全加载后的初始化代码
+});
+
 
 radioButtonsProperties.forEach((radioButton) => {
   radioButton.addEventListener('click', filterSelectOptions);
