@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>坎公面板计算器</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/radio.css">
     <!-- <style>
         body{
             background-image: url('image/logo_black.png'); 
@@ -15,8 +15,8 @@
 <body style="overflow-y: scroll;">
     <h1 align="center">坎公面板计算器</h1>
     <h4 align="center">作者：逐星亦逐心</h4>
-    <h4 align="center">维护日期:23/12/31</h4>     
-    <h4 align="center">图鉴：国服维涅特版本  角色数据：韩服安吉版本</h4>     
+    <h4 align="center">维护日期:24/1/4</h4>     
+    <h4 align="center">图鉴数据：国服维涅特版本  角色数据：韩服安吉版本</h4>     
     <br>
     <button id="fullValuesButton">图鉴默认最大值</button>
     <button id="seeadd1">查看当前图鉴</button>
@@ -29,22 +29,58 @@
                 <tbody>
                     <tr><td colspan="4">
                         <label>属性筛选
-                            <input type="radio" name="roleProperties" value="all" checked> 全部
-                            <input type="radio" name="roleProperties" value="光"> 光
-                            <input type="radio" name="roleProperties" value="暗"> 暗
-                            <input type="radio" name="roleProperties" value="虚"> 虚
-                            <input type="radio" name="roleProperties" value="火"> 火
-                            <input type="radio" name="roleProperties" value="土"> 土
-                            <input type="radio" name="roleProperties" value="水"> 水
+                            <div class="radio-container">
+                                <input type="radio" id="radio0" name="roleProperties" class="radio" value="all" checked>
+                                <label for="radio0" class="roleProperties">全部</label>
+                            </div>
+                            <div class="radio-container">
+                                <input type="radio" id="radio1" name="roleProperties" class="radio" value="光">
+                                <label for="radio1" class="roleProperties">光</label>
+                            </div>
+                            <div class="radio-container">
+                                <input type="radio" id="radio2" name="roleProperties" class="radio" value="暗">
+                                <label for="radio2" class="roleProperties">暗</label>
+                            </div>
+                            <div class="radio-container">
+                                <input type="radio" id="radio3" name="roleProperties" class="radio" value="虚">
+                                <label for="radio3" class="roleProperties">虚</label>
+                            </div>
+                            <div class="radio-container">
+                                <input type="radio" id="radio4" name="roleProperties" class="radio" value="火">
+                                <label for="radio4" class="roleProperties">火</label>
+                            </div>
+                            <div class="radio-container">
+                                <input type="radio" id="radio5" name="roleProperties" class="radio" value="土">
+                                <label for="radio5" class="roleProperties">土</label>
+                            </div>
+                            <div class="radio-container">
+                                <input type="radio" id="radio6" name="roleProperties" class="radio" value="水">
+                                <label for="radio6" class="roleProperties">水</label>
+                            </div>
                         </label>
                     </td></tr>
                     <tr><td colspan="4">
                         <label>职业筛选
-                            <input type="radio" name="roleOccupation" value="all" checked> 全部
-                            <input type="radio" name="roleOccupation" value="战士"> 战士
-                            <input type="radio" name="roleOccupation" value="射手"> 射手
-                            <input type="radio" name="roleOccupation" value="辅助"> 辅助
-                            <input type="radio" name="roleOccupation" value="坦克"> 坦克
+                            <div class="radio-container">
+                                <input type="radio" id="radio00" name="roleOccupation" class="radio" value="all" checked>
+                                <label for="radio00" class="roleOccupation">全部</label>
+                            </div>
+                            <div class="radio-container">
+                                <input type="radio" id="radio01" name="roleOccupation" class="radio" value="战士">
+                                <label for="radio01" class="roleOccupation">战士</label>
+                            </div>
+                            <div class="radio-container">
+                                <input type="radio" id="radio02" name="roleOccupation" class="radio" value="射手">
+                                <label for="radio02" class="roleOccupation">射手</label>
+                            </div>
+                            <div class="radio-container">
+                                <input type="radio" id="radio03" name="roleOccupation" class="radio" value="辅助">
+                                <label for="radio03" class="roleOccupation">辅助</label>
+                            </div>
+                            <div class="radio-container">
+                                <input type="radio" id="radio04" name="roleOccupation" class="radio" value="坦克">
+                                <label for="radio04" class="roleOccupation">坦克</label>
+                            </div>
                         </label>
                     </td></tr>
                 </tbody>
@@ -864,7 +900,8 @@
     </div>    
 
     <br>
-    <p>12/31日志：已录入所有韩服已实装稀有、传奇角色及其专武，【版本至安吉】，界面排版优化</p>
+    <p>24/1/4日志：优化了角色筛选选项</p>
+    <p>23/12/31日志：已录入所有韩服已实装稀有、传奇角色及其专武，【版本至安吉】，界面排版优化</p>
     <p>角色默认满破、满觉醒，装备默认满破、满洗练，伤害减免暂不计入计算，优先取韩服最新数据</p>
     <p>角色与装备的防御数值与实际防御数值并不完全精确（因为kongs图鉴不显示小数），所以在较高等级下会有一定程度的偏差</p>
     <p>如果数据有错误需要反馈或想要对此页面提出建议，请联系：<br>bilibili: space.bilibili.com/495999638 | QQ: 1217505768</p>

@@ -148,6 +148,8 @@ function filterSelectOptions() {
 }
 
 
+
+
 // 更新选定的角色，并且移动select元素
 function selectCharacter() {
   // 首先更新角色

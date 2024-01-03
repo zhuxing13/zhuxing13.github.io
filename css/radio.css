@@ -1,0 +1,82 @@
+.radio-container {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.radio {
+    display: none;
+}
+
+.roleProperties {
+    display: inline-block;
+    width: 45px;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color: #98fb98;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.roleOccupation{
+    display: inline-block;
+    width: 45px;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color: #98fb98;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#radio0:checked + .roleProperties {
+    background-color: #fff;
+}
+
+#radio1:checked + .roleProperties {
+    background-color: #ffef33; /* 光 - 黄色 */
+}
+
+#radio2:checked + .roleProperties {
+    background-color: #0000ff; /* 暗 - 蓝色 */
+}
+
+#radio3:checked + .roleProperties {
+    background-color: #bbbbbb; /* 虚 - 灰色 */
+}
+
+#radio4:checked + .roleProperties {
+    background-color: #ff4500; /* 火 - 橙红色 */
+}
+
+#radio5:checked + .roleProperties {
+    background-color: #2dbb4c; /* 土 - 浅绿色 */
+}
+
+#radio6:checked + .roleProperties {
+    background-color: #a0a0ff; /* 水 - 蓝色 */
+}
+
+#radio00:checked + .roleOccupation {
+    background-color: #fff;
+}
+
+#radio01:checked + .roleOccupation {
+    background-color: #ff4500;
+}
+
+#radio02:checked + .roleOccupation {
+    background-color: #a0a0ff;
+}
+
+#radio03:checked + .roleOccupation {
+    background-color: #ffef33;
+}
+
+#radio04:checked + .roleOccupation {
+    background-color: #2dbb4c;
+}
