@@ -112,7 +112,7 @@ characterAttributes['贝丝'] = {
     roleProperties: '暗',      
     roleOccupation: '战士',    
     weaponType: '双手剑',      
-    weapon2Type: '盾牌',  
+    weapon2Type: '无',  
     crit: 0,            
     addAtk: 63,          
     addDef: 40,          
