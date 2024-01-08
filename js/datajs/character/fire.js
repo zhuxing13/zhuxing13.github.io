@@ -326,7 +326,7 @@ characterAttributes['埃尔韦拉∧三星'] = {
     skill: 0,           
     cdSkill: 0          
 };
-characterAttributes['拉比'] = {
+characterAttributes['拉比∧二星'] = {
     roleProperties: '火',      
     roleOccupation: '坦克',    
     weaponType: '手套',      
@@ -344,7 +344,7 @@ characterAttributes['拉比'] = {
     skill: 2,           
     cdSkill: 4          
 };
-characterAttributes['赤雪'] = {
+characterAttributes['赤雪∧二星'] = {
     roleProperties: '火',      
     roleOccupation: '战士',    
     weaponType: '单手剑',      
@@ -362,7 +362,7 @@ characterAttributes['赤雪'] = {
     skill: 5,           
     cdSkill: 0          
 };
-characterAttributes['道尔夫'] = {
+characterAttributes['道尔夫∧二星'] = {
     roleProperties: '火',      
     roleOccupation: '射手',    
     weaponType: '权杖',      
@@ -380,7 +380,7 @@ characterAttributes['道尔夫'] = {
     skill: 14,           
     cdSkill: 0          
 };
-characterAttributes['吉尔瓦斯'] = {
+characterAttributes['吉尔瓦斯∧二星'] = {
     roleProperties: '火',      
     roleOccupation: '战士',    
     weaponType: '单手剑',      

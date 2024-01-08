@@ -326,7 +326,7 @@ characterAttributes['卡瑞娜∧三星'] = {
     skill: 0,           
     cdSkill: 0          
 };
-characterAttributes['吉蒙里'] = {
+characterAttributes['吉蒙里∧二星'] = {
     roleProperties: '暗',      
     roleOccupation: '射手',    
     weaponType: '篮子',      
@@ -344,7 +344,7 @@ characterAttributes['吉蒙里'] = {
     skill: 4,           
     cdSkill: 0          
 };
-characterAttributes['柚子'] = {
+characterAttributes['柚子∧二星'] = {
     roleProperties: '暗',      
     roleOccupation: '战士',    
     weaponType: '双手剑',      
@@ -362,7 +362,7 @@ characterAttributes['柚子'] = {
     skill: 0,           
     cdSkill: 5          
 };
-characterAttributes['夏皮拉'] = {
+characterAttributes['夏皮拉∧二星'] = {
     roleProperties: '暗',      
     roleOccupation: '战士',    
     weaponType: '双手剑',      

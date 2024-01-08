@@ -290,7 +290,7 @@ characterAttributes['高里'] = {
     skill: 0,           
     cdSkill: 0          
 };
-characterAttributes['伊娃'] = {
+characterAttributes['伊娃∧二星'] = {
     roleProperties: '光',      
     roleOccupation: '射手',    
     weaponType: '权杖',      
@@ -308,7 +308,7 @@ characterAttributes['伊娃'] = {
     skill: 0,           
     cdSkill: 0          
 };
-characterAttributes['索菲'] = {
+characterAttributes['索菲∧二星'] = {
     roleProperties: '光',      
     roleOccupation: '射手',    
     weaponType: '步枪',      
@@ -362,7 +362,7 @@ characterAttributes['梅儿佩儿∧三星'] = {
     skill: 0,           
     cdSkill: 0          
 };
-characterAttributes['阿依莎'] = {
+characterAttributes['阿依莎∧二星'] = {
     roleProperties: '光',      
     roleOccupation: '辅助',    
     weaponType: '单手剑',      
@@ -380,7 +380,7 @@ characterAttributes['阿依莎'] = {
     skill: 6,           
     cdSkill: 0          
 };
-characterAttributes['奈娃'] = {
+characterAttributes['奈娃∧二星'] = {
     roleProperties: '光',      
     roleOccupation: '战士',    
     weaponType: '双手剑',      

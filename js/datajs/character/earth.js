@@ -18,7 +18,7 @@ characterAttributes['模板'] = {
     cdSkill: 0          
 };
 */
-characterAttributes['芭莉∧篮子'] = {
+characterAttributes['芭莉'] = {
     roleProperties: '土',      
     roleOccupation: '射手',    
     weaponType: '篮子',      
@@ -254,7 +254,7 @@ characterAttributes['玛姆'] = {
     skill: 4,           
     cdSkill: 0          
 };
-characterAttributes['青叶'] = {
+characterAttributes['青叶∧二星'] = {
     roleProperties: '土',      
     roleOccupation: '辅助',    
     weaponType: '弓',      
@@ -272,7 +272,7 @@ characterAttributes['青叶'] = {
     skill: 0,           
     cdSkill: 5          
 };
-characterAttributes['赫卡忒'] = {
+characterAttributes['赫卡忒∧二星'] = {
     roleProperties: '土',      
     roleOccupation: '射手',    
     weaponType: '步枪',      
@@ -290,7 +290,7 @@ characterAttributes['赫卡忒'] = {
     skill: 7,           
     cdSkill: 0          
 };
-characterAttributes['玛丽安'] = {
+characterAttributes['玛丽安∧二星'] = {
     roleProperties: '土',      
     roleOccupation: '射手',    
     weaponType: '步枪',      
@@ -308,7 +308,7 @@ characterAttributes['玛丽安'] = {
     skill: 4,           
     cdSkill: 0          
 };
-characterAttributes['马修'] = {
+characterAttributes['马修∧二星'] = {
     roleProperties: '土',      
     roleOccupation: '战士',    
     weaponType: '手套',      

@@ -272,7 +272,7 @@ characterAttributes['安吉'] = {
 };
 // characterAttributes['？？？']
 // characterAttributes['？？？']
-characterAttributes['白兽'] = {
+characterAttributes['白兽∧二星'] = {
     roleProperties: '水',      
     roleOccupation: '战士',    
     weaponType: '爪',      
@@ -290,7 +290,7 @@ characterAttributes['白兽'] = {
     skill: 2,           
     cdSkill: 0          
 };
-characterAttributes['帕比'] = {
+characterAttributes['帕比∧二星'] = {
     roleProperties: '水',      
     roleOccupation: '辅助',    
     weaponType: '篮子',      
@@ -308,7 +308,7 @@ characterAttributes['帕比'] = {
     skill: 14,           
     cdSkill: 0          
 };
-characterAttributes['瑞秋'] = {
+characterAttributes['瑞秋∧二星'] = {
     roleProperties: '水',      
     roleOccupation: '射手',    
     weaponType: '步枪',      
@@ -362,7 +362,7 @@ characterAttributes['可可∧三星'] = {
     skill: 10,           
     cdSkill: 0          
 };
-characterAttributes['凯瑟琳'] = {
+characterAttributes['凯瑟琳∧二星'] = {
     roleProperties: '水',      
     roleOccupation: '射手',    
     weaponType: '弓',      

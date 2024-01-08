@@ -18,7 +18,7 @@ characterAttributes['模板'] = {
     cdSkill: 0          
 };
 */
-characterAttributes['偶像'] = {
+characterAttributes['偶像伊娃'] = {
     roleProperties: '虚',      
     roleOccupation: '辅助',    
     weaponType: '权杖',      
@@ -308,7 +308,7 @@ characterAttributes['达伊'] = {
     skill: 6,           
     cdSkill: 4          
 };
-characterAttributes['骑士∧单手剑'] = {
+characterAttributes['骑士∧单手剑∧二星'] = {
     roleProperties: '虚',      
     roleOccupation: '战士',    
     weaponType: '单手剑',      
@@ -326,7 +326,7 @@ characterAttributes['骑士∧单手剑'] = {
     skill: 3,           
     cdSkill: 5          
 };
-characterAttributes['骑士∧双手剑'] = {
+characterAttributes['骑士∧双手剑∧二星'] = {
     roleProperties: '虚',      
     roleOccupation: '战士',    
     weaponType: '双手剑',      
@@ -344,7 +344,7 @@ characterAttributes['骑士∧双手剑'] = {
     skill: 3,           
     cdSkill: 5   
 };
-characterAttributes['骑士∧步枪'] = {
+characterAttributes['骑士∧步枪∧二星'] = {
     roleProperties: '虚',      
     roleOccupation: '战士',    
     weaponType: '步枪',      
@@ -362,7 +362,7 @@ characterAttributes['骑士∧步枪'] = {
     skill: 3,           
     cdSkill: 5       
 };
-characterAttributes['骑士∧弓'] = {
+characterAttributes['骑士∧弓∧二星'] = {
     roleProperties: '虚',      
     roleOccupation: '战士',    
     weaponType: '弓',      
@@ -380,7 +380,7 @@ characterAttributes['骑士∧弓'] = {
     skill: 3,           
     cdSkill: 5    
 };
-characterAttributes['罗兰茵'] = {
+characterAttributes['罗兰茵∧二星'] = {
     roleProperties: '虚',      
     roleOccupation: '辅助',    
     weaponType: '篮子',      
@@ -398,7 +398,7 @@ characterAttributes['罗兰茵'] = {
     skill: 0,           
     cdSkill: 0          
 };
-characterAttributes['岚芳'] = {
+characterAttributes['岚芳∧二星'] = {
     roleProperties: '虚',      
     roleOccupation: '坦克',    
     weaponType: '爪',      
@@ -416,7 +416,7 @@ characterAttributes['岚芳'] = {
     skill: 0,           
     cdSkill: 0          
 };
-characterAttributes['艾米'] = {
+characterAttributes['艾米∧二星'] = {
     roleProperties: '虚',      
     roleOccupation: '战士',    
     weaponType: '双手剑',      
@@ -434,7 +434,7 @@ characterAttributes['艾米'] = {
     skill: 0,           
     cdSkill: 0          
 };
-characterAttributes['莉耶'] = {
+characterAttributes['莉耶∧二星'] = {
     roleProperties: '虚',      
     roleOccupation: '射手',    
     weaponType: '单手剑',      
