@@ -15,7 +15,7 @@ characterAttributes['模板'] = {
     basicHP: 0,         
     basicHeal: 0,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 */
 characterAttributes['阿拉贝尔'] = {
@@ -124,7 +124,7 @@ characterAttributes['贝丝'] = {
     basicHP: 976,         
     basicHeal: 0,       
     skill: 4,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['诺克希亚'] = {
     roleProperties: '暗',      
@@ -142,7 +142,7 @@ characterAttributes['诺克希亚'] = {
     basicHP: 980,         
     basicHeal: 0,       
     skill: 8,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['莉莉丝'] = {
     roleProperties: '暗',      
@@ -160,7 +160,7 @@ characterAttributes['莉莉丝'] = {
     basicHP: 1046,         
     basicHeal: 0,       
     skill: 18,           
-    cdSkill: 6          
+    cdSkill: 6, 
 };
 characterAttributes['MK.2'] = {
     roleProperties: '暗',      
@@ -178,7 +178,7 @@ characterAttributes['MK.2'] = {
     basicHP: 822,         
     basicHeal: 0,       
     skill: 4,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['克劳德'] = {
     roleProperties: '暗',      
@@ -196,7 +196,7 @@ characterAttributes['克劳德'] = {
     basicHP: 850,         
     basicHeal: 0,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['克罗赛尔'] = {
     roleProperties: '暗',      
@@ -214,7 +214,7 @@ characterAttributes['克罗赛尔'] = {
     basicHP: 1018,         
     basicHeal: 0,       
     skill: 4,           
-    cdSkill: 4          
+    cdSkill: 4, 
 };
 characterAttributes['堇'] = {
     roleProperties: '暗',      
@@ -232,7 +232,7 @@ characterAttributes['堇'] = {
     basicHP: 972,         
     basicHeal: 0,       
     skill: 5,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['第1军团军长'] = {
     roleProperties: '暗',      
@@ -250,7 +250,7 @@ characterAttributes['第1军团军长'] = {
     basicHP: 1184,         
     basicHeal: 0,       
     skill: 0,           
-    cdSkill: 2          
+    cdSkill: 2, 
 };
 characterAttributes['维涅特'] = {
     roleProperties: '暗',      
@@ -268,7 +268,7 @@ characterAttributes['维涅特'] = {
     basicHP: 1100,         
     basicHeal: 1720,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 0,
 };
 // characterAttributes['？？？']
 // characterAttributes['？？？']
@@ -288,7 +288,7 @@ characterAttributes['杰洛士'] = {
     basicHP: 1000,         
     basicHeal: 0,       
     skill: 10,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['卡瑞娜∧二星'] = {
     roleProperties: '暗',      
@@ -306,7 +306,7 @@ characterAttributes['卡瑞娜∧二星'] = {
     basicHP: 953,         
     basicHeal: 0,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['卡瑞娜∧三星'] = {
     roleProperties: '暗',      
@@ -324,7 +324,7 @@ characterAttributes['卡瑞娜∧三星'] = {
     basicHP: 1068,         
     basicHeal: 0,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['吉蒙里∧二星'] = {
     roleProperties: '暗',      
@@ -342,7 +342,7 @@ characterAttributes['吉蒙里∧二星'] = {
     basicHP: 922,         
     basicHeal: 0,       
     skill: 4,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['柚子∧二星'] = {
     roleProperties: '暗',      
@@ -360,7 +360,7 @@ characterAttributes['柚子∧二星'] = {
     basicHP: 1019,         
     basicHeal: 0,       
     skill: 0,           
-    cdSkill: 5          
+    cdSkill: 5, 
 };
 characterAttributes['夏皮拉∧二星'] = {
     roleProperties: '暗',      
@@ -378,5 +378,5 @@ characterAttributes['夏皮拉∧二星'] = {
     basicHP: 960,         
     basicHeal: 0,       
     skill: 3,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };

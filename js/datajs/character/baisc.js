@@ -15,7 +15,7 @@ characterAttributes['模板'] = {
     basicHP: 0,         
     basicHeal: 0,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 */
 characterAttributes['偶像伊娃'] = {
@@ -34,7 +34,8 @@ characterAttributes['偶像伊娃'] = {
     basicHP: 1234,         
     basicHeal: 0,       
     skill: 3,           
-    cdSkill: 0          
+    cdSkill: 0,
+
 };
 characterAttributes['兰儿∧手套'] = {
     roleProperties: '虚',      
@@ -52,7 +53,8 @@ characterAttributes['兰儿∧手套'] = {
     basicHP: 1000,         
     basicHeal: 0,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 0, 
+
 };
 characterAttributes['兰儿∧篮子'] = {
     roleProperties: '虚',      
@@ -70,7 +72,8 @@ characterAttributes['兰儿∧篮子'] = {
     basicHP: 1000,      
     basicHeal: 0,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 0, 
+
 };
 characterAttributes['奈莉'] = {
     roleProperties: '虚',      
@@ -88,7 +91,8 @@ characterAttributes['奈莉'] = {
     basicHP: 986,         
     basicHeal: 0,       
     skill: 18,           
-    cdSkill: 0          
+    cdSkill: 0, 
+
 };
 characterAttributes['未来骑士∧单手剑'] = {
     roleProperties: '虚',       
@@ -106,7 +110,8 @@ characterAttributes['未来骑士∧单手剑'] = {
     basicHP: 1080,                 
     basicHeal: 0,                
     skill: 10,                  
-    cdSkill: 0    
+    cdSkill: 0,
+
 };
 characterAttributes['未来骑士∧双手剑'] = {
     roleProperties: '虚',       
@@ -124,7 +129,8 @@ characterAttributes['未来骑士∧双手剑'] = {
     basicHP: 1080,                 
     basicHeal: 0,                
     skill: 10,                  
-    cdSkill: 0    
+    cdSkill: 0,
+    
 };
 characterAttributes['未来骑士∧步枪'] = {
     roleProperties: '虚',       
@@ -142,7 +148,8 @@ characterAttributes['未来骑士∧步枪'] = {
     basicHP: 1080,                 
     basicHeal: 0,                
     skill: 10,                  
-    cdSkill: 0    
+    cdSkill: 0,
+    
 };
 characterAttributes['未来骑士∧弓'] = {
     roleProperties: '虚',       
@@ -160,7 +167,8 @@ characterAttributes['未来骑士∧弓'] = {
     basicHP: 1080,                 
     basicHeal: 0,                
     skill: 10,                  
-    cdSkill: 0    
+    cdSkill: 0,
+   
 };
 characterAttributes['索菲∧泳装'] = {
     roleProperties: '虚',      
@@ -178,7 +186,8 @@ characterAttributes['索菲∧泳装'] = {
     basicHP: 999,         
     basicHeal: 0,       
     skill: 10,           
-    cdSkill: 4          
+    cdSkill: 4,
+ 
 };
 characterAttributes['埃里娜'] = {
     roleProperties: '虚',      
@@ -196,7 +205,8 @@ characterAttributes['埃里娜'] = {
     basicHP: 1040,         
     basicHeal: 0,       
     skill: 10,           
-    cdSkill: 2          
+    cdSkill: 2,
+ 
 };
 characterAttributes['康娜'] = {
     roleProperties: '虚',      
@@ -214,7 +224,8 @@ characterAttributes['康娜'] = {
     basicHP: 1078,         
     basicHeal: 0,       
     skill: 8,           
-    cdSkill: 0          
+    cdSkill: 0,
+ 
 };
 characterAttributes['罗兰茵∧泳装'] = {
     roleProperties: '虚',      
@@ -232,7 +243,8 @@ characterAttributes['罗兰茵∧泳装'] = {
     basicHP: 1045,         
     basicHeal: 0,       
     skill: 6,           
-    cdSkill: 0          
+    cdSkill: 0,
+ 
 };
 characterAttributes['克罗姆小姐'] = {
     roleProperties: '虚',       
@@ -250,7 +262,8 @@ characterAttributes['克罗姆小姐'] = {
     basicHP: 750,                 
     basicHeal: 0,                
     skill: 10,                  
-    cdSkill: 6           
+    cdSkill: 6 ,
+ 
 };
 characterAttributes['银河'] = {
     roleProperties: '虚',       /* 角色属性 */
@@ -268,7 +281,8 @@ characterAttributes['银河'] = {
     basicHP: 1250,                 /* 1级生命白值 */
     basicHeal: 0,               /* 五星回血值白值 */
     skill: 0,                   /* 满破总技伤 */
-    cdSkill: 0                  /* 角色自带cd */
+    cdSkill: 0,                  /* 角色自带cd */
+
 };
 characterAttributes['米可'] = {
     roleProperties: '虚',      
@@ -286,7 +300,8 @@ characterAttributes['米可'] = {
     basicHP: 1265,         
     basicHeal: 0,       
     skill: 4,           
-    cdSkill: 3      
+    cdSkill: 3 ,
+     
 };
 // characterAttributes['？？？']
 // characterAttributes['？？？']
@@ -306,7 +321,8 @@ characterAttributes['达伊'] = {
     basicHP: 1150,         
     basicHeal: 0,       
     skill: 6,           
-    cdSkill: 4          
+    cdSkill: 4,
+ 
 };
 characterAttributes['骑士∧单手剑∧二星'] = {
     roleProperties: '虚',      
@@ -324,7 +340,7 @@ characterAttributes['骑士∧单手剑∧二星'] = {
     basicHP: 1000,         
     basicHeal: 0,       
     skill: 3,           
-    cdSkill: 5          
+    cdSkill: 5, 
 };
 characterAttributes['骑士∧双手剑∧二星'] = {
     roleProperties: '虚',      
@@ -396,7 +412,7 @@ characterAttributes['罗兰茵∧二星'] = {
     basicHP: 1008,         
     basicHeal: 1478,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['岚芳∧二星'] = {
     roleProperties: '虚',      
@@ -414,7 +430,7 @@ characterAttributes['岚芳∧二星'] = {
     basicHP: 1050,         
     basicHeal: 0,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['艾米∧二星'] = {
     roleProperties: '虚',      
@@ -432,7 +448,7 @@ characterAttributes['艾米∧二星'] = {
     basicHP: 950,         
     basicHeal: 0,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['莉耶∧二星'] = {
     roleProperties: '虚',      
@@ -450,5 +466,5 @@ characterAttributes['莉耶∧二星'] = {
     basicHP: 900,         
     basicHeal: 0,       
     skill: 4,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };

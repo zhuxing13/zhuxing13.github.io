@@ -17,8 +17,8 @@
 <body style="overflow-y: scroll;background-color: #eee;">
     <h1 align="center">坎公面板计算器</h1>
     <h4 align="center">作者：逐星亦逐心</h4>
-    <h4 align="center">维护日期:24/1/8</h4>     
-    <h4 align="center">图鉴数据：国服维涅特版本  角色数据：韩服安吉版本</h4>     
+    <h4 align="center">维护日期:24/1/9</h4>     
+    <h4 align="center">图鉴数据：国服云苓版本  角色数据：韩服安吉版本</h4>     
     <br>
     <button id="fullValuesButton">图鉴默认最大值</button>
     <button id="seeadd1">查看当前图鉴</button>
@@ -221,6 +221,11 @@
                             </select>
                         </td>
                         <td><button id="seeCharacterAttributes">查看角色信息</button></td>
+                        <td>
+                            <div id="imageContainer">
+                              <img src="image/character/选择角色.png" alt="选择角色图像">
+                            </div>                          
+                          </td>
                     </tr>
                     <tr>
                         <td><label for="selectedWeapon">主武器：</label></td>
@@ -416,12 +421,12 @@
                         <td><b>生命加成</b></td>
                     </tr>
                     <tr><td>角色收集图鉴</td>
-                        <td><input type="number" min="0" max="54" id="atk1" value="54">/<a id="atk1full" data-atlas>54.0</a></td>
+                        <td><input type="number" min="0" max="55" id="atk1" value="55">/<a id="atk1full" data-atlas>55.0</a></td>
                         <td><input type="number" min="0" max="27.9" id="def1" value="27.9">/<a id="def1full" data-atlas>27.9</a></td>
                         <td><input type="number" min="0" max="31.8" id="hp1" value="31.8">/<a id="hp1full" data-atlas>31.8</a></td>
                     </tr>
                     <tr><td>道具羁绊图鉴</td>
-                        <td><input type="number" min="0" max="60.7" id="atk2" value="60.7">/<a id="atk2full" data-atlas>60.7</a></td>
+                        <td><input type="number" min="0" max="61.7" id="atk2" value="61.7">/<a id="atk2full" data-atlas>61.7</a></td>
                         <td><input type="number" min="0" max="34.6" id="def2" value="34.6">/<a id="def2full" data-atlas>34.6</a></td>
                         <td><input type="number" min="0" max="34.1" id="hp2" value="34.1">/<a id="hp2full" data-atlas>34.1</a></td>
                     </tr>
@@ -483,7 +488,7 @@
             <label for="levelInput">角色等级：</label>
             <span id="levelValue">95</span>
             <br>
-            <input type="range" id="levelInput" name="levelselect" min="1" max="98" step="1" value="95">
+            <input type="range" id="levelInput" name="levelselect" min="1" max="110" step="1" value="95">
             <br>
 
             <label for="basicAtkCharacter">角色攻击白值：</label>
@@ -746,7 +751,7 @@
                         <td><span id="level2Value">95</span></td>
                     </tr>
                     <tr>
-                        <td><input type="range" id="level2Input" name="level2select" min="1" max="98" step="1" value="95"></td>
+                        <td><input type="range" id="level2Input" name="level2select" min="1" max="110" step="1" value="95"></td>
                     </tr>
                     <tr>
                         <td><label for="basicAtkWeapon">主武器攻击白值：</label></td>
@@ -837,7 +842,7 @@
                         <td><span id="level3Value">95</span></td>
                     </tr>
                     <tr>
-                        <td><input type="range" id="level3Input" name="level3select" min="1" max="98" step="1" value="95"></td>
+                        <td><input type="range" id="level3Input" name="level3select" min="1" max="110" step="1" value="95"></td>
                     </tr>
                     <tr>
                         <td><label for="basicDefWeapon2">副武器防御白值：</label></td>
@@ -872,7 +877,7 @@
                         <td><span id="level4Value">95</span></td>
                     </tr>
                     <tr>
-                        <td><input type="range" id="level4Input" name="level4select" min="1" max="98" step="1" value="95"></td>
+                        <td><input type="range" id="level4Input" name="level4select" min="1" max="110" step="1" value="95"></td>
                     </tr>
                     <tr>
                         <td><label for="basicDefJewelry">饰品防御白值：</label></td>
@@ -906,6 +911,7 @@
     </div>    
 
     <br>
+    <p>24/1/9日志：添加了头像显示功能，等级最高上限提升至110级（可通过显示对应角色/装备按钮打开属性面板调节等级）</p>
     <p>24/1/8日志：优化了部分角色命名</p>
     <p>24/1/5日志：优化了角色筛选选项以及布局</p>
     <p>24/1/4日志：优化了角色筛选选项</p>
@@ -940,6 +946,7 @@
 
     <script src="js/fun.js"></script>
     <script src="js/see.js"></script>
+    <script src="js/images.js"></script>
     <script src="js/updateCharacterAttributes.js"></script>
     <script src="js/updateWeaponAttributes.js"></script>
     <script src="js/updateWeapon2Attributes.js"></script>

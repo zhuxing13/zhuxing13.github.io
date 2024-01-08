@@ -15,7 +15,7 @@ characterAttributes['模板'] = {
     basicHP: 0,         
     basicHeal: 0,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 */
 characterAttributes['普利特维采∧双手剑'] = {
@@ -34,7 +34,7 @@ characterAttributes['普利特维采∧双手剑'] = {
     basicHP: 1071,                 
     basicHeal: 0,                
     skill: 15,                  
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['普利特维采∧单手剑'] = {
     roleProperties: '火',       
@@ -52,7 +52,7 @@ characterAttributes['普利特维采∧单手剑'] = {
     basicHP: 1071,                 
     basicHeal: 0,                
     skill: 15,                  
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['比什巴赫∧爪'] = {
     roleProperties: '火',      
@@ -70,7 +70,7 @@ characterAttributes['比什巴赫∧爪'] = {
     basicHP: 1040,         
     basicHeal: 0,       
     skill: 9,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['比什巴赫∧手套'] = {
     roleProperties: '火',      
@@ -88,7 +88,7 @@ characterAttributes['比什巴赫∧手套'] = {
     basicHP: 1040,         
     basicHeal: 0,       
     skill: 9,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['美娅'] = {
     roleProperties: '火',      
@@ -106,7 +106,7 @@ characterAttributes['美娅'] = {
     basicHP: 980,         
     basicHeal: 1562,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['琳'] = {
     roleProperties: '火',      
@@ -124,7 +124,7 @@ characterAttributes['琳'] = {
     basicHP: 1045,         
     basicHeal: 0,       
     skill: 18,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['罗茜'] = {
     roleProperties: '火',      
@@ -142,7 +142,7 @@ characterAttributes['罗茜'] = {
     basicHP: 960,         
     basicHeal: 0,       
     skill: 11,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['辛缇拉'] = {
     roleProperties: '火',      
@@ -160,7 +160,7 @@ characterAttributes['辛缇拉'] = {
     basicHP: 1120,         
     basicHeal: 0,       
     skill: 10,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['克拉拉'] = {
     roleProperties: '火',      
@@ -178,7 +178,7 @@ characterAttributes['克拉拉'] = {
     basicHP: 931,         
     basicHeal: 0,       
     skill: 10,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['蕾伊'] = {
     roleProperties: '火',      
@@ -196,7 +196,7 @@ characterAttributes['蕾伊'] = {
     basicHP: 1143,         
     basicHeal: 0,       
     skill: 13,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['拜蒙'] = {
     roleProperties: '火',      
@@ -214,7 +214,7 @@ characterAttributes['拜蒙'] = {
     basicHP: 1133,         
     basicHeal: 0,       
     skill: 8,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['艾米∧泳装'] = {
     roleProperties: '火',      
@@ -232,7 +232,7 @@ characterAttributes['艾米∧泳装'] = {
     basicHP: 1110,         
     basicHeal: 0,       
     skill: 4,           
-    cdSkill: 4          
+    cdSkill: 4, 
 };
 characterAttributes['云苓'] = {
     roleProperties: '火',      
@@ -250,7 +250,7 @@ characterAttributes['云苓'] = {
     basicHP: 976,         
     basicHeal: 0,       
     skill: 6,           
-    cdSkill: 6          
+    cdSkill: 6, 
 };
 // characterAttributes['？？？']
 // characterAttributes['？？？']
@@ -270,7 +270,7 @@ characterAttributes['莉娜'] = {
     basicHP: 883,         
     basicHeal: 0,       
     skill: 10,           
-    cdSkill: 4          
+    cdSkill: 4, 
 };
 characterAttributes['波普'] = {
     roleProperties: '火',      
@@ -288,7 +288,7 @@ characterAttributes['波普'] = {
     basicHP: 1036,         
     basicHeal: 0,       
     skill: 6,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['埃尔韦拉∧二星'] = {
     roleProperties: '火',      
@@ -306,7 +306,7 @@ characterAttributes['埃尔韦拉∧二星'] = {
     basicHP: 984,         
     basicHeal: 0,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['埃尔韦拉∧三星'] = {
     roleProperties: '火',      
@@ -324,7 +324,7 @@ characterAttributes['埃尔韦拉∧三星'] = {
     basicHP: 1083,         
     basicHeal: 0,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['拉比∧二星'] = {
     roleProperties: '火',      
@@ -342,7 +342,7 @@ characterAttributes['拉比∧二星'] = {
     basicHP: 1060,         
     basicHeal: 0,       
     skill: 2,           
-    cdSkill: 4          
+    cdSkill: 4, 
 };
 characterAttributes['赤雪∧二星'] = {
     roleProperties: '火',      
@@ -360,7 +360,7 @@ characterAttributes['赤雪∧二星'] = {
     basicHP: 980,         
     basicHeal: 0,       
     skill: 5,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['道尔夫∧二星'] = {
     roleProperties: '火',      
@@ -378,7 +378,7 @@ characterAttributes['道尔夫∧二星'] = {
     basicHP: 979,         
     basicHeal: 0,       
     skill: 14,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['吉尔瓦斯∧二星'] = {
     roleProperties: '火',      
@@ -396,5 +396,5 @@ characterAttributes['吉尔瓦斯∧二星'] = {
     basicHP: 950,         
     basicHeal: 0,       
     skill: 14,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };

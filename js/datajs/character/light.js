@@ -15,7 +15,7 @@ characterAttributes['模板'] = {
     basicHP: 0,         
     basicHeal: 0,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 */
 characterAttributes['拉碧丝∧单手剑'] = {
@@ -70,7 +70,7 @@ characterAttributes['尤金'] = {
     basicHP: 1061,         
     basicHeal: 0,       
     skill: 6,           
-    cdSkill: 6          
+    cdSkill: 6, 
 };
 characterAttributes['未来公主'] = {
     roleProperties: '光',      
@@ -88,7 +88,7 @@ characterAttributes['未来公主'] = {
     basicHP: 1030,         
     basicHeal: 0,       
     skill: 17,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['加百列'] = {
     roleProperties: '光',      
@@ -106,7 +106,7 @@ characterAttributes['加百列'] = {
     basicHP: 937,         
     basicHeal: 1698,       
     skill: 10,           
-    cdSkill: 4          
+    cdSkill: 4, 
 };
 characterAttributes['MK.99'] = {
     roleProperties: '光',      
@@ -124,7 +124,7 @@ characterAttributes['MK.99'] = {
     basicHP: 1010,         
     basicHeal: 0,       
     skill: 16,           
-    cdSkill: 4          
+    cdSkill: 4, 
 };
 characterAttributes['埃莉诺'] = {
     roleProperties: '光',      
@@ -142,7 +142,7 @@ characterAttributes['埃莉诺'] = {
     basicHP: 1121,         
     basicHeal: 1658,       
     skill: 10,           
-    cdSkill: 2          
+    cdSkill: 2, 
 };
 characterAttributes['卡洛儿'] = {
     roleProperties: '光',      
@@ -160,7 +160,7 @@ characterAttributes['卡洛儿'] = {
     basicHP: 1082,         
     basicHeal: 0,       
     skill: 10,           
-    cdSkill: 7          
+    cdSkill: 7, 
 };
 characterAttributes['普利希拉'] = {
     roleProperties: '光',      
@@ -178,7 +178,7 @@ characterAttributes['普利希拉'] = {
     basicHP: 1100,         
     basicHeal: 0,       
     skill: 12,           
-    cdSkill: 4          
+    cdSkill: 4, 
 };
 characterAttributes['瓦伦西亚'] = {
     roleProperties: '光',      
@@ -196,7 +196,7 @@ characterAttributes['瓦伦西亚'] = {
     basicHP: 1070,         
     basicHeal: 0,       
     skill: 6,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['凯伊'] = {
     roleProperties: '光',      
@@ -214,7 +214,7 @@ characterAttributes['凯伊'] = {
     basicHP: 1170,         
     basicHeal: 0,       
     skill: 6,           
-    cdSkill: 2          
+    cdSkill: 2, 
 };
 characterAttributes['千虑'] = {
     roleProperties: '光',      
@@ -232,7 +232,7 @@ characterAttributes['千虑'] = {
     basicHP: 1220,         
     basicHeal: 0,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['夏皮拉∧泳装'] = {
     roleProperties: '光',      
@@ -250,7 +250,7 @@ characterAttributes['夏皮拉∧泳装'] = {
     basicHP: 1080,         
     basicHeal: 0,       
     skill: 8,           
-    cdSkill: 6          
+    cdSkill: 6, 
 };
 characterAttributes['奥迪尔'] = {
     roleProperties: '光',      
@@ -268,7 +268,7 @@ characterAttributes['奥迪尔'] = {
     basicHP: 970,         
     basicHeal: 0,       
     skill: 4,           
-    cdSkill: 7          
+    cdSkill: 7, 
 };
 // characterAttributes['？？？']
 // characterAttributes['？？？']
@@ -288,7 +288,7 @@ characterAttributes['高里'] = {
     basicHP: 1018,         
     basicHeal: 0,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['伊娃∧二星'] = {
     roleProperties: '光',      
@@ -306,7 +306,7 @@ characterAttributes['伊娃∧二星'] = {
     basicHP: 940,         
     basicHeal: 0,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['索菲∧二星'] = {
     roleProperties: '光',      
@@ -324,7 +324,7 @@ characterAttributes['索菲∧二星'] = {
     basicHP: 1030,         
     basicHeal: 0,       
     skill: 4,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['梅儿佩儿∧二星'] = {
     roleProperties: '光',      
@@ -342,7 +342,7 @@ characterAttributes['梅儿佩儿∧二星'] = {
     basicHP: 1003,         
     basicHeal: 0,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['梅儿佩儿∧三星'] = {
     roleProperties: '光',      
@@ -360,7 +360,7 @@ characterAttributes['梅儿佩儿∧三星'] = {
     basicHP: 1124,         
     basicHeal: 0,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['阿依莎∧二星'] = {
     roleProperties: '光',      
@@ -378,7 +378,7 @@ characterAttributes['阿依莎∧二星'] = {
     basicHP: 930,         
     basicHeal: 0,       
     skill: 6,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['奈娃∧二星'] = {
     roleProperties: '光',      
@@ -396,5 +396,5 @@ characterAttributes['奈娃∧二星'] = {
     basicHP: 988,         
     basicHeal: 0,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };

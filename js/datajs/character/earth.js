@@ -15,7 +15,7 @@ characterAttributes['模板'] = {
     basicHP: 0,         
     basicHeal: 0,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 */
 characterAttributes['芭莉'] = {
@@ -34,7 +34,7 @@ characterAttributes['芭莉'] = {
     basicHP: 950,         
     basicHeal: 0,       
     skill: 8,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['蒂尼亚'] = {
     roleProperties: '土',      
@@ -52,7 +52,7 @@ characterAttributes['蒂尼亚'] = {
     basicHP: 985,         
     basicHeal: 0,       
     skill: 4,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['阿勒夫'] = {
     roleProperties: '土',      
@@ -70,7 +70,7 @@ characterAttributes['阿勒夫'] = {
     basicHP: 1090,         
     basicHeal: 0,       
     skill: 10,           
-    cdSkill: 6          
+    cdSkill: 6, 
 };
 characterAttributes['鲁∧步枪'] = {
     roleProperties: '土',      
@@ -88,7 +88,7 @@ characterAttributes['鲁∧步枪'] = {
     basicHP: 1030,         
     basicHeal: 0,       
     skill: 6,           
-    cdSkill: 4          
+    cdSkill: 4, 
 };
 characterAttributes['鲁∧双手剑'] = {
     roleProperties: '土',      
@@ -106,7 +106,7 @@ characterAttributes['鲁∧双手剑'] = {
     basicHP: 1030,         
     basicHeal: 0,       
     skill: 6,           
-    cdSkill: 4          
+    cdSkill: 4, 
 };
 characterAttributes['梅丽尔'] = {
     roleProperties: '土',      
@@ -124,7 +124,7 @@ characterAttributes['梅丽尔'] = {
     basicHP: 1000,         
     basicHeal: 0,       
     skill: 10,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['卡麦尔'] = {
     roleProperties: '土',      
@@ -142,7 +142,7 @@ characterAttributes['卡麦尔'] = {
     basicHP: 1020,         
     basicHeal: 0,       
     skill: 6,           
-    cdSkill: 4          
+    cdSkill: 4, 
 };
 characterAttributes['帕尔瓦蒂'] = {
     roleProperties: '土',      
@@ -160,7 +160,7 @@ characterAttributes['帕尔瓦蒂'] = {
     basicHP: 979,         
     basicHeal: 0,       
     skill: 0,           
-    cdSkill: 6          
+    cdSkill: 6, 
 };
 characterAttributes['疯狂熊猫团'] = {
     roleProperties: '土',      
@@ -178,7 +178,7 @@ characterAttributes['疯狂熊猫团'] = {
     basicHP: 900,         
     basicHeal: 0,       
     skill: 10,           
-    cdSkill: 4          
+    cdSkill: 4, 
 };
 characterAttributes['罗塞塔'] = {
     roleProperties: '土',      
@@ -196,7 +196,7 @@ characterAttributes['罗塞塔'] = {
     basicHP: 980,         
     basicHeal: 0,       
     skill: 6,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['爱梅莉丝'] = {
     roleProperties: '土',      
@@ -214,7 +214,7 @@ characterAttributes['爱梅莉丝'] = {
     basicHP: 880,         
     basicHeal: 0,       
     skill: 6,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['莫莉安'] = {
     roleProperties: '土',      
@@ -232,7 +232,7 @@ characterAttributes['莫莉安'] = {
     basicHP: 1114,         
     basicHeal: 0,       
     skill: 12,           
-    cdSkill: 8          
+    cdSkill: 8, 
 };
 // characterAttributes['？？？']
 // characterAttributes['？？？']
@@ -252,7 +252,7 @@ characterAttributes['玛姆'] = {
     basicHP: 1071,         
     basicHeal: 0,       
     skill: 4,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['青叶∧二星'] = {
     roleProperties: '土',      
@@ -270,7 +270,7 @@ characterAttributes['青叶∧二星'] = {
     basicHP: 960,         
     basicHeal: 1306,       
     skill: 0,           
-    cdSkill: 5          
+    cdSkill: 5, 
 };
 characterAttributes['赫卡忒∧二星'] = {
     roleProperties: '土',      
@@ -288,7 +288,7 @@ characterAttributes['赫卡忒∧二星'] = {
     basicHP: 850,         
     basicHeal: 0,       
     skill: 7,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['玛丽安∧二星'] = {
     roleProperties: '土',      
@@ -306,7 +306,7 @@ characterAttributes['玛丽安∧二星'] = {
     basicHP: 960,         
     basicHeal: 0,       
     skill: 4,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['马修∧二星'] = {
     roleProperties: '土',      
@@ -324,7 +324,7 @@ characterAttributes['马修∧二星'] = {
     basicHP: 1090,         
     basicHeal: 0,       
     skill: 4,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['克雷格∧二星'] = {
     roleProperties: '土',      
@@ -342,7 +342,7 @@ characterAttributes['克雷格∧二星'] = {
     basicHP: 1070,         
     basicHeal: 0,       
     skill: 3,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['克雷格∧三星'] = {
     roleProperties: '土',      
@@ -360,5 +360,5 @@ characterAttributes['克雷格∧三星'] = {
     basicHP: 1177,         
     basicHeal: 0,       
     skill: 3,           
-    cdSkill: 0           
+    cdSkill: 0 , 
 };

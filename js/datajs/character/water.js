@@ -15,7 +15,7 @@ characterAttributes['模板'] = {
     basicHP: 0,         
     basicHeal: 0,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 */
 characterAttributes['玛丽娜'] = {
@@ -52,7 +52,7 @@ characterAttributes['比安卡'] = {
     basicHP: 1020,         
     basicHeal: 0,       
     skill: 14,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['佳岚∧弓'] = {
     roleProperties: '水',       
@@ -106,7 +106,7 @@ characterAttributes['维罗妮卡'] = {
     basicHP: 920,         
     basicHeal: 0,       
     skill: 10,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['柚子∧泳装'] = {
     roleProperties: '水',      
@@ -124,7 +124,7 @@ characterAttributes['柚子∧泳装'] = {
     basicHP: 1050,         
     basicHeal: 0,       
     skill: 4,           
-    cdSkill: 6          
+    cdSkill: 6, 
 };
 characterAttributes['奥尔卡'] = {
     roleProperties: '水',      
@@ -142,7 +142,7 @@ characterAttributes['奥尔卡'] = {
     basicHP: 1006,         
     basicHeal: 0,       
     skill: 10,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['哈娜'] = {
     roleProperties: '水',      
@@ -160,7 +160,7 @@ characterAttributes['哈娜'] = {
     basicHP: 37,         
     basicHeal: 0,       
     skill: 10,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['娅拉'] = {
     roleProperties: '水',      
@@ -178,7 +178,7 @@ characterAttributes['娅拉'] = {
     basicHP: 1020,         
     basicHeal: 0,       
     skill: 8,           
-    cdSkill: 4          
+    cdSkill: 4, 
 };
 characterAttributes['AA72'] = {
     roleProperties: '水',      
@@ -196,7 +196,7 @@ characterAttributes['AA72'] = {
     basicHP: 987,         
     basicHeal: 0,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['安德拉斯'] = {
     roleProperties: '水',      
@@ -214,7 +214,7 @@ characterAttributes['安德拉斯'] = {
     basicHP: 1100,         
     basicHeal: 0,       
     skill: 10,           
-    cdSkill: 6          
+    cdSkill: 6, 
 };
 characterAttributes['白雪'] = {
     roleProperties: '水',      
@@ -232,7 +232,7 @@ characterAttributes['白雪'] = {
     basicHP: 965,         
     basicHeal: 0,       
     skill: 8,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['汐雅'] = {
     roleProperties: '水',      
@@ -250,7 +250,7 @@ characterAttributes['汐雅'] = {
     basicHP: 1000,         
     basicHeal: 1710,       
     skill: 0,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['安吉'] = {
     roleProperties: '水',      
@@ -268,7 +268,7 @@ characterAttributes['安吉'] = {
     basicHP: 920,         
     basicHeal: 0,       
     skill: 8,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 // characterAttributes['？？？']
 // characterAttributes['？？？']
@@ -288,7 +288,7 @@ characterAttributes['白兽∧二星'] = {
     basicHP: 980,         
     basicHeal: 0,       
     skill: 2,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['帕比∧二星'] = {
     roleProperties: '水',      
@@ -306,7 +306,7 @@ characterAttributes['帕比∧二星'] = {
     basicHP: 880,         
     basicHeal: 1375,       
     skill: 14,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['瑞秋∧二星'] = {
     roleProperties: '水',      
@@ -324,7 +324,7 @@ characterAttributes['瑞秋∧二星'] = {
     basicHP: 934,         
     basicHeal: 0,       
     skill: 11,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['可可∧二星'] = {
     roleProperties: '水',      
@@ -342,7 +342,7 @@ characterAttributes['可可∧二星'] = {
     basicHP: 850,         
     basicHeal: 0,       
     skill: 10,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['可可∧三星'] = {
     roleProperties: '水',      
@@ -360,7 +360,7 @@ characterAttributes['可可∧三星'] = {
     basicHP: 978,         
     basicHeal: 0,       
     skill: 10,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
 characterAttributes['凯瑟琳∧二星'] = {
     roleProperties: '水',      
@@ -378,5 +378,5 @@ characterAttributes['凯瑟琳∧二星'] = {
     basicHP: 930,         
     basicHeal: 0,       
     skill: 4,           
-    cdSkill: 0          
+    cdSkill: 0, 
 };
