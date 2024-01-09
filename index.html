@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
     <title>坎公面板计算器</title>
     <link rel="stylesheet" type="text/css" href="css/radio.css">
     <link rel="stylesheet" type="text/css" href="css/text.css">
@@ -17,17 +18,14 @@
 <body style="overflow-y: scroll;background-color: #eee;">
     <h1 align="center">坎公面板计算器</h1>
     <h4 align="center">作者：逐星亦逐心</h4>
-    <h4 align="center">维护日期:24/1/9</h4>     
+    <h4 align="center">维护日期:24/1/10</h4>     
     <h4 align="center">图鉴数据：国服云苓版本  角色数据：韩服安吉版本</h4>     
-    <br>
-    <button id="fullValuesButton">图鉴默认最大值</button>
-    <button id="seeadd1">查看当前图鉴</button>
-    <button id="seeadd2">查看守护者基地</button>
+    <button class="button1" id="fullValuesButton">图鉴默认最大值</button>
+    <button class="button1" id="seeadd1">查看当前图鉴</button>
+    <button class="button1" id="seeadd2">查看守护者基地</button>
     <div> 
-
-        
         <div>
-            <table>
+            <table class="mainselect">
                 <tbody>
                     <tr><td colspan="4">
                         <label>属性筛选
@@ -90,9 +88,9 @@
                     <tr>
                         <td><label for="selectedCharacter">角色：</label></td>
                         <td style="display: none;"><span id="selectedCharacter">选择角色</span></td>
-                        <td>
+                        <td class="rectangle1">
                             <select id="charSelect" aria-label="选择角色">
-                                <option value="">选择角色</option>
+                                <option value="选择角色">选择角色</option>
                                 <option data-occupation="战士" data-properties="光" value='拉碧丝∧单手剑'>拉碧丝∧单手剑</option>           
                                 <option data-occupation="战士" data-properties="光" value='拉碧丝∧双手剑'>拉碧丝∧双手剑</option>
                                 <option data-occupation="战士" data-properties="光" value='尤金'>尤金</option>                
@@ -220,29 +218,32 @@
                                 <option data-occupation="射手" data-properties="水" value='凯瑟琳∧二星'>凯瑟琳∧二星</option>
                             </select>
                         </td>
-                        <td><button id="seeCharacterAttributes">查看角色信息</button></td>
-                        <td>
+                        <td class="rectangle2">
                             <div id="imageContainer">
-                              <img src="image/character/选择角色.png" alt="选择角色图像">
+                              <img src="image/character/选择角色.png" alt="选择角色图像" class="charaimage">
                             </div>                          
                           </td>
+                        <td class="rectangle3"><button class="button2" id="seeCharacterAttributes">查看角色信息</button></td>
+
                     </tr>
                     <tr>
                         <td><label for="selectedWeapon">主武器：</label></td>
                         <td style="display: none;"><span id="selectedWeapon">未装备</span></td>
-                        <td id="WeaponSelect"></td>
-                        <td><button id="seeWeaponAttributes">查看主武器信息</button></td>
+                        <td id="WeaponSelect" class="rectangle1"></td>
+                        <td></td>
+                        <td class="rectangle3"><button class="button2" id="seeWeaponAttributes">查看主武器信息</button></td>
                     </tr>
                     <tr>
                         <td><label for="selectedWeapon2">副武器：</label></td>
                         <td style="display: none;"><span id="selectedWeapon2">未装备</span></td>
-                        <td id="Weapon2Select"></td>
-                        <td><button id="seeWeapon2Attributes">查看副武器属性</button></td>
+                        <td id="Weapon2Select" class="rectangle1"></td>
+                        <td></td>
+                        <td class="rectangle3"><button class="button2" id="seeWeapon2Attributes">查看副武器属性</button></td>
                     </tr>
                     <tr>
                         <td><label for="selectedJewelry">饰品：</label></td>
                         <td style="display: none;"><span id="selectedJewelry">未装备</span></td>
-                        <td>
+                        <td class="rectangle1">
                           <select id="jewelrySelect">
                             <option value='未装备'>未装备</option>
                             <option value='疯狂熊猫胸针'>疯狂熊猫胸针</option>
@@ -258,13 +259,12 @@
                             <option value='狙击镜'>狙击镜</option>
                         </select>
                         </td>
-                        <td><button id="seeJewelryAttributes">查看饰品属性</button></td>
+                        <td></td>
+                        <td class="rectangle3"><button class="button2" id="seeJewelryAttributes">查看饰品属性</button></td>
                     </tr>
-                </tbody>
-                <tbody>
                     <tr>
                       <td><label for="peripheralSelect">周边：</label></td>
-                      <td>
+                      <td class="rectangle1">
                           <select id="peripheralSelect">
                               <option value='未装备'>未装备</option>
                               <option value='牺牲石像样品'>牺牲石像样品</option>
@@ -280,7 +280,8 @@
                               <option value='梅丽尔坐垫'>梅丽尔坐垫</option>
                           </select>
                       </td>
-                      <td><button id="seeOthersAttributes">查看杂项属性</button></td>
+                      <td></td>
+                      <td class="rectangle3"><button class="button2" id="seeOthersAttributes">查看杂项属性</button></td>
                     </tr>
                     <tr>
                       <td><label for="relicSelect">遗物：</label></td>
@@ -318,6 +319,10 @@
                               <option value="10回血卡">10回血卡</option>
                           </select>
                       </td>
+                      <td colspan="2">
+                        <label for="ogmNO2Shield">暗盾二专勾选</label>
+                        <input type="checkbox" id="ogmNO2Shield">
+                      </td>
                     </tr>
                     <tr>
                         <td><label for="magicCard2">魔卡2：</label></td>
@@ -332,16 +337,18 @@
                                 <option value="10回血卡">10回血卡</option>
                             </select>
                         </td>
+                        <td colspan="2">
+                            <label for="sameProperties">武器相同属性</label>
+                            <input type="checkbox" id="sameProperties" checked>
+                        </td>
                     </tr>
                     <tr>
 
                       <td>
-                          <label for="ogmNO2Shield">暗盾二专</label>
-                          <input type="checkbox" id="ogmNO2Shield">
+
                       </td>
                       <td>
-                          <label for="sameProperties">武器同属性</label>
-                          <input type="checkbox" id="sameProperties" checked>
+                          
                       </td>
                       <td></td>
                     </tr>
@@ -908,13 +915,13 @@
             </table>
             
         </div>
-    </div>    
+    </div>     
 
     <br>
+    <p>24/1/10日志：优化了角色选择界面</p>
     <p>24/1/9日志：添加了头像显示功能，等级最高上限提升至110级（可通过显示对应角色/装备按钮打开属性面板调节等级）</p>
     <p>24/1/8日志：优化了部分角色命名</p>
-    <p>24/1/5日志：优化了角色筛选选项以及布局</p>
-    <p>24/1/4日志：优化了角色筛选选项</p>
+    
     <p>23/12/31日志：已录入所有韩服已实装稀有、传奇角色及其专武，【版本至安吉】，界面排版优化</p>
     <p>角色默认满破、满觉醒，装备默认满破、满洗练，伤害减免暂不计入计算，优先取韩服最新数据</p>
     <p>角色与装备的防御数值与实际防御数值并不完全精确（因为kongs图鉴不显示小数），所以在较高等级下会有一定程度的偏差</p>

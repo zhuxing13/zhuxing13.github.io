@@ -1,0 +1,74 @@
+.mainselect tbody{
+    background-color: #5faa5f;
+}
+.mainselect {
+    background-color: #7be57b ;
+}
+
+.rectangle1{
+    width: 140px;
+    height: 63.2px;
+    background-color: #7be57b ;
+}
+.rectangle1 select {
+    border-radius: 10px;
+    background-color: #98fb98;
+    height: 70%;
+    width: 100%;
+  }
+  
+.rectangle2{
+    width: 63.2px;
+    height: 63.2px;
+    display: block;
+    line-height: 0;
+    background-color: #7be57b ;
+}
+.rectangle3{
+    width: 63.2px;
+    height: 63.2px;
+    background-color: #7be57b ;
+}
+
+.charaimage {
+    width: 60px;
+    height: 60px;
+    background-color: #98fb98b6;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.button1 {
+    width: 160px;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color: #98fb98;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font: inherit; 
+  }
+
+  .button2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px; /* 调整圆角的大小 */
+    background-color: #98fb98;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font: inherit;
+  }
+  
+  td .button2 {
+    font-size: 12px;
+  }
+  
