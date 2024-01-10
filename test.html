@@ -18,7 +18,7 @@
 <body style="overflow-y: scroll;background-color: #eee;">
     <h1 align="center">坎公面板计算器</h1>
     <h4 align="center">作者：逐星亦逐心</h4>
-    <h4 align="center">维护日期:24/1/10</h4>     
+    <h4 align="center">维护日期:24/1/11</h4>     
     <h4 align="center">图鉴数据：国服云苓版本  角色数据：韩服安吉版本</h4>     
     <button class="button1" id="fullValuesButton">图鉴默认最大值</button>
     <button class="button1" id="seeadd1">查看当前图鉴</button>
@@ -87,7 +87,6 @@
                 <tbody>
                     <tr>
                         <td><label for="selectedCharacter">角色：</label></td>
-                        <td style="display: none;"><span id="selectedCharacter">选择角色</span></td>
                         <td class="rectangle1">
                             <select id="charSelect" aria-label="选择角色">
                                 <option value="选择角色">选择角色</option>
@@ -228,21 +227,25 @@
                     </tr>
                     <tr>
                         <td><label for="selectedWeapon">主武器：</label></td>
-                        <td style="display: none;"><span id="selectedWeapon">未装备</span></td>
+
                         <td id="WeaponSelect" class="rectangle1"></td>
-                        <td></td>
+                        <td class="rectangle2">
+                            <div id="imageContainer2">
+                                <img src="image/weapon/未装备.png" alt="选择主武器图像" class="weaponimage">
+                            </div>
+                        </td>
                         <td class="rectangle3"><button class="button2" id="seeWeaponAttributes">查看主武器信息</button></td>
                     </tr>
                     <tr>
                         <td><label for="selectedWeapon2">副武器：</label></td>
-                        <td style="display: none;"><span id="selectedWeapon2">未装备</span></td>
+
                         <td id="Weapon2Select" class="rectangle1"></td>
                         <td></td>
                         <td class="rectangle3"><button class="button2" id="seeWeapon2Attributes">查看副武器属性</button></td>
                     </tr>
                     <tr>
                         <td><label for="selectedJewelry">饰品：</label></td>
-                        <td style="display: none;"><span id="selectedJewelry">未装备</span></td>
+
                         <td class="rectangle1">
                           <select id="jewelrySelect">
                             <option value='未装备'>未装备</option>
@@ -342,16 +345,6 @@
                             <input type="checkbox" id="sameProperties" checked>
                         </td>
                     </tr>
-                    <tr>
-
-                      <td>
-
-                      </td>
-                      <td>
-                          
-                      </td>
-                      <td></td>
-                    </tr>
                 </tbody>
                 
 
@@ -401,6 +394,14 @@
                   </tbody>
             </table>
             <table>
+                <tbody>
+                    <tr style="display: none;">
+                        <td><span id="selectedCharacter">选择角色</span></td>
+                        <td><span id="selectedWeapon">未装备</span></td>
+                        <td><span id="selectedWeapon2">未装备</span></td>
+                        <td><span id="selectedJewelry">未装备</span></td>
+                    </tr>
+                </tbody>
                 <tbody>
                     <tr>
                         <td colspan="2">秒伤（无暴击）</td>
@@ -534,7 +535,7 @@
                 </tr>
                 <tr><td><label for="oneSelect">单手剑选择</label></td>
                     <td>
-                        <select id="oneSelect">
+                        <select id="oneSelect" class="weapon1">
                             <option value="未装备">未装备</option>
                             <option value="无邪">无邪</option>
                             <option value="阿尔马达">阿尔马达</option>
@@ -560,7 +561,7 @@
                     </td>
                     <td><label for="twoSelect">双手剑选择</label></td>
                     <td>
-                        <select id="twoSelect">
+                        <select id="twoSelect" class="weapon1">
                             <option value="未装备">未装备</option>
                             <option value="普洛米诺斯">普洛米诺斯</option>
                             <option value="勇者之心">勇者之心</option>
@@ -582,7 +583,7 @@
                 <tr>
                     <td><label for="rifleSelect">步枪选择</label></td>
                     <td>
-                        <select id="rifleSelect">
+                        <select id="rifleSelect" class="weapon1">
                             <option value="未装备">未装备</option>
                             <option value="无边绝望">无边绝望</option>
                             <option value="终结者">终结者</option>
@@ -604,7 +605,7 @@
                     </td>
                     <td><label for="scepterSelect">权杖选择</label></td>
                     <td>
-                        <select id="scepterSelect">
+                        <select id="scepterSelect" class="weapon1">
                             <option value="未装备">未装备</option>
                             <option value="天使之音">天使之音</option>
                             <option value="亚马洛克">亚马洛克</option>
@@ -629,7 +630,7 @@
                 <tr>
                     <td><label for="basketSelect">篮子选择</label></td>
                     <td>
-                        <select id="basketSelect">
+                        <select id="basketSelect" class="weapon1">
                             <option value="未装备">未装备</option>
                             <option value="梅丽尔">梅丽尔</option>
                             <option value="仙玉">仙玉</option>
@@ -651,7 +652,7 @@
                     </td>
                     <td><label for="archSelect">弓选择</label></td>
                     <td>
-                        <select id="archSelect">
+                        <select id="archSelect" class="weapon1">
                             <option value="未装备">未装备</option>
                             <option value="沙兰加神弓">沙兰加神弓</option>
                             <option value="千雷弓">千雷弓</option>
@@ -666,7 +667,7 @@
                 <tr>
                     <td><label for="gloveSelect">手套选择</label></td>
                     <td>
-                        <select id="gloveSelect">
+                        <select id="gloveSelect" class="weapon1">
                             <option value="未装备">未装备</option>
                             <option value="明镜止水">明镜止水</option>
                             <option value="山神">山神</option>
@@ -678,7 +679,7 @@
                             <option value="拒绝访问">拒绝访问</option>
                             <option value="行星破坏者">行星破坏者</option>
                             <option value="造雪机">造雪机</option>
-                            <option value="云苓（专）">云苓（专）</option>
+                            <option value="炼火拳套">炼火拳套</option>
                             <option value="魔血玉">魔血玉</option>
                             <option value="魔甲拳">魔甲拳</option>
                             <option value="乌尔坎">乌尔坎</option>
@@ -688,7 +689,7 @@
                     </td>
                     <td><label for="clawSelect">爪选择</label></td>
                     <td>
-                        <select id="clawSelect">
+                        <select id="clawSelect" class="weapon1">
                             <option value="未装备">未装备</option>
                             <option value="火山犄角">火山犄角</option>
                             <option value="索拉里斯">索拉里斯</option>
@@ -709,7 +710,7 @@
                 <tr>
                     <td><label for="shieldSelect">盾牌选择</label></td>
                     <td>
-                        <select id="shieldSelect">
+                        <select id="shieldSelect" class="weapon2">
                             <option value='未装备'>未装备</option>
                             <option value='军长魔镜盾牌'>军长魔镜盾牌</option>
                             <option value='保护之盾'>保护之盾</option>
@@ -726,7 +727,7 @@
                     </td>
                     <td><label for="rifle2Select">步枪选择</label></td>
                     <td>
-                        <select id="rifle2Select">
+                        <select id="rifle2Select" class="weapon2">
                             <option value="未装备">未装备</option>
                             <option value="无边绝望">无边绝望</option>
                             <option value="终结者">终结者</option>
@@ -915,12 +916,12 @@
             </table>
             
         </div>
-    </div>   
+    </div>
 
-    <br>
+    <br>    
+    <p>24/1/11日志：添加了专武显示功能，并更改了专武获取来源</p>
     <p>24/1/10日志：优化了角色选择界面</p>
-    <p>24/1/9日志：更改了头像获取来源</p>
-    <p>24/1/9日志：添加了头像显示功能，等级最高上限提升至110级（可通过显示对应角色/装备按钮打开属性面板调节等级）</p>
+    <p>24/1/9日志：添加了头像显示功能并更改了头像获取来源，等级最高上限提升至110级（可通过显示对应角色/装备按钮打开属性面板调节等级）</p>
     
     <p>23/12/31日志：已录入所有韩服已实装稀有、传奇角色及其专武，【版本至安吉】，界面排版优化</p>
     <p>角色默认满破、满觉醒，装备默认满破、满洗练，伤害减免暂不计入计算，优先取韩服最新数据</p>
@@ -955,6 +956,9 @@
     <script src="js/see.js"></script>
     <!-- <script src="js/images.js"></script> -->
     <script src="js/imageTest.js"></script>
+    <!-- <script src="js/wenponimage.js"></script> -->
+    <script src="js/weaponimageT.js"></script>
+
     <script src="js/updateCharacterAttributes.js"></script>
     <script src="js/updateWeaponAttributes.js"></script>
     <script src="js/updateWeapon2Attributes.js"></script>

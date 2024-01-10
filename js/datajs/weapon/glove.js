@@ -177,7 +177,7 @@ const gloveWeaponAttributes = {
         cdSkill: 16,            
         reduceDamage: 0,         
     },
-    '云苓（专）':{
+    '炼火拳套':{
         roleProperties: '火',    
         weaponType: '手套',    
         weaponCoefficient: 4,    

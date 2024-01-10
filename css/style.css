@@ -38,6 +38,23 @@
     border-radius: 10px;
 }
 
+#imageContainer2 {
+  width: 60px;
+  height: 60px;
+  background-color: #98fb98b6;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.weaponimage {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+
 .button1 {
     width: 160px;
     height: 40px;
