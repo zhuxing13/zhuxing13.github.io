@@ -18,7 +18,7 @@
 <body style="overflow-y: scroll;background-color: #eee;">
     <h1 align="center">坎公面板计算器</h1>
     <h4 align="center">作者：逐星亦逐心</h4>
-    <h4 align="center">维护日期:24/1/11</h4>     
+    <h4 align="center">维护日期:24/1/12</h4>     
     <h4 align="center">图鉴数据：国服云苓版本  角色数据：韩服安吉版本</h4>     
     <button class="button1" id="fullValuesButton">图鉴默认最大值</button>
     <button class="button1" id="seeadd1">查看当前图鉴</button>
@@ -240,7 +240,11 @@
                         <td><label for="selectedWeapon2">副武器：</label></td>
 
                         <td id="Weapon2Select" class="rectangle1"></td>
-                        <td></td>
+                        <td class="rectangle2">
+                            <div id="imageContainer2">
+                                <img src="image/weapon/未装备.png" alt="选择副武器" class="weapon2image">
+                            </div>
+                        </td>
                         <td class="rectangle3"><button class="button2" id="seeWeapon2Attributes">查看副武器属性</button></td>
                     </tr>
                     <tr>
@@ -262,33 +266,41 @@
                             <option value='狙击镜'>狙击镜</option>
                         </select>
                         </td>
-                        <td></td>
+                        <td class="rectangle2">
+                            <div id="imageContainer3">
+                                <img src="image/jewelry/未装备.png" alt="选择饰品" class="jewelryimage">
+                            </div>
+                        </td>
                         <td class="rectangle3"><button class="button2" id="seeJewelryAttributes">查看饰品属性</button></td>
                     </tr>
                     <tr>
-                      <td><label for="peripheralSelect">周边：</label></td>
-                      <td class="rectangle1">
-                          <select id="peripheralSelect">
-                              <option value='未装备'>未装备</option>
-                              <option value='牺牲石像样品'>牺牲石像样品</option>
-                              <option value='侵略者航天母舰模型'>侵略者航天母舰模型</option>
-                              <option value='欧格玛手办'>欧格玛手办</option>
-                              <option value='小公主公仔'>小公主公仔</option>
-                              <option value='疯狂熊猫团奖杯'>疯狂熊猫团奖杯</option>
-                              <option value='老鼠奈莉坐垫'>老鼠奈莉坐垫</option>
-                              <option value='冰雪魔女的T恤'>冰雪魔女的T恤</option>
-                              <option value='笑面神坐垫'>笑面神坐垫</option>
-                              <option value='神秘自动售货机存钱罐'>神秘自动售货机存钱罐</option>
-                              <option value='蓝色攻击周边'>蓝色攻击周边</option>
-                              <option value='梅丽尔坐垫'>梅丽尔坐垫</option>
-                          </select>
-                      </td>
-                      <td></td>
-                      <td class="rectangle3"><button class="button2" id="seeOthersAttributes">查看杂项属性</button></td>
+                        <td><label for="peripheralSelect">周边：</label></td>
+                        <td class="rectangle1">
+                            <select id="peripheralSelect">
+                                <option value='未装备'>未装备</option>
+                                <option value='牺牲石像样品'>牺牲石像样品</option>
+                                <option value='侵略者航天母舰模型'>侵略者航天母舰模型</option>
+                                <option value='欧格玛手办'>欧格玛手办</option>
+                                <option value='小公主公仔'>小公主公仔</option>
+                                <option value='疯狂熊猫团奖杯'>疯狂熊猫团奖杯</option>
+                                <option value='老鼠奈莉坐垫'>老鼠奈莉坐垫</option>
+                                <option value='冰雪魔女的T恤'>冰雪魔女的T恤</option>
+                                <option value='笑面神坐垫'>笑面神坐垫</option>
+                                <option value='神秘自动售货机存钱罐'>神秘自动售货机存钱罐</option>
+                                <option value='蓝色攻击周边'>蓝色攻击周边</option>
+                                <option value='梅丽尔坐垫'>梅丽尔坐垫</option>
+                            </select>
+                        </td>
+                        <td class="rectangle2">
+                            <div id="imageContainer4">
+                                <img src="image/peripheral/未装备.png" alt="选择周边" class="peripheralimage">
+                            </div>
+                        </td>
+                        <td class="rectangle3"><button class="button2" id="seeOthersAttributes">查看杂项属性</button></td>
                     </tr>
                     <tr>
                       <td><label for="relicSelect">遗物：</label></td>
-                      <td>
+                      <td class="rectangle4">
                           <select id="relicSelect">
                               <option value="未装备">未装备</option>
                               <option value="★★★★★三暴">★★★★★三暴</option>
@@ -311,7 +323,7 @@
                     </tr>
                     <tr>
                       <td><label for="magicCard1">魔卡1：</label></td>
-                      <td>
+                      <td class="rectangle4">
                           <select id="magicCard1">
                               <option value="未装备">未装备</option>
                               <option value="3暴卡">3暴卡</option>
@@ -329,7 +341,7 @@
                     </tr>
                     <tr>
                         <td><label for="magicCard2">魔卡2：</label></td>
-                        <td>
+                        <td class="rectangle4">
                             <select id="magicCard2">
                                 <option value="未装备">未装备</option>
                                 <option value="3暴卡">3暴卡</option>
@@ -919,9 +931,9 @@
     </div>     
 
     <br>
+    <p>24/1/12日志：添加了盾牌、饰品、周边显示功能，改变了未装备时的样式</p>
     <p>24/1/11日志：添加了专武显示功能</p>
     <p>24/1/10日志：优化了角色选择界面</p>
-    <p>24/1/9日志：添加了头像显示功能，等级最高上限提升至110级（可通过显示对应角色/装备按钮打开属性面板调节等级）</p>
     
     <p>23/12/31日志：已录入所有韩服已实装稀有、传奇角色及其专武，【版本至安吉】，界面排版优化</p>
     <p>角色默认满破、满觉醒，装备默认满破、满洗练，伤害减免暂不计入计算，优先取韩服最新数据</p>
@@ -956,6 +968,8 @@
     <script src="js/see.js"></script>
     <script src="js/images.js"></script>
     <script src="js/wenponimage.js"></script>
+    <script src="js/jewelryimage.js"></script>
+    <script src="js/peripheralimage.js"></script>
 
     <script src="js/updateCharacterAttributes.js"></script>
     <script src="js/updateWeaponAttributes.js"></script>

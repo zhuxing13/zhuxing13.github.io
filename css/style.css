@@ -29,6 +29,17 @@
     height: 63.2px;
     background-color: #7be57b ;
 }
+.rectangle4{
+  width: 140px;
+  height: 32px;
+  background-color: #7be57b ;
+}
+.rectangle4 select{
+  border-radius: 10px;
+  background-color: #98fb98;
+  height: 70%;
+  width: 100%;
+}
 
 .charaimage {
     width: 60px;
@@ -53,7 +64,43 @@
   height: 80%;
   object-fit: contain;
 }
+.weapon2image {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
 
+#imageContainer3 {
+  width: 60px;
+  height: 60px;
+  background-color: #98fb98b6;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.jewelryimage {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+#imageContainer4 {
+  width: 60px;
+  height: 60px;
+  background-color: #98fb98b6;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.peripheralimage {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
 
 .button1 {
     width: 160px;
