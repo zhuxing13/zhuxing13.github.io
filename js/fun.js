@@ -47,7 +47,7 @@ const weaponType = document.getElementById('weaponType');
 const weapon2Type = document.getElementById('weapon2Type');
 const jewelrySelect = document.getElementById('jewelrySelect');
 const peripheralSelect = document.getElementById('peripheralSelect');
-const relicSelect = document.getElementById('relicSelect');
+
 const magicCard1 = document.getElementById('magicCard1');
 const magicCard2 = document.getElementById('magicCard2');
 
@@ -62,7 +62,7 @@ shieldSelect.addEventListener('change', updateGet);
 rifle2Select.addEventListener('change', updateGet);   
 jewelrySelect.addEventListener('change', updateGet);   
 peripheralSelect.addEventListener('change', updateGet);   
-relicSelect.addEventListener('change', updateGet);   
+
 magicCard1.addEventListener('change', updateGet);   
 magicCard2.addEventListener('change', updateGet);  
 
@@ -80,8 +80,10 @@ function updateGet(){
       }else{
           addAtkGet1 = 0
       }
-      
-      if (relicSelect.value !== '未装备'){
+      var relicEntry1 = document.getElementById('relicEntry1');
+      var relicEntry2 = document.getElementById('relicEntry2');
+      var relicEntry3 = document.getElementById('relicEntry3');
+      if (relicEntry1.value !== 'none'|| relicEntry2.value !== 'none'|| relicEntry3.value !== 'none'){
           addAtkGet2 = atk5_2.value
       }else{
           addAtkGet2 = 0
@@ -358,6 +360,118 @@ updateSelectedJewelry();
     level4Value.textContent = level4Input.value;
   });
 
+  const relicEntry11 = document.getElementById('relicEntry11');
+  const entry11Value = document.getElementById('entry11Value');
+  relicEntry11.addEventListener('input', function() {
+    entry11Value.textContent = relicEntry11.value;
+  });
+
+  const relicEntry22 = document.getElementById('relicEntry22');
+  const entry22Value = document.getElementById('entry22Value');
+  relicEntry22.addEventListener('input', function() {
+    entry22Value.textContent = relicEntry22.value;
+  });
+
+  const relicEntry33 = document.getElementById('relicEntry33');
+  const entry33Value = document.getElementById('entry33Value');
+  relicEntry33.addEventListener('input', function() {
+    entry33Value.textContent = relicEntry33.value;
+  });
+
 })();
 
+
+// 遗物主词条上限变化
+const relicEntry1 = document.getElementById('relicEntry1');
+const relicEntry11 = document.getElementById('relicEntry11');
+const entry11Value = document.getElementById('entry11Value');
+
+relicEntry1.addEventListener('change', function() {
+  const selectedValue = relicEntry1.value;
+  switch (selectedValue) {
+    case 'none':
+    case 'crit':
+      relicEntry11.max = 3;
+      break;
+    case 'atk':
+      relicEntry11.max = 7;
+      break;
+    case 'def':
+    case 'hp':
+      relicEntry11.max = 5;
+      break;
+    case 'heal':
+    case 'skill':
+      relicEntry11.max = 11;
+      break;
+    default:
+      relicEntry11.max = 3;
+  }
+  if (entry11Value.textContent > relicEntry11.max) {
+    entry11Value.textContent = relicEntry11.max;
+    }
+  updateGet();
+});
+
+const relicEntry2 = document.getElementById('relicEntry2');
+const relicEntry22 = document.getElementById('relicEntry22');
+const entry22Value = document.getElementById('entry22Value');
+
+relicEntry2.addEventListener('change', function() {
+  const selectedValue = relicEntry2.value;
+  switch (selectedValue) {
+    case 'none':
+    case 'crit':
+      relicEntry22.max = 3;
+      break;
+    case 'atk':
+      relicEntry22.max = 7;
+      break;
+    case 'def':
+    case 'hp':
+      relicEntry22.max = 5;
+      break;
+    case 'heal':
+    case 'skill':
+      relicEntry22.max = 11;
+      break;
+    default:
+      relicEntry22.max = 3;
+  }
+  if (entry22Value.textContent > relicEntry22.max) {
+    entry22Value.textContent = relicEntry22.max;
+    }
+    updateGet();
+});
+
+const relicEntry3 = document.getElementById('relicEntry3');
+const relicEntry33 = document.getElementById('relicEntry33');
+const entry33Value = document.getElementById('entry33Value');
+
+relicEntry3.addEventListener('change', function() {
+  const selectedValue = relicEntry3.value;
+  switch (selectedValue) {
+    case 'none':
+    case 'crit':
+      relicEntry33.max = 3;
+      break;
+    case 'atk':
+      relicEntry33.max = 7;
+      break;
+    case 'def':
+    case 'hp':
+      relicEntry33.max = 5;
+      break;
+    case 'heal':
+    case 'skill':
+      relicEntry33.max = 11;
+      break;
+    default:
+      relicEntry33.max = 3;
+  }
+  if (entry33Value.textContent > relicEntry33.max) {
+    entry33Value.textContent = relicEntry33.max;
+    }
+    updateGet();
+});
 

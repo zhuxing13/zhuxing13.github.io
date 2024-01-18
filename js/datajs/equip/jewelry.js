@@ -67,7 +67,7 @@ const jewelryAttributes = {
   },
   '冰雪女王指环': {
     crit: 3,
-    addWaterAtk: 15,
+    addAtk: 15,
     addDef: 6,
     addHP: 16,
     reduceDamage: 0,

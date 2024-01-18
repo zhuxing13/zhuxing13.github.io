@@ -133,4 +133,5 @@ const selectedValue = selectElement.value;
 const imagemapname = characterAttributes[selectedValue].map
 // imageElement.src = 'https://t2.ww2.ren/img/ava/'+imagemapname+'.png?imageMogr2/thumbnail/128x';
 imageElement.src = 'https://t2.ww2.ren/img/ava/'+imagemapname+'.png';
+
 });
