@@ -165,7 +165,7 @@ characterAttributes['辛缇拉'] = {
 characterAttributes['克拉拉'] = {
     roleProperties: '火',      
     roleOccupation: '射手',    
-    weaponType: '步枪',      
+    weaponType: '弓',      
     weapon2Type: '无',  
     crit: 5,            
     addAtk: 67,          
