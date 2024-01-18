@@ -20,7 +20,7 @@
 .rectangle2{
     width: 63.2px;
     height: 63.2px;
-    display: block;
+    /* display: block; */
     line-height: 0;
     background-color: #7be57b ;
 }
@@ -39,6 +39,25 @@
   background-color: #98fb98;
   height: 70%;
   width: 100%;
+}
+.rectangle5{
+  width: 140px;
+  height: 32px;
+  background-color: #7be57b ;
+}
+.rectangle5 select{
+  border-radius: 10px;
+  background-color: #98fb98;
+  height: 70%;
+  width: 40%;
+}
+.rectangle5 span{
+  text-align: right;
+}
+.rectangle6{
+  width: 130.4px;
+  height: 32px;
+  background-color: #7be57b ;
 }
 
 .charaimage {

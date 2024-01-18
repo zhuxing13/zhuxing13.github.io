@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/radio.css">
     <link rel="stylesheet" type="text/css" href="css/text.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/range.css">
     <!-- <style>
         body{
             background-image: url('image/logo_black.png'); 
@@ -18,8 +19,8 @@
 <body style="overflow-y: scroll;background-color: #eee;">
     <h1 align="center">坎公面板计算器</h1>
     <h4 align="center">作者：逐星亦逐心</h4>
-    <h4 align="center">维护日期:24/1/12</h4>     
-    <h4 align="center">图鉴数据：国服云苓版本  角色数据：韩服安吉版本</h4>     
+    <h4 align="center">维护日期:24/1/19</h4>     
+    <h4 align="center">图鉴数据：国服前日版本  角色数据：韩服安吉版本</h4>     
     <button class="button1" id="fullValuesButton">图鉴默认最大值</button>
     <button class="button1" id="seeadd1">查看当前图鉴</button>
     <button class="button1" id="seeadd2">查看守护者基地</button>
@@ -27,8 +28,11 @@
         <div>
             <table class="mainselect">
                 <tbody>
-                    <tr><td colspan="4">
-                        <label>属性筛选
+                    <tr>
+                        <td>
+                            <label>属性：</label>
+                        </td>
+                        <td colspan="3" class="radio-c">
                             <div class="radio-container">
                                 <input type="radio" id="radio0" name="roleProperties" class="radio" value="all" checked>
                                 <label for="radio0" class="roleProperties">全</label>
@@ -57,10 +61,13 @@
                                 <input type="radio" id="radio6" name="roleProperties" class="radio" value="水">
                                 <label for="radio6" class="roleProperties">水</label>
                             </div>
-                        </label>
-                    </td></tr>
-                    <tr><td colspan="4">
-                        <label>职业筛选
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>职业：</label>
+                        </td>
+                        <td colspan="3" class="radio-c">
                             <div class="radio-container">
                                 <input type="radio" id="radio00" name="roleOccupation" class="radio" value="all" checked>
                                 <label for="radio00" class="roleOccupation">全部</label>
@@ -81,8 +88,8 @@
                                 <input type="radio" id="radio04" name="roleOccupation" class="radio" value="坦克">
                                 <label for="radio04" class="roleOccupation">坦克</label>
                             </div>
-                        </label>
-                    </td></tr>
+                        </td>
+                    </tr>
                 </tbody>
                 <tbody>
                     <tr>
@@ -299,27 +306,63 @@
                         <td class="rectangle3"><button class="button2" id="seeOthersAttributes">查看杂项属性</button></td>
                     </tr>
                     <tr>
-                      <td><label for="relicSelect">遗物：</label></td>
-                      <td class="rectangle4">
-                          <select id="relicSelect">
-                              <option value="未装备">未装备</option>
-                              <option value="★★★★★三暴">★★★★★三暴</option>
-                              <option value="★★★★☆三暴">★★★★☆三暴</option>
-                              <option value="★★★☆☆双暴">★★★☆☆双暴</option>
-                              <option value="★★★★★三攻">★★★★★三攻</option>
-                              <option value="★★★★☆三攻">★★★★☆三攻</option>
-                              <option value="★★★☆☆双攻">★★★☆☆双攻</option>
-                              <option value="★★★★★三防">★★★★★三防</option>
-                              <option value="★★★★☆三防">★★★★☆三防</option>
-                              <option value="★★★☆☆双防">★★★☆☆双防</option>
-                              <option value="★★★★★三生命">★★★★★三生命</option>
-                              <option value="★★★★☆三生命">★★★★☆三生命</option>
-                              <option value="★★★☆☆双生命">★★★☆☆双生命</option>
-                              <option value="★★★★★三回血">★★★★★三回血</option>
-                              <option value="★★★★☆三回血">★★★★☆三回血</option>
-                              <option value="★★★☆☆双回血">★★★☆☆双回血</option>
-                          </select>
-                      </td>
+                        <td><label for="relicEntry1">主词条1：</label></td>
+                        <td class="rectangle5">
+                            <select id="relicEntry1">
+                                <option value="none">空</option>
+                                <option value="crit">暴击</option>
+                                <option value="atk">攻击</option>
+                                <option value="def">防御</option>
+                                <option value="hp">生命</option>
+                                <option value="heal">回血</option>
+                                <option value="skill">技伤</option>
+                            </select>
+                            <span id="entry11Value">0</span>
+                            <span>%</span>
+                        </td>
+                        <td colspan="2" class="rectangle6">
+                            <input type="range" id="relicEntry11" min="0" max="3" step="0.1" value="0" class="relicRange">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="relicEntry2">主词条2：</label></td>
+                        <td class="rectangle5">
+                            <select id="relicEntry2">
+                                <option value="none">空</option>
+                                <option value="crit">暴击</option>
+                                <option value="atk">攻击</option>
+                                <option value="def">防御</option>
+                                <option value="hp">生命</option>
+                                <option value="heal">回血</option>
+                                <option value="skill">技伤</option>
+                            </select>
+                            <span id="entry22Value">0</span>
+                            <span>%</span>
+                        </td>
+                        </td>
+                        <td colspan="2" class="rectangle6">
+                            <input type="range" id="relicEntry22" min="0" max="3" step="0.1" value="0" class="relicRange">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="relicEntry3">主词条3：</label></td>
+                        <td class="rectangle5">
+                            <select id="relicEntry3">
+                                <option value="none">空</option>
+                                <option value="crit">暴击</option>
+                                <option value="atk">攻击</option>
+                                <option value="def">防御</option>
+                                <option value="hp">生命</option>
+                                <option value="heal">回血</option>
+                                <option value="skill">技伤</option>
+                            </select>
+                            <span id="entry33Value">0</span>
+                            <span>%</span>
+                        </td>
+                        </td>
+                        <td colspan="2" class="rectangle6">
+                            <input type="range" id="relicEntry33" min="0" max="3" step="0.1" value="0" class="relicRange">
+                        </td>
                     </tr>
                     <tr>
                       <td><label for="magicCard1">魔卡1：</label></td>
@@ -361,18 +404,71 @@
                 
 
             </table>
+            <table id="mianban">
+                <tbody>
+                    <tr>
+                        <td colspan="4" align="center">
+                            <button onclick="CalculationResults()" style="width: 100%;">计算当前角色面板</button>
+                        </td>
+                    </tr>
+                    <tr style="display: none;">
+                        <td><span id="selectedCharacter">选择角色</span></td>
+                        <td><span id="selectedWeapon">未装备</span></td>
+                        <td><span id="selectedWeapon2">未装备</span></td>
+                        <td><span id="selectedJewelry">未装备</span></td>
+                    </tr>
+                </tbody>
+                <tbody class="mianbanValue">
+                    <tr style="height: 32px;">
+                        <td>秒伤</td>
+                        <td><input type="text" id="dpsGetCrit" value="0" readonly class="mianbantext"></td>
+                        <td class="mianban2">
+                            <img src="image/character/选择角色.png" alt="选择角色图像" class="mianban2ima" id="mianbanimg1">  
+                        </td>
+                        <td></td>
+                        <td style="text-align: center;">
+                            <span>攻击练度</span>
+                            <input type="text" id="atkMasteryDegree" value="0%" readonly class="masteryDegree">
+                        </td>
+                    </tr>
+                    <tr style="height: 32px;">
+                        <td>韧性</td>
+                        <td><input type="text" id="toughness" value="0" readonly class="mianbantext"></td>
+                        <td class="mianban2">
+                            <img src="image/weapon/未装备.png" alt="选择主武器图像" class="mianban2ima" id="mianbanimg2">
+                        </td>
+                        <td class="mianban2">
+                            <img src="image/weapon/未装备.png" alt="选择副武器" class="mianban2ima" id="mianbanimg3">
+                        </td>
+                        <td style="text-align: center;">
+                            <span>防御练度</span>
+                            <input type="text" id="defMasteryDegree" value="0%" readonly class="masteryDegree">
+                        </td>
+                    </tr>
+                    <tr style="height: 32px;">
+                        <td>回血值</td>
+                        <td><input type="text" id="healGet" value="0" readonly class="mianbantext"></td>
+                        <td class="mianban2">
+                            <img src="image/jewelry/未装备.png" alt="选择饰品" class="mianban2ima" id="mianbanimg4">
+                        </td>
+                        <td class="mianban2">
+                            <img src="image/peripheral/未装备.png" alt="选择周边" class="mianban2ima" id="mianbanimg5">
+                        </td>
+                        <td style="text-align: center;">
+                            <span>生命练度</span>
+                            <input type="text" id="hpMasteryDegree" value="0%" readonly class="masteryDegree">
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
             <table id="jisuan">
                 <tbody>
                     <tr>
-                      <td colspan="4" align="center">
-                          <button onclick="CalculationResults()" style="width: 100%;">计算当前角色面板</button>
-                      </td>
-                  </tr>
-                  <tr></tr>
-                    <tr>
                         <td></td>
                         <td>基础白值</td>
-                        <td>总加成</td>
+                        <td>总加成(%)</td>
                         <td>最终结果</td>
                     </tr>
                     <tr>
@@ -400,35 +496,12 @@
                         <td><input type="text" id="resultHeal" value="0" readonly></td>
                     </tr>
                       <tr>
-                          <td>暴击</td>
-                          <td colspan="3"><input type="text" id="critAll" value="0" readonly></td>
+                          <td>暴击(%)</td>
+                          <td><input type="text" id="critAll" value="0" readonly></td>
+                          <td>无暴击秒伤</td>
+                          <td><input type="text" id="dpsNoCrit" value="0" readonly></td>
                       </tr>
                   </tbody>
-            </table>
-            <table>
-                <tbody>
-                    <tr style="display: none;">
-                        <td><span id="selectedCharacter">选择角色</span></td>
-                        <td><span id="selectedWeapon">未装备</span></td>
-                        <td><span id="selectedWeapon2">未装备</span></td>
-                        <td><span id="selectedJewelry">未装备</span></td>
-                    </tr>
-                </tbody>
-                <tbody>
-                    <tr>
-                        <td colspan="2">秒伤（无暴击）</td>
-                        <td colspan="2"><input type="text" id="dpsNoCrit" value="0" readonly></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">秒伤（带暴击）</td>
-                        <td colspan="2"><input type="text" id="dpsGetCrit" value="0" readonly></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">韧性</td>
-                        <td colspan="2"><input type="text" id="toughness" value="0" readonly></td>
-                    </tr>
-
-                </tbody>
             </table>
         </div>
 
@@ -446,7 +519,7 @@
                         <td><input type="number" min="0" max="31.8" id="hp1" value="31.8">/<a id="hp1full" data-atlas>31.8</a></td>
                     </tr>
                     <tr><td>道具羁绊图鉴</td>
-                        <td><input type="number" min="0" max="61.7" id="atk2" value="61.7">/<a id="atk2full" data-atlas>61.7</a></td>
+                        <td><input type="number" min="0" max="62.2" id="atk2" value="62.2">/<a id="atk2full" data-atlas>62.2</a></td>
                         <td><input type="number" min="0" max="34.6" id="def2" value="34.6">/<a id="def2full" data-atlas>34.6</a></td>
                         <td><input type="number" min="0" max="34.1" id="hp2" value="34.1">/<a id="hp2full" data-atlas>34.1</a></td>
                     </tr>
@@ -456,7 +529,7 @@
                         <td><input type="number" min="0" max="8.2" id="hp3" value="8.2">/<a id="hp3full" data-atlas>8.2</a></td>
                     </tr>
                     <tr><td>皮肤与浮游城</td>
-                        <td><input type="number" min="0" max="22.1" id="atk4" value="22.1">/<a id="atk4full" data-atlas>22.1</a></td>
+                        <td><input type="number" min="0" max="22.2" id="atk4" value="22.2">/<a id="atk4full" data-atlas>22.2</a></td>
                         <td>N/A</td>
                         <td><input type="number" min="0" max="20" id="hp4" value="20">/<a id="hp4full" data-atlas>20.0</a></td>
                     </tr>
@@ -819,7 +892,7 @@
 
               <tr>
                   <td rowspan="2">杂项属性</td>
-                  <td rowspan="2"><span>(周边遗物魔卡)</span><br><span>面板属性加成</span></td>
+                  <td rowspan="2"><span>(周边+魔卡)</span><br><span>面板属性加成</span></td>
                   <td rowspan="2"><span>(已装备的装备)</span><br><span>图鉴属性加成</span></td>
               </tr>
               <tr>
@@ -930,7 +1003,8 @@
         </div>
     </div>     
 
-    <br>    
+    <br>
+    <p>24/1/19日志：优化了数据界面布局;更改了遗物选择方式;当前图鉴更新至国服千日版本（已校对）;添加了练度百分比显示</p>
     <p>24/1/12日志：添加了盾牌、饰品、周边显示功能，改变了未装备时的样式，并更改了获取来源</p>
     <p>24/1/11日志：添加了专武显示功能，并更改了专武获取来源</p>
     <p>24/1/10日志：优化了角色选择界面</p>
@@ -952,7 +1026,6 @@
     <script src="js/datajs/equip/peripheral.js"></script>
     <script src="js/datajs/equip/rifle2.js"></script>
     <script src="js/datajs/equip/shield.js"></script>
-    <script src="js/datajs/equip/relic.js"></script>
     <script src="js/datajs/equip/magicCard.js"></script>
     
     <script src="js/datajs/weapon/arch.js"></script>

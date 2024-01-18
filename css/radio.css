@@ -7,6 +7,10 @@
     display: none;
 }
 
+.radio-c {
+    background-color: #98fb98b6;
+}
+
 .roleProperties {
     width: 30px;
     height: 30px;
