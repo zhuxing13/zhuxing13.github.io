@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/text.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/range.css">
+    <link rel="stylesheet" type="text/css" href="css/guardianBase.css">
     <!-- <style>
         body{
             background-image: url('image/logo_black.png'); 
@@ -19,12 +20,89 @@
 <body style="overflow-y: scroll;background-color: #eee;">
     <h1 align="center">坎公面板计算器</h1>
     <h4 align="center">作者：逐星亦逐心</h4>
-    <h4 align="center">维护日期:24/1/19</h4>     
+    <h4 align="center">维护日期:24/1/23</h4>     
     <h4 align="center">图鉴数据：国服千日版本  角色数据：韩服安吉版本</h4>     
-    <button class="button1" id="fullValuesButton">图鉴默认最大值</button>
-    <button class="button1" id="seeadd1">查看当前图鉴</button>
+
+    <button class="button1" id="seeadd1">收起图鉴信息</button>
     <button class="button1" id="seeadd2">查看守护者基地</button>
     <div> 
+
+        <!-- <div id="add1" style="display: none;" class="allBonuses"> -->
+        <div id="add1" class="allBonuses">
+            <table>
+                <tbody>
+                    <tr>
+                        <td colspan="4" align="center">
+                            <button class="buttonBonus" id="emptyValuesButton">清空图鉴</button>
+                            <button class="buttonBonus" id="fillValuesButton">填充空白图鉴</button>
+                            <button class="buttonBonus" id="fullValuesButton">收起图鉴并默认最大值</button>
+                        </td>
+                    </tr>
+                    <tr><td align="center"><b>加成种类</b></td>
+                        <td align="center"><b>攻击加成</b></td>
+                        <td align="center"><b>防御加成</b></td>
+                        <td align="center"><b>生命加成</b></td>
+                    </tr>
+                    <tr><td class="bonusText" align="center"><a>角色收集图鉴</a></td>
+                        <td><input type="number" min="0" max="55.0" id="atk1" value="55.0">/<a id="atk1full" data-atlas>55.0</a></td>
+                        <td><input type="number" min="0" max="27.9" id="def1" value="27.9">/<a id="def1full" data-atlas>27.9</a></td>
+                        <td><input type="number" min="0" max="31.8" id="hp1" value="31.8">/<a id="hp1full" data-atlas>31.8</a></td>
+                    </tr>
+                    <tr><td class="bonusText" align="center"><a>道具羁绊图鉴</a></td>
+                        <td><input type="number" min="0" max="62.2" id="atk2" value="62.2">/<a id="atk2full" data-atlas>62.2</a></td>
+                        <td><input type="number" min="0" max="34.6" id="def2" value="34.6">/<a id="def2full" data-atlas>34.6</a></td>
+                        <td><input type="number" min="0" max="34.1" id="hp2" value="34.1">/<a id="hp2full" data-atlas>34.1</a></td>
+                    </tr>
+                    <tr><td class="bonusText" align="center"><a>武器饰品盾牌</a></td>
+                        <td><input type="number" min="0" max="10.0" id="atk3" value="10.0">/<a id="atk3full" data-atlas>10.0</a></td>
+                        <td><input type="number" min="0" max="7.9" id="def3" value="7.9">/<a id="def3full" data-atlas>7.9</a></td>
+                        <td><input type="number" min="0" max="8.2" id="hp3" value="8.2">/<a id="hp3full" data-atlas>8.2</a></td>
+                    </tr>
+                    <tr><td class="bonusText" align="center"><a>皮肤与浮游城</a></td>
+                        <td><input type="number" min="0" max="22.2" id="atk4" value="22.2">/<a id="atk4full" data-atlas>22.2</a></td>
+                        <td align="center">N/A</td>
+                        <td><input type="number" min="0" max="20.0" id="hp4" value="20.0">/<a id="hp4full" data-atlas>20.0</a></td>
+                    </tr>
+                    <tr><td class="bonusText" align="center"><a>装备遗物图鉴</a></td>
+                        <td><input type="number" min="0" max="2.0" id="atk5" value="2.0">/<a id="atk5full" data-atlas>2.0</a></td>
+                        <td align="center">N/A</td>
+                        <td align="center">N/A</td>
+                    </tr>
+                    <tr><td class="bonusText" align="center"><a>装备魔卡图鉴</a></td>
+                        <td><input type="number" min="0" max="10.0" id="atk6" value="10.0">/<a id="atk6full" data-atlas>10.0</a></td>
+                        <td align="center">N/A</td>
+                        <td align="center">N/A</td>
+                    </tr>
+                    <tr><td class="bonusText" align="center"><a>装备周边图鉴</a></td>
+                        <td><input type="number" min="0" max="4.0" id="atk7" value="4.0">/<a id="atk7full" data-atlas>4.0</a></td>
+                        <td align="center">N/A</td>
+                        <td align="center">N/A</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="add2" style="display: none;" class="guardianBase">
+            <table>
+                <tbody>
+                    <tr>
+                        <td colspan="2" align="center"><b>守护者基地加成</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>攻击加成</b></td>
+                        <td><input type="number" min="0" max="39.8" id="atk99" value="39.8"> / <a id="atk99full" data-atlas>39.8</a></td>
+                    </tr>
+                    <tr>
+                        <td><b>防御加成</b></td>
+                        <td><input type="number" min="0" max="10.7" id="def99" value="10.7"> / <a id="def99full" data-atlas>10.7</a></td>
+                    </tr>
+                    <tr>
+                        <td><b>生命加成</b></td>
+                        <td><input type="number" min="0" max="10.7" id="hp99" value="10.7"> / <a id="hp99full" data-atlas>10.7</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
         <div>
             <table class="mainselect">
                 <tbody>
@@ -463,7 +541,7 @@
                 </tbody>
 
             </table>
-            <table id="jisuan">
+            <table id="jisuanValue">
                 <tbody>
                     <tr>
                         <td></td>
@@ -473,105 +551,41 @@
                     </tr>
                     <tr>
                         <td>攻击</td>
-                        <td><input type="text" id="basicAtkAll" value="0" readonly></td>
-                        <td><input type="text" id="addAtkAll" value="0" readonly></td>
-                        <td><input type="text" id="resultAtk" value="0" readonly></td>
+                        <td><input type="text" id="basicAtkAll" value="0" readonly class="jisuanText"></td>
+                        <td><input type="text" id="addAtkAll" value="0" readonly class="jisuanText"></td>
+                        <td><input type="text" id="resultAtk" value="0" readonly class="jisuanText"></td>
                     </tr>
                     <tr>
                         <td>防御</td>
-                        <td><input type="text" id="basicDefAll" value="0" readonly></td>
-                        <td><input type="text" id="addDefAll" value="0" readonly></td>
-                        <td><input type="text" id="resultDef" value="0" readonly></td>
+                        <td><input type="text" id="basicDefAll" value="0" readonly class="jisuanText"></td>
+                        <td><input type="text" id="addDefAll" value="0" readonly class="jisuanText"></td>
+                        <td><input type="text" id="resultDef" value="0" readonly class="jisuanText"></td>
                     </tr>
                     <tr>
                         <td>生命</td>
-                        <td><input type="text" id="basicHPAll" value="0" readonly></td>
-                        <td><input type="text" id="addHPAll" value="0" readonly></td>
-                        <td><input type="text" id="resultHP" value="0" readonly></td>
+                        <td><input type="text" id="basicHPAll" value="0" readonly class="jisuanText"></td>
+                        <td><input type="text" id="addHPAll" value="0" readonly class="jisuanText"></td>
+                        <td><input type="text" id="resultHP" value="0" readonly class="jisuanText"></td>
                     </tr>
                     <tr>
                         <td>回血值</td>
-                        <td><input type="text" id="basicHealAll" value="0" readonly></td>
-                        <td><input type="text" id="addHealAll" value="0" readonly></td>
-                        <td><input type="text" id="resultHeal" value="0" readonly></td>
+                        <td><input type="text" id="basicHealAll" value="0" readonly class="jisuanText"></td>
+                        <td><input type="text" id="addHealAll" value="0" readonly class="jisuanText"></td>
+                        <td><input type="text" id="resultHeal" value="0" readonly class="jisuanText"></td>
                     </tr>
                       <tr>
                           <td>暴击(%)</td>
-                          <td><input type="text" id="critAll" value="0" readonly></td>
+                          <td><input type="text" id="critAll" value="0" readonly class="jisuanText"></td>
                           <td>无暴击秒伤</td>
-                          <td><input type="text" id="dpsNoCrit" value="0" readonly></td>
+                          <td><input type="text" id="dpsNoCrit" value="0" readonly class="jisuanText"></td>
                       </tr>
                   </tbody>
             </table>
         </div>
 
-        <div id="add1" style="display: none;">
-            <table>
-                <tbody>
-                    <tr><td><b>加成种类</b></td>
-                        <td><b>攻击加成</b></td>
-                        <td><b>防御加成</b></td>
-                        <td><b>生命加成</b></td>
-                    </tr>
-                    <tr><td>角色收集图鉴</td>
-                        <td><input type="number" min="0" max="55" id="atk1" value="55">/<a id="atk1full" data-atlas>55.0</a></td>
-                        <td><input type="number" min="0" max="27.9" id="def1" value="27.9">/<a id="def1full" data-atlas>27.9</a></td>
-                        <td><input type="number" min="0" max="31.8" id="hp1" value="31.8">/<a id="hp1full" data-atlas>31.8</a></td>
-                    </tr>
-                    <tr><td>道具羁绊图鉴</td>
-                        <td><input type="number" min="0" max="62.2" id="atk2" value="62.2">/<a id="atk2full" data-atlas>62.2</a></td>
-                        <td><input type="number" min="0" max="34.6" id="def2" value="34.6">/<a id="def2full" data-atlas>34.6</a></td>
-                        <td><input type="number" min="0" max="34.1" id="hp2" value="34.1">/<a id="hp2full" data-atlas>34.1</a></td>
-                    </tr>
-                    <tr><td>武器饰品盾牌</td>
-                        <td><input type="number" min="0" max="10" id="atk3" value="10">/<a id="atk3full" data-atlas>10.0</a></td>
-                        <td><input type="number" min="0" max="7.9" id="def3" value="7.9">/<a id="def3full" data-atlas>7.9</a></td>
-                        <td><input type="number" min="0" max="8.2" id="hp3" value="8.2">/<a id="hp3full" data-atlas>8.2</a></td>
-                    </tr>
-                    <tr><td>皮肤与浮游城</td>
-                        <td><input type="number" min="0" max="22.2" id="atk4" value="22.2">/<a id="atk4full" data-atlas>22.2</a></td>
-                        <td>N/A</td>
-                        <td><input type="number" min="0" max="20" id="hp4" value="20">/<a id="hp4full" data-atlas>20.0</a></td>
-                    </tr>
-                    <tr><td>遗物图鉴</td>
-                        <td><input type="number" min="0" max="2" id="atk5" value="2">/<a id="atk5full" data-atlas>2.0</a></td>
-                        <td>N/A</td>
-                        <td>N/A</td>
-                    </tr>
-                    <tr><td>魔卡图鉴</td>
-                        <td><input type="number" min="0" max="10" id="atk6" value="10">/<a id="atk6full" data-atlas>10.0</a></td>
-                        <td>N/A</td>
-                        <td>N/A</td>
-                    </tr>
-                    <tr><td>周边图鉴</td>
-                        <td><input type="number" min="0" max="4" id="atk7" value="4">/<a id="atk7full" data-atlas>4.0</a></td>
-                        <td>N/A</td>
-                        <td>N/A</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div id="add2" style="display: none;">
-            <table>
-                <tbody>
-                    <tr>
-                        <td colspan="2"><b>守护者基地加成</b></td>
-                    </tr>
-                    <tr>
-                        <td><b>攻击加成</b></td>
-                        <td><input type="number" min="0" max="39.8" id="atk99" value="39.8">/<a id="atk99full" data-atlas>39.8</a></td>
-                    </tr>
-                    <tr>
-                        <td><b>防御加成</b></td>
-                        <td><input type="number" min="0" max="10.7" id="def99" value="10.7">/<a id="def99full" data-atlas>10.7</a></td>
-                    </tr>
-                    <tr>
-                        <td><b>生命加成</b></td>
-                        <td><input type="number" min="0" max="10.7" id="hp99" value="10.7">/<a id="hp99full" data-atlas>10.7</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        
+
+
     </div>
 
     <div>
@@ -1004,6 +1018,7 @@
     </div>     
 
     <br>
+    <p>24/1/23日志：优化了图鉴与守护者基地界面布局；添加了当前图鉴清空和填充按钮</p>
     <p>24/1/19日志：优化了数据界面布局;更改了遗物选择方式;当前图鉴更新至国服千日版本（已校对）;添加了练度百分比显示</p>
     <p>24/1/12日志：添加了盾牌、饰品、周边显示功能，改变了未装备时的样式，并更改了获取来源</p>
     <p>24/1/11日志：添加了专武显示功能，并更改了专武获取来源</p>

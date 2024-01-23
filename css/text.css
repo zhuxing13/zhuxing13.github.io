@@ -1,6 +1,18 @@
-#jisuan input {
+#jisuanValue input {
     width: 50px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #63f563;
 }
+#jisuanValue{
+    width: 100%;
+    background: #53e553;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 20px;
+    /* display: block; */
+}
+
 
 
 #mianban button{
@@ -18,9 +30,6 @@
 
 }
 
-#jisuan{
-    width: 100%;
-}
 #mianban{
     width: 100%;
 }
