@@ -10,6 +10,27 @@ window.onload = function() {
       inputs[i].value = aTags[i].textContent;
     }
   });
+
+  const emptyValuesButton = document.getElementById("emptyValuesButton");
+  emptyValuesButton.addEventListener("click", function() {
+    const inputs = document.querySelectorAll("input[type='number']");
+    
+    for (let i = 0; i < inputs.length; i++) {
+      inputs[i].value = "";
+    }
+  });
+
+  const fillValuesButton = document.getElementById("fillValuesButton");
+  fillValuesButton.addEventListener("click", function() {
+    const inputs = document.querySelectorAll("input[type='number']");
+    const aTags = document.querySelectorAll("a[data-atlas]");
+
+    for (let i = 0; i < inputs.length; i++) {
+      if (inputs[i].value === "") {
+        inputs[i].value = aTags[i].textContent;
+      }
+    }
+  });
 }
 // 图鉴范围限制
 document.querySelectorAll('input[type="number"]').forEach(function(input) {

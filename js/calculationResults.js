@@ -74,9 +74,27 @@ function CalculationResults(){
     var defMasteryDegree = document.getElementById("defMasteryDegree");
     var hpMasteryDegree = document.getElementById("hpMasteryDegree");
 
-    atkMasteryDegree.value = ((Number(atk1)+Number(atk2)+Number(atk3)+Number(atk4)+Number(atk5)+Number(atk6)+Number(atk7))/(Number(atk1full)+Number(atk2full)+Number(atk3full)+Number(atk4full)+Number(atk5full)+Number(atk6full)+Number(atk7full))*100) + "%";
-    defMasteryDegree.value = ((Number(def1)+Number(def2)+Number(def3))/(Number(def1full)+Number(def2full)+Number(def3full))*100) + "%";
-    hpMasteryDegree.value = ((Number(hp1)+Number(hp2)+Number(hp3)+Number(hp4))/(Number(hp1full)+Number(hp2full)+Number(hp3full)+Number(hp4full))*100) + "%";
+    // atkMasteryDegree.value = ((Number(atk1)+Number(atk2)+Number(atk3)+Number(atk4)+Number(atk5)+Number(atk6)+Number(atk7))/(Number(atk1full)+Number(atk2full)+Number(atk3full)+Number(atk4full)+Number(atk5full)+Number(atk6full)+Number(atk7full))*100) + "%";
+    // defMasteryDegree.value = ((Number(def1)+Number(def2)+Number(def3))/(Number(def1full)+Number(def2full)+Number(def3full))*100) + "%";
+    // hpMasteryDegree.value = ((Number(hp1)+Number(hp2)+Number(hp3)+Number(hp4))/(Number(hp1full)+Number(hp2full)+Number(hp3full)+Number(hp4full))*100) + "%";
+    var atkValueDegree = ((Number(atk1)+Number(atk2)+Number(atk3)+Number(atk4)+Number(atk5)+Number(atk6)+Number(atk7))/(Number(atk1full)+Number(atk2full)+Number(atk3full)+Number(atk4full)+Number(atk5full)+Number(atk6full)+Number(atk7full))*100);
+    var defValueDegree = ((Number(def1)+Number(def2)+Number(def3))/(Number(def1full)+Number(def2full)+Number(def3full))*100);
+    var hpValueDegree = ((Number(hp1)+Number(hp2)+Number(hp3)+Number(hp4))/(Number(hp1full)+Number(hp2full)+Number(hp3full)+Number(hp4full))*100);
+    if (atkValueDegree === 100){
+        atkMasteryDegree.value = atkValueDegree + "%";
+    }else{
+        atkMasteryDegree.value = atkValueDegree.toFixed(1) + "%";
+    }
+    if (defValueDegree === 100){
+        defMasteryDegree.value = defValueDegree + "%";
+    }else{
+        defMasteryDegree.value = defValueDegree.toFixed(1) + "%";
+    }
+    if (hpValueDegree === 100){
+        hpMasteryDegree.value = hpValueDegree + "%";
+    }else{
+        hpMasteryDegree.value = hpValueDegree.toFixed(1) + "%";
+    }
 
     //攻击加成
     const addAtkCharacter = document.getElementById("addAtkCharacter").value;
