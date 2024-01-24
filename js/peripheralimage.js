@@ -9,4 +9,9 @@ peripheralSelectimg.addEventListener('change', function() {
   
   // 根据选择的值更新图像的 src 属性
   image5Element.src = 'image/peripheral/' + selectedValue + '.png';
+
+  // 当备用图片加载失败时，切换到其他备用图片路径
+  image5Element.onerror = function() {
+    image5Element.src = 'image/weapon/其他装备.png';
+  };
 });

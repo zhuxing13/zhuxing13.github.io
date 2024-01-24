@@ -9,6 +9,12 @@ window.onload = function() {
     for (let i = 0; i < inputs.length; i++) {
       inputs[i].value = aTags[i].textContent;
     }
+
+    const add1 = document.getElementById("add1");
+    const seeadd1 = document.getElementById('seeadd1');
+    const isHidden = add1.style.display === 'none';
+    add1.style.display = isHidden ? 'block' : 'none';
+    seeadd1.textContent = isHidden ? '收起图鉴信息' : '查看当前图鉴';
   });
 
   const emptyValuesButton = document.getElementById("emptyValuesButton");
@@ -234,39 +240,48 @@ function moveWeaponSelect() {
 
   var weaponSelect = document.getElementById("WeaponSelect");
   var weapon2Select = document.getElementById("Weapon2Select");
-  var select2 = document.getElementById("select2");
 
-  if (weaponSelect && weaponSelect.firstChild) {
-    // 将WeaponSelect中的select元素移动到select2元素中
-    select2.appendChild(weaponSelect.firstChild);
+  if (weaponSelect && weaponSelect.style) {
+    // 将WeaponSelect内的所有select元素的display设置为none
+    var weaponSelectSelects = weaponSelect.getElementsByTagName("select");
+    for (var i = 0; i < weaponSelectSelects.length; i++) {
+      if (weaponSelectSelects[i].style.display === "block"){
+        weaponSelectSelects[i].style.display = "none";
+        break
+      }
+    }
+    if (selectElement) {
+      // 将选择的武器类型的select元素的display设置为block
+      selectElement.style.display = "block";
+      }
   } else {
-    // selectElement不存在，或者没有firstChild
-    console.log("表格内无主武器(忽略)")
-  }
-  if (weapon2Select && weapon2Select.firstChild) {
-    // 将WeaponSelect中的select元素移动到select2元素中
-    select2.appendChild(weapon2Select.firstChild);
-  } else {
-    // selectElement不存在，或者没有firstChild
-    console.log("表格内无副武器(忽略)")
+    // weaponSelect不存在或没有style属性
+    console.log("表格内无主武器(忽略)");
   }
 
-  if (selectElement) {
-    // 将新的select元素移动到WeaponSelect中
-    weaponSelect.appendChild(selectElement);
+  if (weapon2Select && weapon2Select.style) {
+    // 将Weapon2Select内的所有select元素的display设置为none
+    var weapon2SelectSelects = weapon2Select.getElementsByTagName("select");
+    for (var i = 0; i < weapon2SelectSelects.length; i++) {
+      if (weapon2SelectSelects[i].style.display === "block"){
+        weapon2SelectSelects[i].style.display = "none";
+        break
+      }
+    }
+    if (selectElement2) {
+      // 将选择的武器类型的select元素的display设置为block
+      selectElement2.style.display = "block";
+      }
   } else {
-    console.log("主武器类型不存在（忽略）");
+    // weapon2Select不存在或没有style属性
+    console.log("表格内无副武器(忽略)");
   }
-  if (selectElement2) {
-    // 将新的select元素移动到WeaponSelect中
-    weapon2Select.appendChild(selectElement2);
-  } else {
-    console.log("副武器类型不存在（忽略）");
-  }
+
 
   // 更新selectedWeapon的文本
   document.getElementById("selectedWeapon").textContent = weaponType;
   document.getElementById("selectedWeapon2").textContent = weapon2Type;
+
 }
 
 

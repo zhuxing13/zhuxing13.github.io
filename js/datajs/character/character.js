@@ -2,7 +2,7 @@ const characterAttributes = {
     '未选择角色':{
         roleProperties: '虚',       /* 角色属性 */
         roleOccupation: '战士',     /* 角色职业 */
-        weaponType: '单手剑',       /* 主武器类型 */
+        weaponType: '无',       /* 主武器类型 */
         weapon2Type: '无',          /* 副武器类型 */
         crit: 0,                    /* 满破自带暴击 */
         addAtk: 0,                  /* 满破攻击觉醒 */
@@ -20,7 +20,7 @@ const characterAttributes = {
     '选择角色':{
         roleProperties: '虚',       /* 角色属性 */
         roleOccupation: '战士',     /* 角色职业 */
-        weaponType: '单手剑',       /* 主武器类型 */
+        weaponType: '无',       /* 主武器类型 */
         weapon2Type: '无',          /* 副武器类型 */
         crit: 0,                    /* 满破自带暴击 */
         addAtk: 0,                  /* 满破攻击觉醒 */

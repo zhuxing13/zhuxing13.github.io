@@ -16,42 +16,31 @@ seeadd2.addEventListener('click', function() {
   seeadd2.textContent = isHidden ? '收起守护者基地' : '查看守护者基地';
 });
 
-const seeCharacterAttributes = document.getElementById('seeCharacterAttributes');
-const CharacterAttributes = document.getElementById('CharacterAttributes');
-seeCharacterAttributes.addEventListener('click', function() {
-  const isHidden = CharacterAttributes.style.display === 'none';
-  CharacterAttributes.style.display = isHidden ? 'block' : 'none';
-  seeCharacterAttributes.textContent = isHidden ? '收起角色属性' : '查看角色属性';
-});
+const attributeSections = [
+  { buttonId: 'seeCharacterAttributes', sectionId: 'CharacterAttributes', buttonText: '角色属性' },
+  { buttonId: 'seeWeaponAttributes', sectionId: 'WeaponAttributes', buttonText: '主武器属性' },
+  { buttonId: 'seeWeapon2Attributes', sectionId: 'Weapon2Attributes', buttonText: '副武器属性' },
+  { buttonId: 'seeJewelryAttributes', sectionId: 'JewelryAttributes', buttonText: '饰品属性' },
+  { buttonId: 'seeOthersAttributes', sectionId: 'OthersAttributes', buttonText: '杂项属性' }
+];
 
-const seeWeaponAttributes = document.getElementById('seeWeaponAttributes');
-const WeaponAttributes = document.getElementById('WeaponAttributes');
-seeWeaponAttributes.addEventListener('click', function() {
-  const isHidden = WeaponAttributes.style.display === 'none';
-  WeaponAttributes.style.display = isHidden ? 'block' : 'none';
-  seeWeaponAttributes.textContent = isHidden ? '收起主武器属性' : '查看主武器属性';
-});
+attributeSections.forEach(section => {
+  const button = document.getElementById(section.buttonId);
+  const sectionElement = document.getElementById(section.sectionId);
 
-const seeWeapon2Attributes = document.getElementById('seeWeapon2Attributes');
-const Weapon2Attributes = document.getElementById('Weapon2Attributes');
-seeWeapon2Attributes.addEventListener('click', function() {
-  const isHidden = Weapon2Attributes.style.display === 'none';
-  Weapon2Attributes.style.display = isHidden ? 'block' : 'none';
-  seeWeapon2Attributes.textContent = isHidden ? '收起副武器属性' : '查看副武器属性';
-});
+  button.addEventListener('click', function() {
+    const isHidden = sectionElement.style.display === 'none';
 
-const seeJewelryAttributes = document.getElementById('seeJewelryAttributes');
-const JewelryAttributes = document.getElementById('JewelryAttributes');
-seeJewelryAttributes.addEventListener('click', function() {
-  const isHidden = JewelryAttributes.style.display === 'none';
-  JewelryAttributes.style.display = isHidden ? 'block' : 'none';
-  seeJewelryAttributes.textContent = isHidden ? '收起饰品属性' : '查看饰品属性';
-});
+    attributeSections.forEach(otherSection => {
+      if (otherSection.sectionId !== section.sectionId) {
+        const otherSectionElement = document.getElementById(otherSection.sectionId);
+        otherSectionElement.style.display = 'none';
+        const otherButton = document.getElementById(otherSection.buttonId);
+        otherButton.textContent = '查看' + otherSection.buttonText;
+      }
+    });
 
-const seeOthersAttributes = document.getElementById('seeOthersAttributes');
-const OthersAttributes = document.getElementById('OthersAttributes');
-seeOthersAttributes.addEventListener('click', function() {
-  const isHidden = OthersAttributes.style.display === 'none';
-  OthersAttributes.style.display = isHidden ? 'block' : 'none';
-  seeOthersAttributes.textContent = isHidden ? '收起杂项属性' : '查看杂项属性';
+    sectionElement.style.display = isHidden ? 'block' : 'none';
+    button.textContent = isHidden ? '收起' + section.buttonText : '查看' + section.buttonText;
+  });
 });

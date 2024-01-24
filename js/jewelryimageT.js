@@ -22,4 +22,9 @@ jewelrySelectimg.addEventListener('change', function() {
 
   // 加载图片
   image.src = imageUrl;
+
+  // 当备用图片加载失败时，切换到其他备用图片路径
+  image4Element.onerror = function() {
+    image4Element.src = 'image/weapon/其他装备.png';
+  };
 });

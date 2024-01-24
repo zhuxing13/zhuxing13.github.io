@@ -270,6 +270,42 @@ characterAttributes['维涅特'] = {
     skill: 0,           
     cdSkill: 0,
 };
+characterAttributes['瘟疫医生∧姐姐模板'] = {
+    roleProperties: '暗',      
+    roleOccupation: '战士',    
+    weaponType: '权杖',      
+    weapon2Type: '无',  
+    crit: 0,            
+    addAtk: 63,          
+    addDef: 42,          
+    addHP: 44,           
+    addHeal: 0,         
+    reduceDamage: 0,    
+    basicAtk: 143,        
+    basicDef: 30,        
+    basicHP: 1184,         
+    basicHeal: 0,       
+    skill: 0,           
+    cdSkill: 2, 
+};
+characterAttributes['瘟疫医生∧白虎模板'] = {
+    roleProperties: '暗',      
+    roleOccupation: '战士',    
+    weaponType: '权杖',      
+    weapon2Type: '无',  
+    crit: 5,            
+    addAtk: 54,          
+    addDef: 42,          
+    addHP: 39,           
+    addHeal: 0,         
+    reduceDamage: 14,    
+    basicAtk: 151,        
+    basicDef: 35,        
+    basicHP: 1078,         
+    basicHeal: 0,       
+    skill: 8,           
+    cdSkill: 0,
+};
 // characterAttributes['？？？']
 // characterAttributes['？？？']
 characterAttributes['杰洛士'] = {

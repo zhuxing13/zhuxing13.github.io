@@ -129,9 +129,13 @@ const selectElement = document.getElementById('charSelect');
 const imageElement = document.querySelector('#imageContainer img');
 
 selectElement.addEventListener('change', function() {
-const selectedValue = selectElement.value;
-const imagemapname = characterAttributes[selectedValue].map
-// imageElement.src = 'https://t2.ww2.ren/img/ava/'+imagemapname+'.png?imageMogr2/thumbnail/128x';
-imageElement.src = 'https://t2.ww2.ren/img/ava/'+imagemapname+'.png';
+    const selectedValue = selectElement.value;
+    const imagemapname = characterAttributes[selectedValue].map
 
+    imageElement.src = 'https://t2.ww2.ren/img/ava/'+imagemapname+'.png';
+
+    // 当备用图片加载失败时，切换到其他备用图片路径
+    imageElement.onerror = function() {
+        imageElement.src = 'image/character/选择角色.png';
+    };
 });

@@ -9,26 +9,23 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/range.css">
     <link rel="stylesheet" type="text/css" href="css/guardianBase.css">
-    <!-- <style>
-        body{
-            background-image: url('image/logo_black.png'); 
-            background-size: cover; 
-            background-repeat: no-repeat; 
-        }
-    </style> -->
+    <link rel="stylesheet" type="text/css" href="css/allAttributes.css">
 </head>
 <body style="overflow-y: scroll;background-color: #eee;">
     <h1 align="center">坎公面板计算器</h1>
-    <h4 align="center">作者：逐星亦逐心</h4>
-    <h4 align="center">维护日期:24/1/23</h4>     
-    <h4 align="center">图鉴数据：国服千日版本  角色数据：韩服安吉版本</h4>     
+    <div style="width: 100%; text-align: center; display: flex;align-items: center;justify-content: center;">
+        <a align="center" style="font-weight: bold;font-size: 18px;">作者：</a>
+        <img src="image/logo_black.png" class="logo">
+    </div>
+    <h4 align="center" style="margin: 4px;">维护日期:24/1/25</h4>     
+    <h4 align="center" style="margin-top: 4px;">图鉴数据:国服千日版本  角色数据:韩服凯登预告版本</h4>     
 
-    <button class="button1" id="seeadd1">收起图鉴信息</button>
+    <button class="button1" id="seeadd1">查看图鉴信息</button>
     <button class="button1" id="seeadd2">查看守护者基地</button>
     <div> 
 
-        <!-- <div id="add1" style="display: none;" class="allBonuses"> -->
-        <div id="add1" class="allBonuses">
+        <div id="add1" style="display: none;" class="allBonuses">
+        <!-- <div id="add1" class="allBonuses"> -->
             <table>
                 <tbody>
                     <tr>
@@ -39,9 +36,9 @@
                         </td>
                     </tr>
                     <tr><td align="center"><b>加成种类</b></td>
-                        <td align="center"><b>攻击加成</b></td>
-                        <td align="center"><b>防御加成</b></td>
-                        <td align="center"><b>生命加成</b></td>
+                        <td align="center"><b>攻击加成(%)</b></td>
+                        <td align="center"><b>防御加成(%)</b></td>
+                        <td align="center"><b>生命加成(%)</b></td>
                     </tr>
                     <tr><td class="bonusText" align="center"><a>角色收集图鉴</a></td>
                         <td><input type="number" min="0" max="55.0" id="atk1" value="55.0">/<a id="atk1full" data-atlas>55.0</a></td>
@@ -85,7 +82,7 @@
             <table>
                 <tbody>
                     <tr>
-                        <td colspan="2" align="center"><b>守护者基地加成</b></td>
+                        <td colspan="2" align="center"><b>守护者基地加成(%)</b></td>
                     </tr>
                     <tr>
                         <td><b>攻击加成</b></td>
@@ -209,6 +206,8 @@
                                 <option data-occupation="辅助" data-properties="暗" value='克罗赛尔'>克罗赛尔</option>
                                 <option data-occupation="战士" data-properties="暗" value='堇'>堇</option>
                                 <option data-occupation="射手" data-properties="暗" value='第1军团军长'>第1军团军长</option>
+                                <option data-occupation="战士" data-properties="暗" value='瘟疫医生∧姐姐模板'>瘟疫医生∧姐姐模板</option>
+                                <option data-occupation="战士" data-properties="暗" value='瘟疫医生∧白虎模板'>瘟疫医生∧白虎模板</option>
                                 <option data-occupation="辅助" data-properties="暗" value='维涅特'>维涅特</option>
                                 <option data-occupation="辅助" data-properties="暗" value='杰洛士'>杰洛士</option>
                                 <option data-occupation="辅助" data-properties="暗" value='卡瑞娜∧二星'>卡瑞娜∧二星</option>
@@ -307,24 +306,210 @@
                               <img src="image/character/选择角色.png" alt="选择角色图像" class="charaimage">
                             </div>                          
                           </td>
-                        <td class="rectangle3"><button class="button2" id="seeCharacterAttributes">查看角色信息</button></td>
+                        <td class="rectangle3"><button class="button2" id="seeCharacterAttributes">查看角色属性</button></td>
 
                     </tr>
                     <tr>
                         <td><label for="selectedWeapon">主武器：</label></td>
 
-                        <td id="WeaponSelect" class="rectangle1"></td>
+                        <td id="WeaponSelect" class="rectangle1">
+
+                            <select id="oneSelect" class="weapon1" style="display: none;">
+                                <option value="未装备">未装备</option>
+                                <option value="无邪">无邪</option>
+                                <option value="阿尔马达">阿尔马达</option>
+                                <option value="方阵刹那">方阵刹那</option>
+                                <option value="红莲">红莲</option>
+                                <option value="巴鲁蒙格">巴鲁蒙格</option>
+                                <option value="小星星">小星星</option>
+                                <option value="天衣无缝">天衣无缝</option>
+                                <option value="阿耳戈斯">阿耳戈斯</option>
+                                <option value="光环">光环</option>
+                                <option value="杜兰尔德">杜兰尔德</option>
+                                <option value="帕拉苏">帕拉苏</option>
+                                <option value="爱娜温">爱娜温</option>
+                                <option value="米可（专）">米可（专）</option>
+                                <option value="安吉（专）">安吉（专）</option>
+                                <option value="达伊之剑">达伊之剑</option>
+                                <option value="村雨">村雨</option>
+                                <option value="利贝拉">利贝拉</option>
+                                <option value="沉默">沉默</option>
+                                <option value="真理">真理</option>
+                                <option value="莉耶（专）">莉耶（专）</option>
+                            </select>
+
+                            <select id="twoSelect" class="weapon1" style="display: none;">
+                                <option value="未装备">未装备</option>
+                                <option value="普洛米诺斯">普洛米诺斯</option>
+                                <option value="勇者之心">勇者之心</option>
+                                <option value="阿施塔特">阿施塔特</option>
+                                <option value="猎食者">猎食者</option>
+                                <option value="涅瑞伊得斯">涅瑞伊得斯</option>
+                                <option value="海洋守护者">海洋守护者</option>
+                                <option value="原子毁灭者">原子毁灭者</option>
+                                <option value="辐光">辐光</option>
+                                <option value="梦魇">梦魇</option>
+                                <option value="皇家沙铲">皇家沙铲</option>
+                                <option value="光之剑">光之剑</option>
+                                <option value="盖米诺斯">盖米诺斯</option>
+                                <option value="塔尔塔洛斯">塔尔塔洛斯</option>
+                                <option value="法夫尼尔">法夫尼尔</option>
+                            </select>
+
+                            <select id="rifleSelect" class="weapon1" style="display: none;">
+                                <option value="未装备">未装备</option>
+                                <option value="无边绝望">无边绝望</option>
+                                <option value="终结者">终结者</option>
+                                <option value="宇宙毁灭者">宇宙毁灭者</option>
+                                <option value="欧米伽冲锋枪">欧米伽冲锋枪</option>
+                                <option value="反抗">反抗</option>
+                                <option value="涅墨西斯">涅墨西斯</option>
+                                <option value="湛蓝鱼矛">湛蓝鱼矛</option>
+                                <option value="R模式·方阵刹那">R模式·方阵刹那</option>
+                                <option value="黑曼巴">黑曼巴</option>
+                                <option value="蜜獾手枪">蜜獾手枪</option>
+                                <option value="纳米粒子加速器">纳米粒子加速器</option>
+                                <option value="捣蛋鬼">捣蛋鬼</option>
+                                <option value="无情">无情</option>
+                                <option value="蓝玫瑰">蓝玫瑰</option>
+                                <option value="神奇激光风暴">神奇激光风暴</option>
+                                <option value="协商者">协商者</option>
+                            </select>
+
+                            <select id="scepterSelect" class="weapon1" style="display: none;">
+                                <option value="未装备">未装备</option>
+                                <option value="天使之音">天使之音</option>
+                                <option value="亚马洛克">亚马洛克</option>
+                                <option value="解放者">解放者</option>
+                                <option value="弥赛亚">弥赛亚</option>
+                                <option value="幻想曲">幻想曲</option>
+                                <option value="年丰时稔">年丰时稔</option>
+                                <option value="爱之深">爱之深</option>
+                                <option value="冲破禁锢">冲破禁锢</option>
+                                <option value="猎头者">猎头者</option>
+                                <option value="菲尔诺特">菲尔诺特</option>
+                                <option value="瘟疫医生（专）">瘟疫医生（专）</option>
+                                <option value="杰洛士权杖">杰洛士权杖</option>
+                                <option value="漆黑法杖">漆黑法杖</option>
+                                <option value="女巫之心">女巫之心</option>
+                                <option value="峨眉月">峨眉月</option>
+                                <option value="正义">正义</option>
+                                <option value="赫利俄斯">赫利俄斯</option>
+                                <option value="逆鳞">逆鳞</option>
+                            </select>
+
+                            <select id="basketSelect" class="weapon1" style="display: none;">
+                                <option value="未装备">未装备</option>
+                                <option value="梅丽尔">梅丽尔</option>
+                                <option value="仙玉">仙玉</option>
+                                <option value="花鸟风月">花鸟风月</option>
+                                <option value="紫魄">紫魄</option>
+                                <option value="赞美诗">赞美诗</option>
+                                <option value="日食">日食</option>
+                                <option value="万波息笔">万波息笔</option>
+                                <option value="海之呼唤">海之呼唤</option>
+                                <option value="仙山拳秘籍">仙山拳秘籍</option>
+                                <option value="镜花水月">镜花水月</option>
+                                <option value="海洋之泪">海洋之泪</option>
+                                <option value="千变万化">千变万化</option>
+                                <option value="芭莉二专">芭莉二专</option>
+                                <option value="艾玛">艾玛</option>
+                                <option value="杰克·弗罗斯特">杰克·弗罗斯特</option>
+                                <option value="好奇心终结者">好奇心终结者</option>
+                            </select>
+
+                            <select id="archSelect" class="weapon1" style="display: none;">
+                                <option value="未装备">未装备</option>
+                                <option value="沙兰加神弓">沙兰加神弓</option>
+                                <option value="千雷弓">千雷弓</option>
+                                <option value="圣母颂">圣母颂</option>
+                                <option value="拜蒙碎片Ⅲ">拜蒙碎片Ⅲ</option>
+                                <option value="偷袭者">偷袭者</option>
+                                <option value="奥伯伦">奥伯伦</option>
+                                <option value="利贝拉B型">利贝拉B型</option>
+                            </select>
+
+                            <select id="gloveSelect" class="weapon1" style="display: none;">
+                                <option value="未装备">未装备</option>
+                                <option value="明镜止水">明镜止水</option>
+                                <option value="山神">山神</option>
+                                <option value="伊芙利特">伊芙利特</option>
+                                <option value="办公用品">办公用品</option>
+                                <option value="暮色">暮色</option>
+                                <option value="火山核心">火山核心</option>
+                                <option value="威名显赫">威名显赫</option>
+                                <option value="拒绝访问">拒绝访问</option>
+                                <option value="行星破坏者">行星破坏者</option>
+                                <option value="造雪机">造雪机</option>
+                                <option value="炼火拳套">炼火拳套</option>
+                                <option value="魔血玉">魔血玉</option>
+                                <option value="魔甲拳">魔甲拳</option>
+                                <option value="乌尔坎">乌尔坎</option>
+                                <option value="拳士的自尊">拳士的自尊</option>
+                                <option value="粉碎者">粉碎者</option>
+                            </select>
+
+                            <select id="clawSelect" class="weapon1" style="display: none;">
+                                <option value="未装备">未装备</option>
+                                <option value="火山犄角">火山犄角</option>
+                                <option value="索拉里斯">索拉里斯</option>
+                                <option value="女王的优雅">女王的优雅</option>
+                                <option value="影丸">影丸</option>
+                                <option value="龙牙">龙牙</option>
+                                <option value="奥迪尔（专）">奥迪尔（专）</option>
+                                <option value="坚定的决议">坚定的决议</option>
+                                <option value="芬里尔">芬里尔</option>
+                            </select>
+
+                        </td>
                         <td class="rectangle2">
                             <div id="imageContainer2">
                                 <img src="image/weapon/未装备.png" alt="选择主武器图像" class="weaponimage">
                             </div>
                         </td>
-                        <td class="rectangle3"><button class="button2" id="seeWeaponAttributes">查看主武器信息</button></td>
+                        <td class="rectangle3"><button class="button2" id="seeWeaponAttributes">查看主武器属性</button></td>
                     </tr>
                     <tr>
                         <td><label for="selectedWeapon2">副武器：</label></td>
 
-                        <td id="Weapon2Select" class="rectangle1"></td>
+                        <td id="Weapon2Select" class="rectangle1">
+
+                            <select id="shieldSelect" class="weapon2" style="display: none;">
+                                <option value='未装备'>未装备</option>
+                                <option value='军长魔镜盾牌'>军长魔镜盾牌</option>
+                                <option value='保护之盾'>保护之盾</option>
+                                <option value='审判者之盾'>审判者之盾</option>
+                                <option value='牛头人之盾'>牛头人之盾</option>
+                                <option value='哥布林族长盾牌'>哥布林族长盾牌</option>
+                                <option value='前进之盾'>前进之盾</option>
+                                <option value='狮心之盾'>狮心之盾</option>
+                                <option value='艾芙芭的微笑∧生命'>艾芙芭的微笑∧生命</option>
+                                <option value='艾芙芭的微笑∧击杀'>艾芙芭的微笑∧击杀</option>
+                                <option value='刀刃之盾'>刀刃之盾</option>
+                                <option value='镜盾'>镜盾</option>
+                            </select>
+
+                            <select id="rifle2Select" class="weapon2" style="display: none;">
+                                <option value="未装备">未装备</option>
+                                <option value="无边绝望">无边绝望</option>
+                                <option value="终结者">终结者</option>
+                                <option value="宇宙毁灭者">宇宙毁灭者</option>
+                                <option value="欧米伽冲锋枪">欧米伽冲锋枪</option>
+                                <option value="反抗">反抗</option>
+                                <option value="涅墨西斯">涅墨西斯</option>
+                                <option value="湛蓝鱼矛">湛蓝鱼矛</option>
+                                <option value="R模式·方阵刹那">R模式·方阵刹那</option>
+                                <option value="黑曼巴">黑曼巴</option>
+                                <option value="蜜獾手枪">蜜獾手枪</option>
+                                <option value="纳米粒子加速器">纳米粒子加速器</option>
+                                <option value="捣蛋鬼">捣蛋鬼</option>
+                                <option value="无情">无情</option>
+                                <option value="蓝玫瑰">蓝玫瑰</option>
+                                <option value="神奇激光风暴">神奇激光风暴</option>
+                                <option value="协商者">协商者</option>
+                            </select>
+
+                        </td>
                         <td class="rectangle2">
                             <div id="imageContainer2">
                                 <img src="image/weapon/未装备.png" alt="选择副武器" class="weapon2image">
@@ -490,10 +675,18 @@
                         </td>
                     </tr>
                     <tr style="display: none;">
-                        <td><span id="selectedCharacter">选择角色</span></td>
-                        <td><span id="selectedWeapon">未装备</span></td>
-                        <td><span id="selectedWeapon2">未装备</span></td>
-                        <td><span id="selectedJewelry">未装备</span></td>
+                        <td></td>
+
+
+
+                        <td><input type="text" id="weaponType" value="无" readonly></td>
+                        <td><input type="text" id="weapon2Type" value="无" readonly></td>
+
+
+
+
+
+
                     </tr>
                 </tbody>
                 <tbody class="mianbanValue">
@@ -501,7 +694,7 @@
                         <td>秒伤</td>
                         <td><input type="text" id="dpsGetCrit" value="0" readonly class="mianbantext"></td>
                         <td class="mianban2">
-                            <img src="image/character/选择角色.png" alt="选择角色图像" class="mianban2ima" id="mianbanimg1">  
+                            <img src="image/character/选择角色.png" alt="角色" class="mianban2ima" id="mianbanimg1">  
                         </td>
                         <td></td>
                         <td style="text-align: center;">
@@ -513,10 +706,10 @@
                         <td>韧性</td>
                         <td><input type="text" id="toughness" value="0" readonly class="mianbantext"></td>
                         <td class="mianban2">
-                            <img src="image/weapon/未装备.png" alt="选择主武器图像" class="mianban2ima" id="mianbanimg2">
+                            <img src="image/weapon/未装备.png" alt="主武器" class="mianban2ima" id="mianbanimg2">
                         </td>
                         <td class="mianban2">
-                            <img src="image/weapon/未装备.png" alt="选择副武器" class="mianban2ima" id="mianbanimg3">
+                            <img src="image/weapon/未装备.png" alt="副武器" class="mianban2ima" id="mianbanimg3">
                         </td>
                         <td style="text-align: center;">
                             <span>防御练度</span>
@@ -527,10 +720,10 @@
                         <td>回血值</td>
                         <td><input type="text" id="healGet" value="0" readonly class="mianbantext"></td>
                         <td class="mianban2">
-                            <img src="image/jewelry/未装备.png" alt="选择饰品" class="mianban2ima" id="mianbanimg4">
+                            <img src="image/jewelry/未装备.png" alt="饰品" class="mianban2ima" id="mianbanimg4">
                         </td>
                         <td class="mianban2">
-                            <img src="image/peripheral/未装备.png" alt="选择周边" class="mianban2ima" id="mianbanimg5">
+                            <img src="image/peripheral/未装备.png" alt="周边" class="mianban2ima" id="mianbanimg5">
                         </td>
                         <td style="text-align: center;">
                             <span>生命练度</span>
@@ -588,443 +781,249 @@
 
     </div>
 
-    <div>
-        <div id="CharacterAttributes" style="display: none;"> 
-            
-            <br>
-            <label for="levelInput">角色等级：</label>
-            <span id="levelValue">95</span>
-            <br>
-            <input type="range" id="levelInput" name="levelselect" min="1" max="110" step="1" value="95">
-            <br>
-
-            <label for="basicAtkCharacter">角色攻击白值：</label>
-            <input type="text" id="basicAtkCharacter" value="未选择角色" readonly>
-            <br>
-            <label for="basicDefCharacter">角色防御白值：</label>
-            <input type="text" id="basicDefCharacter" value="未选择角色" readonly>
-            <br>
-            <label for="basicHPCharacter">角色生命白值：</label>
-            <input type="text" id="basicHPCharacter" value="未选择角色" readonly>
-            <br>
-            <label for="basicHealCharacter">角色回血白值：</label>
-            <input type="text" id="basicHealCharacter" value="未选择角色" readonly>
-            <br>
-            <label for="critCharacter">角色暴击觉醒：</label>
-            <input type="text" id="critCharacter" value="未选择角色" readonly>
-            <br>
-            <label for="addAtkCharacter">角色攻击觉醒：</label>
-            <input type="text" id="addAtkCharacter" value="未选择角色" readonly>
-            <br>
-            <label for="addDefCharacter">角色防御觉醒：</label>
-            <input type="text" id="addDefCharacter" value="未选择角色" readonly>
-            <br>
-            <label for="addHPCharacter">角色生命觉醒：</label>
-            <input type="text" id="addHPCharacter" value="未选择角色" readonly>
-            <br>
-            <label for="addHealCharacter">角色回血值觉醒：</label>
-            <input type="text" id="addHealCharacter" value="未选择角色" readonly>
-        </div>
-
-        <div id="select2" style="display: none;">
+    <div class="allAttributes">
+        <div id="CharacterAttributes" style="display: none;" class="CharacterAttributes"> 
             <table>
                 <tr>
-                    <td><label for="weaponType">角色主武器类型：</label></td>
-                    <td><input type="text" id="weaponType" value="未选择角色" readonly></td>
-                </tr>
-                <tr><td><label for="oneSelect">单手剑选择</label></td>
-                    <td>
-                        <select id="oneSelect" class="weapon1">
-                            <option value="未装备">未装备</option>
-                            <option value="无邪">无邪</option>
-                            <option value="阿尔马达">阿尔马达</option>
-                            <option value="方阵刹那">方阵刹那</option>
-                            <option value="红莲">红莲</option>
-                            <option value="巴鲁蒙格">巴鲁蒙格</option>
-                            <option value="小星星">小星星</option>
-                            <option value="天衣无缝">天衣无缝</option>
-                            <option value="阿耳戈斯">阿耳戈斯</option>
-                            <option value="光环">光环</option>
-                            <option value="杜兰尔德">杜兰尔德</option>
-                            <option value="帕拉苏">帕拉苏</option>
-                            <option value="爱娜温">爱娜温</option>
-                            <option value="米可（专）">米可（专）</option>
-                            <option value="安吉（专）">安吉（专）</option>
-                            <option value="达伊之剑">达伊之剑</option>
-                            <option value="村雨">村雨</option>
-                            <option value="利贝拉">利贝拉</option>
-                            <option value="沉默">沉默</option>
-                            <option value="真理">真理</option>
-                            <option value="莉耶（专）">莉耶（专）</option>
-                        </select>
-                    </td>
-                    <td><label for="twoSelect">双手剑选择</label></td>
-                    <td>
-                        <select id="twoSelect" class="weapon1">
-                            <option value="未装备">未装备</option>
-                            <option value="普洛米诺斯">普洛米诺斯</option>
-                            <option value="勇者之心">勇者之心</option>
-                            <option value="阿施塔特">阿施塔特</option>
-                            <option value="猎食者">猎食者</option>
-                            <option value="涅瑞伊得斯">涅瑞伊得斯</option>
-                            <option value="海洋守护者">海洋守护者</option>
-                            <option value="原子毁灭者">原子毁灭者</option>
-                            <option value="辐光">辐光</option>
-                            <option value="梦魇">梦魇</option>
-                            <option value="皇家沙铲">皇家沙铲</option>
-                            <option value="光之剑">光之剑</option>
-                            <option value="盖米诺斯">盖米诺斯</option>
-                            <option value="塔尔塔洛斯">塔尔塔洛斯</option>
-                            <option value="法夫尼尔">法夫尼尔</option>
-                        </select>
-                    </td>
+                    <td colspan="2"><span id="selectedCharacter">选择角色</span></td>
                 </tr>
                 <tr>
-                    <td><label for="rifleSelect">步枪选择</label></td>
-                    <td>
-                        <select id="rifleSelect" class="weapon1">
-                            <option value="未装备">未装备</option>
-                            <option value="无边绝望">无边绝望</option>
-                            <option value="终结者">终结者</option>
-                            <option value="宇宙毁灭者">宇宙毁灭者</option>
-                            <option value="欧米伽冲锋枪">欧米伽冲锋枪</option>
-                            <option value="反抗">反抗</option>
-                            <option value="涅墨西斯">涅墨西斯</option>
-                            <option value="湛蓝鱼矛">湛蓝鱼矛</option>
-                            <option value="R模式·方阵刹那">R模式·方阵刹那</option>
-                            <option value="黑曼巴">黑曼巴</option>
-                            <option value="蜜獾手枪">蜜獾手枪</option>
-                            <option value="纳米粒子加速器">纳米粒子加速器</option>
-                            <option value="捣蛋鬼">捣蛋鬼</option>
-                            <option value="无情">无情</option>
-                            <option value="蓝玫瑰">蓝玫瑰</option>
-                            <option value="神奇激光风暴">神奇激光风暴</option>
-                            <option value="协商者">协商者</option>
-                        </select>
-                    </td>
-                    <td><label for="scepterSelect">权杖选择</label></td>
-                    <td>
-                        <select id="scepterSelect" class="weapon1">
-                            <option value="未装备">未装备</option>
-                            <option value="天使之音">天使之音</option>
-                            <option value="亚马洛克">亚马洛克</option>
-                            <option value="解放者">解放者</option>
-                            <option value="弥赛亚">弥赛亚</option>
-                            <option value="幻想曲">幻想曲</option>
-                            <option value="年丰时稔">年丰时稔</option>
-                            <option value="爱之深">爱之深</option>
-                            <option value="冲破禁锢">冲破禁锢</option>
-                            <option value="猎头者">猎头者</option>
-                            <option value="菲尔诺特">菲尔诺特</option>
-                            <option value="杰洛士权杖">杰洛士权杖</option>
-                            <option value="漆黑法杖">漆黑法杖</option>
-                            <option value="女巫之心">女巫之心</option>
-                            <option value="峨眉月">峨眉月</option>
-                            <option value="正义">正义</option>
-                            <option value="赫利俄斯">赫利俄斯</option>
-                            <option value="逆鳞">逆鳞</option>
-                        </select>
-                    </td>
+                    <td><label for="levelInput">角色等级：</label></td>
+                    <td><span id="levelValue">95</span></td>
                 </tr>
                 <tr>
-                    <td><label for="basketSelect">篮子选择</label></td>
-                    <td>
-                        <select id="basketSelect" class="weapon1">
-                            <option value="未装备">未装备</option>
-                            <option value="梅丽尔">梅丽尔</option>
-                            <option value="仙玉">仙玉</option>
-                            <option value="花鸟风月">花鸟风月</option>
-                            <option value="紫魄">紫魄</option>
-                            <option value="赞美诗">赞美诗</option>
-                            <option value="日食">日食</option>
-                            <option value="万波息笔">万波息笔</option>
-                            <option value="海之呼唤">海之呼唤</option>
-                            <option value="仙山拳秘籍">仙山拳秘籍</option>
-                            <option value="镜花水月">镜花水月</option>
-                            <option value="海洋之泪">海洋之泪</option>
-                            <option value="千变万化">千变万化</option>
-                            <option value="芭莉二专">芭莉二专</option>
-                            <option value="艾玛">艾玛</option>
-                            <option value="杰克·弗罗斯特">杰克·弗罗斯特</option>
-                            <option value="好奇心终结者">好奇心终结者</option>
-                        </select>
-                    </td>
-                    <td><label for="archSelect">弓选择</label></td>
-                    <td>
-                        <select id="archSelect" class="weapon1">
-                            <option value="未装备">未装备</option>
-                            <option value="沙兰加神弓">沙兰加神弓</option>
-                            <option value="千雷弓">千雷弓</option>
-                            <option value="圣母颂">圣母颂</option>
-                            <option value="拜蒙碎片Ⅲ">拜蒙碎片Ⅲ</option>
-                            <option value="偷袭者">偷袭者</option>
-                            <option value="奥伯伦">奥伯伦</option>
-                            <option value="利贝拉B型">利贝拉B型</option>
-                        </select>
-                    </td>
+                    <td colspan="2"><input type="range" id="levelInput" name="levelselect" min="1" max="110" step="1" value="95" class="rangeAttributes"></td>
                 </tr>
                 <tr>
-                    <td><label for="gloveSelect">手套选择</label></td>
-                    <td>
-                        <select id="gloveSelect" class="weapon1">
-                            <option value="未装备">未装备</option>
-                            <option value="明镜止水">明镜止水</option>
-                            <option value="山神">山神</option>
-                            <option value="伊芙利特">伊芙利特</option>
-                            <option value="办公用品">办公用品</option>
-                            <option value="暮色">暮色</option>
-                            <option value="火山核心">火山核心</option>
-                            <option value="威名显赫">威名显赫</option>
-                            <option value="拒绝访问">拒绝访问</option>
-                            <option value="行星破坏者">行星破坏者</option>
-                            <option value="造雪机">造雪机</option>
-                            <option value="炼火拳套">炼火拳套</option>
-                            <option value="魔血玉">魔血玉</option>
-                            <option value="魔甲拳">魔甲拳</option>
-                            <option value="乌尔坎">乌尔坎</option>
-                            <option value="拳士的自尊">拳士的自尊</option>
-                            <option value="粉碎者">粉碎者</option>
-                        </select>
-                    </td>
-                    <td><label for="clawSelect">爪选择</label></td>
-                    <td>
-                        <select id="clawSelect" class="weapon1">
-                            <option value="未装备">未装备</option>
-                            <option value="火山犄角">火山犄角</option>
-                            <option value="索拉里斯">索拉里斯</option>
-                            <option value="女王的优雅">女王的优雅</option>
-                            <option value="影丸">影丸</option>
-                            <option value="龙牙">龙牙</option>
-                            <option value="奥迪尔（专）">奥迪尔（专）</option>
-                            <option value="坚定的决议">坚定的决议</option>
-                            <option value="芬里尔">芬里尔</option>
-                        </select>
-                    </td>
+                    <td><label for="basicAtkCharacter">攻击白值：</label></td>
+                    <td><input type="text" id="basicAtkCharacter" value="未选择角色" readonly></td>
                 </tr>
                 <tr>
-                    <td colspan="2">副武器选择</td>
-                    <td><label for="weapon2Type">角色副武器类型：</label></td>
-                    <td><input type="text" id="weapon2Type" value="无" readonly></td>
+                    <td><label for="basicDefCharacter">防御白值：</label></td>
+                    <td><input type="text" id="basicDefCharacter" value="未选择角色" readonly></td>
                 </tr>
                 <tr>
-                    <td><label for="shieldSelect">盾牌选择</label></td>
-                    <td>
-                        <select id="shieldSelect" class="weapon2">
-                            <option value='未装备'>未装备</option>
-                            <option value='军长魔镜盾牌'>军长魔镜盾牌</option>
-                            <option value='保护之盾'>保护之盾</option>
-                            <option value='审判者之盾'>审判者之盾</option>
-                            <option value='牛头人之盾'>牛头人之盾</option>
-                            <option value='哥布林族长盾牌'>哥布林族长盾牌</option>
-                            <option value='前进之盾'>前进之盾</option>
-                            <option value='狮心之盾'>狮心之盾</option>
-                            <option value='艾芙芭的微笑∧生命'>艾芙芭的微笑∧生命</option>
-                            <option value='艾芙芭的微笑∧击杀'>艾芙芭的微笑∧击杀</option>
-                            <option value='刀刃之盾'>刀刃之盾</option>
-                            <option value='镜盾'>镜盾</option>
-                        </select>
-                    </td>
-                    <td><label for="rifle2Select">步枪选择</label></td>
-                    <td>
-                        <select id="rifle2Select" class="weapon2">
-                            <option value="未装备">未装备</option>
-                            <option value="无边绝望">无边绝望</option>
-                            <option value="终结者">终结者</option>
-                            <option value="宇宙毁灭者">宇宙毁灭者</option>
-                            <option value="欧米伽冲锋枪">欧米伽冲锋枪</option>
-                            <option value="反抗">反抗</option>
-                            <option value="涅墨西斯">涅墨西斯</option>
-                            <option value="湛蓝鱼矛">湛蓝鱼矛</option>
-                            <option value="R模式·方阵刹那">R模式·方阵刹那</option>
-                            <option value="黑曼巴">黑曼巴</option>
-                            <option value="蜜獾手枪">蜜獾手枪</option>
-                            <option value="纳米粒子加速器">纳米粒子加速器</option>
-                            <option value="捣蛋鬼">捣蛋鬼</option>
-                            <option value="无情">无情</option>
-                            <option value="蓝玫瑰">蓝玫瑰</option>
-                            <option value="神奇激光风暴">神奇激光风暴</option>
-                            <option value="协商者">协商者</option>
-                        </select>
-                    </td>
+                    <td><label for="basicHPCharacter">生命白值：</label></td>
+                    <td><input type="text" id="basicHPCharacter" value="未选择角色" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="basicHealCharacter">回血白值：</label></td>
+                    <td><input type="text" id="basicHealCharacter" value="未选择角色" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="critCharacter">暴击觉醒(%)：</label></td>
+                    <td><input type="text" id="critCharacter" value="未选择角色" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="addAtkCharacter">攻击觉醒(%)：</label></td>
+                    <td><input type="text" id="addAtkCharacter" value="未选择角色" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="addDefCharacter">防御觉醒(%)：</label></td>
+                    <td><input type="text" id="addDefCharacter" value="未选择角色" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="addHPCharacter">生命觉醒(%)：</label></td>
+                    <td><input type="text" id="addHPCharacter" value="未选择角色" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="addHealCharacter">回血觉醒(%)：</label></td>
+                    <td><input type="text" id="addHealCharacter" value="未选择角色" readonly></td>
                 </tr>
             </table>
+
         </div>
         
         <div id="WeaponAttributes" style="display: none;">
             <table>
-                <tbody>
-                    <tr>
-                        <td><label for="level2Input">主武器等级：</label></td>
-                        <td><span id="level2Value">95</span></td>
-                    </tr>
-                    <tr>
-                        <td><input type="range" id="level2Input" name="level2select" min="1" max="110" step="1" value="95"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="basicAtkWeapon">主武器攻击白值：</label></td>
-                        <td><input type="text" id="basicAtkWeapon" value="0" readonly></td>
-                    </tr>
-                    <tr>
-                        <td><label for="weaponCoefficient">主武器系数：</label></td>
-                        <td><input type="text" id="weaponCoefficient" value="0" readonly></td>
-                    </tr>
-                    <tr>
-                        <td><label for="basicDefWeapon">主武器防御白值：</label></td>
-                        <td><input type="text" id="basicDefWeapon" value="0" readonly></td>
-                    </tr>
-                    <tr>
-                        <td><label for="basicHealWeapon">主武器回血白值：</label></td>
-                        <td><input type="text" id="basicHealWeapon" value="0" readonly></td>
-                    </tr>
-                    <tr>
-                        <td><label for="critWeapon">主武器暴击：</label></td>
-                        <td><input type="text" id="critWeapon" value="0" readonly></td>
-                    </tr>
-                    <tr>
-                        <td><label for="addAtkWeapon">主武器攻击加成：</label></td>
-                        <td><input type="text" id="addAtkWeapon" value="0" readonly></td>
-                    </tr>
-                    <tr>
-                        <td><label for="addDefWeapon">主武器防御加成：</label></td>
-                        <td><input type="text" id="addDefWeapon" value="0" readonly></td>
-                    </tr>
-                    <tr>
-                        <td><label for="addHPWeapon">主武器生命加成：</label></td>
-                        <td><input type="text" id="addHPWeapon" value="0" readonly></td>
-                    </tr>
-                    <tr>
-                        <td><label for="addHealWeapon">主武器回血值加成：</label></td>
-                        <td><input type="text" id="addHealWeapon" value="0" readonly></td>
-                    </tr>
-
-                </tbody>
-              </table>
+                <tr>
+                    <td colspan="2"><span id="selectedWeapon">未装备</span></td>
+                </tr>
+                <tr>
+                    <td><label for="level2Input">主武器等级：</label></td>
+                    <td><span id="level2Value">95</span></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="range" id="level2Input" name="level2select" min="1" max="110" step="1" value="95" class="rangeAttributes"></td>
+                </tr>
+                <tr>
+                    <td><label for="basicAtkWeapon">攻击白值：</label></td>
+                    <td><input type="text" id="basicAtkWeapon" value="0" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="weaponCoefficient">武器系数：</label></td>
+                    <td><input type="text" id="weaponCoefficient" value="0" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="basicDefWeapon">防御白值：</label></td>
+                    <td><input type="text" id="basicDefWeapon" value="0" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="basicHealWeapon">回血白值：</label></td>
+                    <td><input type="text" id="basicHealWeapon" value="0" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="critWeapon">武器暴击(%)：</label></td>
+                    <td><input type="text" id="critWeapon" value="0" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="addAtkWeapon">攻击加成(%)：</label></td>
+                    <td><input type="text" id="addAtkWeapon" value="0" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="addDefWeapon">防御加成(%)：</label></td>
+                    <td><input type="text" id="addDefWeapon" value="0" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="addHPWeapon">生命加成(%)：</label></td>
+                    <td><input type="text" id="addHPWeapon" value="0" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="addHealWeapon">回血加成(%)：</label></td>
+                    <td><input type="text" id="addHealWeapon" value="0" readonly></td>
+                </tr>
+            </table>
         </div>
         <div id="OthersAttributes" style="display: none;">
-          <table>
-            <tbody>
+            <table>
 
-              <tr>
-                  <td rowspan="2">杂项属性</td>
-                  <td rowspan="2"><span>(周边+魔卡)</span><br><span>面板属性加成</span></td>
-                  <td rowspan="2"><span>(已装备的装备)</span><br><span>图鉴属性加成</span></td>
-              </tr>
-              <tr>
+                <tr>
+                    <td rowspan="2"><span>杂项</span><br><span>加成属性</span></td>
+                    <td rowspan="2"><span>周边魔卡</span><br><span>属性加成</span></td>
+                    <td rowspan="2"><span>装备</span><br><span>图鉴加成</span></td>
+                </tr>
+                <tr>
 
-              </tr>
-              <tr>
-                  <td><label for="critOthers">暴击：</label></td>
-                  <td><input type="text" id="critOthers" value="0" readonly></td>
-                  <td><span>看不见我</span></td>
-              </tr>
-              <tr>
-                  <td><label for="addAtkOthers">攻击加成：</label></td>
-                  <td><input type="text" id="addAtkOthers" value="0" readonly></td>
-                  <td><input type="text" value="" id="addAtkGet"></td>
-              </tr>
-              <tr>
-                  <td><label for="addDefOthers">防御加成：</label></td>
-                  <td><input type="text" id="addDefOthers" value="0" readonly></td>
-                  <td><input type="text" value="" id="addDefGet"></td>
-              </tr>
-              <tr>
-                  <td><label for="addHPOthers">生命加成：</label></td>
-                  <td><input type="text" id="addHPOthers" value="0" readonly></td>
-                  <td><input type="text" value="" id="addHPGet"></td>
-              </tr>
-              <tr>
-                  <td><label for="addHealOthers">回血值加成：</label></td>
-                  <td><input type="text" id="addHealOthers" value="0" readonly></td>
-                  <td><span>看不见我</span></td>
-              </tr>
-
-            </tbody>
-          </table>
+                </tr>
+                <tr>
+                    <td><label for="critOthers">暴击：</label></td>
+                    <td><input type="text" id="critOthers" value="0" readonly></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label for="addAtkOthers">攻击：</label></td>
+                    <td><input type="text" id="addAtkOthers" value="0" readonly></td>
+                    <td><input type="text" value="" id="addAtkGet"></td>
+                </tr>
+                <tr>
+                    <td><label for="addDefOthers">防御：</label></td>
+                    <td><input type="text" id="addDefOthers" value="0" readonly></td>
+                    <td><input type="text" value="" id="addDefGet"></td>
+                </tr>
+                <tr>
+                    <td><label for="addHPOthers">生命：</label></td>
+                    <td><input type="text" id="addHPOthers" value="0" readonly></td>
+                    <td><input type="text" value="" id="addHPGet"></td>
+                </tr>
+                <tr>
+                    <td><label for="addHealOthers">回血：</label></td>
+                    <td><input type="text" id="addHealOthers" value="0" readonly></td>
+                    <td></td>
+                </tr>
+            </table>
         </div>
         <div id="Weapon2Attributes" style="display: none;">
             <table>
-                <tbody>
-                    <tr>
-                        <td><label for="level3Input">副武器等级：</label></td>
-                        <td><span id="level3Value">95</span></td>
-                    </tr>
-                    <tr>
-                        <td><input type="range" id="level3Input" name="level3select" min="1" max="110" step="1" value="95"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="basicDefWeapon2">副武器防御白值：</label></td>
-                        <td><input type="text" id="basicDefWeapon2" value="0" readonly></td>
-                    </tr>
-                    <tr>
-                        <td><label for="critWeapon2">副武器暴击：</label></td>
-                        <td><input type="text" id="critWeapon2" value="0" readonly></td>
-                    </tr>
-                    <tr>
-                        <td><label for="addAtkWeapon2">副武器攻击加成：</label></td>
-                        <td><input type="text" id="addAtkWeapon2" value="0" readonly></td>
-                    </tr>
-                    <tr>
-                        <td><label for="addDefWeapon2">副武器防御加成：</label></td>
-                        <td><input type="text" id="addDefWeapon2" value="0" readonly></td>
-                    </tr>
-                    <tr>
-                        <td><label for="addHPWeapon2">副武器生命加成：</label></td>
-                        <td><input type="text" id="addHPWeapon2" value="0" readonly></td>
-                    </tr>
-                </tbody>
+                <tr>
+                    <td colspan="2"><span id="selectedWeapon2">未装备</span></td>
+                </tr>
+                <tr>
+                    <td><label for="level3Input">副武器等级：</label></td>
+                    <td><span id="level3Value">95</span></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="range" id="level3Input" name="level3select" min="1" max="110" step="1" value="95" class="rangeAttributes"></td>
+                </tr>
+                <tr>
+                    <td><label for="basicDefWeapon2">防御白值：</label></td>
+                    <td><input type="text" id="basicDefWeapon2" value="0" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="critWeapon2">武器暴击(%)：</label></td>
+                    <td><input type="text" id="critWeapon2" value="0" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="addAtkWeapon2">攻击加成(%)：</label></td>
+                    <td><input type="text" id="addAtkWeapon2" value="0" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="addDefWeapon2">防御加成(%)：</label></td>
+                    <td><input type="text" id="addDefWeapon2" value="0" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="addHPWeapon2">生命加成(%)：</label></td>
+                    <td><input type="text" id="addHPWeapon2" value="0" readonly></td>
+                </tr>
             </table>
-            
         </div>
 
         <div id="JewelryAttributes" style="display: none;">
             <table>
-                <tbody>
-                    <tr>
-                        <td><label for="level4Input">饰品等级：</label></td>
-                        <td><span id="level4Value">95</span></td>
-                    </tr>
-                    <tr>
-                        <td><input type="range" id="level4Input" name="level4select" min="1" max="110" step="1" value="95"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="basicDefJewelry">饰品防御白值：</label></td>
-                        <td><input type="text" id="basicDefJewelry" value="0" readonly></td>
-                    </tr>
-                    <tr>
-                        <td><label for="critJewelry">饰品暴击：</label></td>
-                        <td><input type="text" id="critJewelry" value="0" readonly></td>
-                    </tr>
-                    <tr>
-                        <td><label for="addAtkJewelry">饰品攻击加成：</label></td>
-                        <td><input type="text" id="addAtkJewelry" value="0" readonly></td>
-                    </tr>
-                    <tr>
-                        <td><label for="addDefJewelry">饰品防御加成：</label></td>
-                        <td><input type="text" id="addDefJewelry" value="0" readonly></td>
-                    </tr>
-                    <tr>
-                        <td><label for="addHPJewelry">饰品生命加成：</label></td>
-                        <td><input type="text" id="addHPJewelry" value="0" readonly></td>
-                    </tr>
-                    <tr>
-                        <td><label for="addHealJewelry">饰品回血值加成：</label></td>
-                        <td><input type="text" id="addHealJewelry" value="0" readonly></td>
-                    </tr>
-        
-                </tbody>
+                <tr>
+                    <td colspan="2"><span id="selectedJewelry">未装备</span></td>
+                </tr>
+                <tr>
+                    <td><label for="level4Input">饰品等级：</label></td>
+                    <td><span id="level4Value">95</span></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="range" id="level4Input" name="level4select" min="1" max="110" step="1" value="95" class="rangeAttributes"></td>
+                </tr>
+                <tr>
+                    <td><label for="basicDefJewelry">防御白值：</label></td>
+                    <td><input type="text" id="basicDefJewelry" value="0" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="critJewelry">饰品暴击(%)：</label></td>
+                    <td><input type="text" id="critJewelry" value="0" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="addAtkJewelry">攻击加成(%)：</label></td>
+                    <td><input type="text" id="addAtkJewelry" value="0" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="addDefJewelry">防御加成(%)：</label></td>
+                    <td><input type="text" id="addDefJewelry" value="0" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="addHPJewelry">生命加成(%)：</label></td>
+                    <td><input type="text" id="addHPJewelry" value="0" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="addHealJewelry">回血加成(%)：</label></td>
+                    <td><input type="text" id="addHealJewelry" value="0" readonly></td>
+                </tr>
             </table>
             
         </div>
     </div>     
 
     <br>
-    <p>24/1/23日志：优化了图鉴与守护者基地界面布局；添加了当前图鉴清空和填充按钮</p>
-    <p>24/1/19日志：优化了数据界面布局;更改了遗物选择方式;当前图鉴更新至国服千日版本（已校对）;添加了练度百分比显示</p>
-    <p>24/1/12日志：添加了盾牌、饰品、周边显示功能，改变了未装备时的样式</p>
-    <p>24/1/11日志：添加了专武显示功能</p>
-    <p>24/1/10日志：优化了角色选择界面</p>
-    
-    <p>23/12/31日志：已录入所有韩服已实装稀有、传奇角色及其专武，【版本至安吉】，界面排版优化</p>
+    <div style="width: auto; text-align: center;" >
+        <button id="upLog">查看2024所有更新日志</button>
+    </div>
+
+    <div style="display: none;" id="updateLog">
+        <p>24/1/25日志：优化了属性查看界面</p>
+        <p>24/1/24日志：优化了当图片未知时，显示断剑</p>
+        <p>24/1/23日志：优化了图鉴与守护者基地界面布局；添加了当前图鉴清空和填充按钮</p>
+        <p>24/1/19日志：优化了数据界面布局;更改了遗物选择方式;当前图鉴更新至国服千日版本（已校对）;添加了练度百分比显示</p>
+        <p>24/1/12日志：添加了盾牌、饰品、周边显示功能，改变了未装备时的样式</p>
+        <p>24/1/11日志：添加了专武显示功能</p>
+        <p>24/1/10日志：优化了角色选择界面</p>
+    </div>
+    <script>
+        const upLog = document.getElementById("upLog");
+        const updateLog = document.getElementById("updateLog");
+        upLog.addEventListener("click", function(){
+            const isHidden = updateLog.style.display === 'none';
+            updateLog.style.display = isHidden ? 'block' : 'none';
+            upLog.textContent = isHidden ? '收起日志' : '查看2024所有更新日志';
+        })
+    </script>
+    <br>
+    <p>24/1/25日志：当前图鉴更新至国服【千日版本】（已校对）</p>
+    <p>23/12/31日志：已录入所有韩服已实装稀有、传奇角色及其专武，【安吉版本】</p>
     <p>角色默认满破、满觉醒，装备默认满破、满洗练，伤害减免暂不计入计算，优先取韩服最新数据</p>
     <p>角色与装备的防御数值与实际防御数值并不完全精确（因为kongs图鉴不显示小数），所以在较高等级下会有一定程度的偏差</p>
     <p>如果数据有错误需要反馈或想要对此页面提出建议，请联系：<br>bilibili: space.bilibili.com/495999638 <br> QQ: 1217505768</p>

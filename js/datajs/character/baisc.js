@@ -278,8 +278,8 @@ characterAttributes['银河'] = {
     reduceDamage: 0,            /* 伤害减免 */
     basicAtk: 151,                /* 1级攻击白值 */
     basicDef: 41,                /* 1级防御白值 */
-    basicHP: 1250,                 /* 1级生命白值 */
-    basicHeal: 0,               /* 五星回血值白值 */
+    basicHP: 1102,                 /* 1级生命白值 */
+    basicHeal: 1250,               /* 五星回血值白值 */
     skill: 0,                   /* 满破总技伤 */
     cdSkill: 0,                  /* 角色自带cd */
 
