@@ -123,6 +123,7 @@ characterAttributes["可可∧三星"].map = 'innuit_ascent'
 characterAttributes["达伊"].map = 'dai'
 characterAttributes["波普"].map = 'popp'
 characterAttributes["安吉"].map = 'guardian_angel'
+characterAttributes["瘟疫医生"].map = 'plague_doctor'
 
 // 获取 select 元素和 image 元素
 const selectElement = document.getElementById('charSelect');

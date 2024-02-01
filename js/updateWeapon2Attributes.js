@@ -48,7 +48,7 @@ function updateWeapon2Attributes() {
         defCoefficient3 = lvl83DefCoefficient * Math.pow(1.018, level3 - 83);
       }
       if (typeof weapon2Attributes === 'undefined') {
-        console.log('当前主武器不存在（忽略）');
+        // console.log('当前主武器不存在（忽略）');
         return; // 提前退出函数
       }
       basicDefWeapon2.value = Math.floor(((weapon2Attributes.basicDef) || 0) * defCoefficient3 * DefCoefficient);

@@ -5,47 +5,62 @@ const magicCardAttributes = {
         addDef: 0,
         addHP: 0,
         addHeal: 0,
+        skill: 0,
     },
-    '3暴卡':{
+    '暴击率+3%':{
         crit: 3,
         addAtk: 0,
         addDef: 0,
         addHP: 0,
         addHeal: 0,
+        skill: 0,
     },
-    '7攻卡':{
+    '攻击+7%':{
         crit: 0,
         addAtk: 7,
         addDef: 0,
         addHP: 0,
         addHeal: 0,
+        skill: 0,
     },
-    '5攻卡':{
+    '攻击+5%':{
         crit: 0,
         addAtk: 5,
         addDef: 0,
         addHP: 0,
         addHeal: 0,
+        skill: 0,
     },
-    '7防卡':{
+    '防御+7%':{
         crit: 0,
         addAtk: 0,
         addDef: 7,
         addHP: 0,
         addHeal: 0,
+        skill: 0,
     },
-    '6血卡':{
+    '生命+6%':{
         crit: 0,
         addAtk: 0,
         addDef: 0,
         addHP: 6,
         addHeal: 0,
+        skill: 0,
     },
-    '10回血卡':{
+    '恢复能力+10%':{
         crit: 0,
         addAtk: 0,
         addDef: 0,
         addHP: 0,
         addHeal: 10,
+        skill: 0,
+    },
+    '技能伤害值+10%':{
+        crit: 0,
+        addAtk: 0,
+        addDef: 0,
+        addHP: 0,
+        addHeal: 0,
+        skill: 10,
     },
 }

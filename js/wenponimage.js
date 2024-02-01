@@ -76,6 +76,6 @@ function updateImg2Element() {
     };
   }else{
     imgElement.src = 'image/weapon/未装备.png';
-    console.log("该角色无副武器（忽略）");
+    // console.log("该角色无副武器（忽略）");
   }
 }

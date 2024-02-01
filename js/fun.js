@@ -256,7 +256,7 @@ function moveWeaponSelect() {
       }
   } else {
     // weaponSelect不存在或没有style属性
-    console.log("表格内无主武器(忽略)");
+    // console.log("表格内无主武器(忽略)");
   }
 
   if (weapon2Select && weapon2Select.style) {
@@ -274,7 +274,7 @@ function moveWeaponSelect() {
       }
   } else {
     // weapon2Select不存在或没有style属性
-    console.log("表格内无副武器(忽略)");
+    // console.log("表格内无副武器(忽略)");
   }
 
 

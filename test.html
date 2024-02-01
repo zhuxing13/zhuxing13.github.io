@@ -17,8 +17,8 @@
         <a align="center" style="font-weight: bold;font-size: 18px;">作者：</a>
         <img src="image/logo_black.png" class="logo">
     </div>
-    <h4 align="center" style="margin: 4px;">维护日期:24/1/25</h4>     
-    <h4 align="center" style="margin-top: 4px;">图鉴数据:国服千日版本  角色数据:韩服瘟疫医生版本</h4>     
+    <h4 align="center" style="margin: 4px;">维护日期:24/2/1</h4>     
+    <h4 align="center" style="margin-top: 4px;">图鉴数据:国服奥迪尔版本  角色数据:韩服瘟疫医生版本</h4>       
 
     <button class="button1" id="seeadd1">查看图鉴信息</button>
     <button class="button1" id="seeadd2">查看守护者基地</button>
@@ -42,12 +42,12 @@
                     </tr>
                     <tr><td class="bonusText" align="center"><a>角色收集图鉴</a></td>
                         <td><input type="number" min="0" max="55.0" id="atk1" value="55.0">/<a id="atk1full" data-atlas>55.0</a></td>
-                        <td><input type="number" min="0" max="27.9" id="def1" value="27.9">/<a id="def1full" data-atlas>27.9</a></td>
+                        <td><input type="number" min="0" max="28.9" id="def1" value="28.9">/<a id="def1full" data-atlas>28.9</a></td>
                         <td><input type="number" min="0" max="31.8" id="hp1" value="31.8">/<a id="hp1full" data-atlas>31.8</a></td>
                     </tr>
                     <tr><td class="bonusText" align="center"><a>道具羁绊图鉴</a></td>
                         <td><input type="number" min="0" max="62.2" id="atk2" value="62.2">/<a id="atk2full" data-atlas>62.2</a></td>
-                        <td><input type="number" min="0" max="34.6" id="def2" value="34.6">/<a id="def2full" data-atlas>34.6</a></td>
+                        <td><input type="number" min="0" max="35.6" id="def2" value="35.6">/<a id="def2full" data-atlas>35.6</a></td>
                         <td><input type="number" min="0" max="34.1" id="hp2" value="34.1">/<a id="hp2full" data-atlas>34.1</a></td>
                     </tr>
                     <tr><td class="bonusText" align="center"><a>武器饰品盾牌</a></td>
@@ -572,12 +572,12 @@
                         <td class="rectangle5">
                             <select id="relicEntry1">
                                 <option value="none">空</option>
-                                <option value="crit">暴击</option>
+                                <option value="crit">暴击率</option>
                                 <option value="atk">攻击</option>
                                 <option value="def">防御</option>
                                 <option value="hp">生命</option>
-                                <option value="heal">回血</option>
-                                <option value="skill">技伤</option>
+                                <option value="heal">恢复能力</option>
+                                <option value="skill">技能伤害值</option>
                             </select>
                             <span id="entry11Value">0</span>
                             <span>%</span>
@@ -591,12 +591,12 @@
                         <td class="rectangle5">
                             <select id="relicEntry2">
                                 <option value="none">空</option>
-                                <option value="crit">暴击</option>
+                                <option value="crit">暴击率</option>
                                 <option value="atk">攻击</option>
                                 <option value="def">防御</option>
                                 <option value="hp">生命</option>
-                                <option value="heal">回血</option>
-                                <option value="skill">技伤</option>
+                                <option value="heal">恢复能力</option>
+                                <option value="skill">技能伤害值</option>
                             </select>
                             <span id="entry22Value">0</span>
                             <span>%</span>
@@ -611,12 +611,12 @@
                         <td class="rectangle5">
                             <select id="relicEntry3">
                                 <option value="none">空</option>
-                                <option value="crit">暴击</option>
+                                <option value="crit">暴击率</option>
                                 <option value="atk">攻击</option>
                                 <option value="def">防御</option>
                                 <option value="hp">生命</option>
-                                <option value="heal">回血</option>
-                                <option value="skill">技伤</option>
+                                <option value="heal">恢复能力</option>
+                                <option value="skill">技能伤害值</option>
                             </select>
                             <span id="entry33Value">0</span>
                             <span>%</span>
@@ -631,13 +631,13 @@
                       <td class="rectangle4">
                           <select id="magicCard1">
                               <option value="未装备">未装备</option>
-                              <option value="3暴卡">3暴卡</option>
-                              <option value="7攻卡">7攻卡</option>
-                              <option value="5攻卡">5攻卡</option>
-                              <option value="7防卡">7防卡</option>
-                              <option value="6血卡">6血卡</option>
-                              <option value="10回血卡">10回血卡</option>
-                              <option value="10回血卡">10技伤卡</option>
+                              <option value="暴击率+3%">暴击率+3%</option>
+                              <option value="攻击+7%">攻击+7%</option>
+                              <option value="攻击+5%">攻击+5%</option>
+                              <option value="防御+7%">防御+7%</option>
+                              <option value="生命+6%">生命+6%</option>
+                              <option value="恢复能力+10%">恢复能力+10%</option>
+                              <option value="技能伤害值+10%">技能伤害值+10%</option>
                           </select>
                       </td>
                       <td colspan="2">
@@ -650,12 +650,13 @@
                         <td class="rectangle4">
                             <select id="magicCard2">
                                 <option value="未装备">未装备</option>
-                                <option value="3暴卡">3暴卡</option>
-                                <option value="7攻卡">7攻卡</option>
-                                <option value="5攻卡">5攻卡</option>
-                                <option value="7防卡">7防卡</option>
-                                <option value="6血卡">6血卡</option>
-                                <option value="10回血卡">10回血卡</option>
+                                <option value="暴击率+3%">暴击率+3%</option>
+                                <option value="攻击+7%">攻击+7%</option>
+                                <option value="攻击+5%">攻击+5%</option>
+                                <option value="防御+7%">防御+7%</option>
+                                <option value="生命+6%">生命+6%</option>
+                                <option value="恢复能力+10%">恢复能力+10%</option>
+                                <option value="技能伤害值+10%">技能伤害值+10%</option>
                             </select>
                         </td>
                         <td colspan="2">
@@ -677,21 +678,14 @@
                     <tr style="display: none;">
                         <td></td>
 
-
-
                         <td><input type="text" id="weaponType" value="无" readonly></td>
                         <td><input type="text" id="weapon2Type" value="无" readonly></td>
-
-
-
-
-
 
                     </tr>
                 </tbody>
                 <tbody class="mianbanValue">
                     <tr style="height: 32px;">
-                        <td>秒伤</td>
+                        <td style="text-align: center;">每秒<br>伤害</td>
                         <td><input type="text" id="dpsGetCrit" value="0" readonly class="mianbantext"></td>
                         <td class="mianban2">
                             <img src="image/character/选择角色.png" alt="角色" class="mianban2ima" id="mianbanimg1">  
@@ -703,7 +697,7 @@
                         </td>
                     </tr>
                     <tr style="height: 32px;">
-                        <td>韧性</td>
+                        <td>韧性值</td>
                         <td><input type="text" id="toughness" value="0" readonly class="mianbantext"></td>
                         <td class="mianban2">
                             <img src="image/weapon/未装备.png" alt="主武器" class="mianban2ima" id="mianbanimg2">
@@ -717,7 +711,7 @@
                         </td>
                     </tr>
                     <tr style="height: 32px;">
-                        <td>回血值</td>
+                        <td style="text-align: center;">恢复<br>能力</td>
                         <td><input type="text" id="healGet" value="0" readonly class="mianbantext"></td>
                         <td class="mianban2">
                             <img src="image/jewelry/未装备.png" alt="饰品" class="mianban2ima" id="mianbanimg4">
@@ -761,13 +755,13 @@
                         <td><input type="text" id="resultHP" value="0" readonly class="jisuanText"></td>
                     </tr>
                     <tr>
-                        <td>回血值</td>
+                        <td>恢复能力</td>
                         <td><input type="text" id="basicHealAll" value="0" readonly class="jisuanText"></td>
                         <td><input type="text" id="addHealAll" value="0" readonly class="jisuanText"></td>
                         <td><input type="text" id="resultHeal" value="0" readonly class="jisuanText"></td>
                     </tr>
                       <tr>
-                          <td>暴击(%)</td>
+                          <td>暴击率(%)</td>
                           <td><input type="text" id="critAll" value="0" readonly class="jisuanText"></td>
                           <td>无暴击秒伤</td>
                           <td><input type="text" id="dpsNoCrit" value="0" readonly class="jisuanText"></td>
@@ -807,11 +801,11 @@
                     <td><input type="text" id="basicHPCharacter" value="未选择角色" readonly></td>
                 </tr>
                 <tr>
-                    <td><label for="basicHealCharacter">回血白值：</label></td>
+                    <td><label for="basicHealCharacter">恢复能力白值：</label></td>
                     <td><input type="text" id="basicHealCharacter" value="未选择角色" readonly></td>
                 </tr>
                 <tr>
-                    <td><label for="critCharacter">暴击觉醒(%)：</label></td>
+                    <td><label for="critCharacter">暴击率觉醒(%)：</label></td>
                     <td><input type="text" id="critCharacter" value="未选择角色" readonly></td>
                 </tr>
                 <tr>
@@ -827,7 +821,7 @@
                     <td><input type="text" id="addHPCharacter" value="未选择角色" readonly></td>
                 </tr>
                 <tr>
-                    <td><label for="addHealCharacter">回血觉醒(%)：</label></td>
+                    <td><label for="addHealCharacter">恢复能力觉醒(%)：</label></td>
                     <td><input type="text" id="addHealCharacter" value="未选择角色" readonly></td>
                 </tr>
             </table>
@@ -859,11 +853,11 @@
                     <td><input type="text" id="basicDefWeapon" value="0" readonly></td>
                 </tr>
                 <tr>
-                    <td><label for="basicHealWeapon">回血白值：</label></td>
+                    <td><label for="basicHealWeapon">恢复能力白值：</label></td>
                     <td><input type="text" id="basicHealWeapon" value="0" readonly></td>
                 </tr>
                 <tr>
-                    <td><label for="critWeapon">武器暴击(%)：</label></td>
+                    <td><label for="critWeapon">暴击率(%)：</label></td>
                     <td><input type="text" id="critWeapon" value="0" readonly></td>
                 </tr>
                 <tr>
@@ -879,7 +873,7 @@
                     <td><input type="text" id="addHPWeapon" value="0" readonly></td>
                 </tr>
                 <tr>
-                    <td><label for="addHealWeapon">回血加成(%)：</label></td>
+                    <td><label for="addHealWeapon">恢复能力加成(%)：</label></td>
                     <td><input type="text" id="addHealWeapon" value="0" readonly></td>
                 </tr>
             </table>
@@ -896,27 +890,27 @@
 
                 </tr>
                 <tr>
-                    <td><label for="critOthers">暴击：</label></td>
+                    <td><label for="critOthers">暴击率(%)</label></td>
                     <td><input type="text" id="critOthers" value="0" readonly></td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td><label for="addAtkOthers">攻击：</label></td>
+                    <td><label for="addAtkOthers">攻击(%)</label></td>
                     <td><input type="text" id="addAtkOthers" value="0" readonly></td>
                     <td><input type="text" value="" id="addAtkGet"></td>
                 </tr>
                 <tr>
-                    <td><label for="addDefOthers">防御：</label></td>
+                    <td><label for="addDefOthers">防御(%)</label></td>
                     <td><input type="text" id="addDefOthers" value="0" readonly></td>
                     <td><input type="text" value="" id="addDefGet"></td>
                 </tr>
                 <tr>
-                    <td><label for="addHPOthers">生命：</label></td>
+                    <td><label for="addHPOthers">生命(%)</label></td>
                     <td><input type="text" id="addHPOthers" value="0" readonly></td>
                     <td><input type="text" value="" id="addHPGet"></td>
                 </tr>
                 <tr>
-                    <td><label for="addHealOthers">回血：</label></td>
+                    <td><label for="addHealOthers">恢复能力(%)</label></td>
                     <td><input type="text" id="addHealOthers" value="0" readonly></td>
                     <td></td>
                 </tr>
@@ -939,7 +933,7 @@
                     <td><input type="text" id="basicDefWeapon2" value="0" readonly></td>
                 </tr>
                 <tr>
-                    <td><label for="critWeapon2">武器暴击(%)：</label></td>
+                    <td><label for="critWeapon2">暴击率(%)：</label></td>
                     <td><input type="text" id="critWeapon2" value="0" readonly></td>
                 </tr>
                 <tr>
@@ -974,7 +968,7 @@
                     <td><input type="text" id="basicDefJewelry" value="0" readonly></td>
                 </tr>
                 <tr>
-                    <td><label for="critJewelry">饰品暴击(%)：</label></td>
+                    <td><label for="critJewelry">暴击率(%)：</label></td>
                     <td><input type="text" id="critJewelry" value="0" readonly></td>
                 </tr>
                 <tr>
@@ -990,7 +984,7 @@
                     <td><input type="text" id="addHPJewelry" value="0" readonly></td>
                 </tr>
                 <tr>
-                    <td><label for="addHealJewelry">回血加成(%)：</label></td>
+                    <td><label for="addHealJewelry">恢复能力加成(%)：</label></td>
                     <td><input type="text" id="addHealJewelry" value="0" readonly></td>
                 </tr>
             </table>
@@ -1022,7 +1016,7 @@
         })
     </script>
     <br>
-    <p>24/1/25日志：当前图鉴更新至国服【千日版本】（已校对）</p>
+    <p>24/2/1日志：当前图鉴更新至国服【奥迪尔版本】（已校对），部分标签修正</p>
     <p>24/1/25日志：已录入所有韩服已实装稀有、传奇角色及其专武，【瘟疫医生版本】</p>
     <p>角色默认满破、满觉醒，装备默认满破、满洗练，伤害减免暂不计入计算，优先取韩服最新数据</p>
     <p>角色与装备的防御数值与实际防御数值并不完全精确（因为kongs图鉴不显示小数），所以在较高等级下会有一定程度的偏差</p>

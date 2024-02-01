@@ -58,7 +58,7 @@ function updateWeaponAttributes() {
           }
         
         if (typeof weaponAttributes === 'undefined') {
-            console.log('当前主武器不存在（忽略）');
+            // console.log('当前主武器不存在（忽略）');
             return; // 提前退出函数
           }
         basicAtkWeapon.value = Math.floor(weaponAttributes.basicAtk * atkCoefficient2);
