@@ -1,0 +1,88 @@
+/*输出模块*/
+#jisuanValue input {
+    width: 50px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #63f563;
+}
+#jisuanValue{
+    width: 100%;
+    background: #53e553;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 20px;
+    /* display: block; */
+}
+
+
+
+#mianban button{
+    background-color: #98fb98;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+
+    line-height: 30px;
+
+}
+
+#mianban{
+    width: 100%;
+}
+
+#mianban input{
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #63f563;
+}
+
+.mianban2{
+    height: 32px;
+    width: 32px;
+
+}
+.mianban2ima{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #63f563;
+}
+.mianbanValue{
+    background: #53e553;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: block;
+}
+.masteryDegree{
+    width: 40px;
+}
+.mianbantext{
+    width: 70px;
+}
+
+#upLog{
+    background-color: #98fb98;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+
+    line-height: 30px;
+}
+
+.logo{
+    width: 44.6px;
+    height: 20px;
+}
+

@@ -1,0 +1,47 @@
+/*遗物模块*/
+.relicRange{
+    width: 90%;
+    height: 30px;
+    background: rgba(152, 251, 152, 1);
+    appearance: none;
+    border: 2px solid white;
+    border-radius: 15px;
+    outline: none;
+    box-shadow: 0 0 5px #7be57b, 0 0 10px #7be57b, inset 0 0 5px #7be57b,
+      inset 0 0 10px #7be57b;
+    overflow: hidden;
+}
+
+.relicRange::-webkit-slider-thumb {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 15px;
+    border: 8px solid #5faa5f;  /*滑块样式*/
+    box-shadow: calc(-35vw - 15px) 0 0 35vw #5faa5fb6,
+      inset 0 0 5px #7be57b;  /*滑槽样式*/
+    cursor: pointer;
+  }
+
+  .relicRange::-webkit-slider-thumb:hover {
+    background: #2ed573;
+  }
+
+  
+  /* .relicRange::-moz-range-thumb {
+    background: red; 
+  }
+  
+  .relicRange::-moz-range-track {
+    background-color: #98fb98;
+  }
+  
+  .relicRange::-ms-thumb {
+    background: red; 
+  }
+  
+  .relicRange::-ms-track {
+    background-color: #98fb98;
+  }
+   */
