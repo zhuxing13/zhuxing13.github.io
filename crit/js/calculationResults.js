@@ -116,10 +116,10 @@ const atk5C2 = document.getElementById("atk5C2");
 
 let aall = addatkall + relicAtk - Number(addAtkOthers)
 let a7c1, a7c2, a5c1, a5c2;
-a7c1 = (7 / aall * 100).toFixed(5);
-a7c2 = (7 / (aall + 7) * 100).toFixed(5);
-a5c1 = (5 / aall * 100).toFixed(5);
-a5c2 = (5 / (aall + 5) * 100).toFixed(5);
+a7c1 = (7 / (aall + 100) * 100).toFixed(5);
+a7c2 = (7 / (aall + 107) * 100).toFixed(5);
+a5c1 = (5 / (aall + 100) * 100).toFixed(5);
+a5c2 = (5 / (aall + 105) * 100).toFixed(5);
 atk7C1.value = a7c1;
 atk7C2.value = a7c2;
 atk5C1.value = a5c1;
