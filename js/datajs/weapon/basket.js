@@ -209,7 +209,7 @@ const basketWeaponAttributes = {
         cdSkill: 18,            
         reduceDamage: 0,         
     },
-    '芭莉二专':{
+    '皮诺':{
         roleProperties: '土',
         weaponType: '篮子',    
         weaponCoefficient: 4,    

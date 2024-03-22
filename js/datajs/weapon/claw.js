@@ -97,7 +97,7 @@ const clawWeaponAttributes = {
         cdSkill: 16,            
         reduceDamage: 0,         
     },
-    '奥迪尔（专）':{
+    '麻烦终结者':{
         roleProperties: '光',    
         weaponType: '爪',    
         weaponCoefficient: 3.5,    
@@ -111,6 +111,22 @@ const clawWeaponAttributes = {
         basicHeal: 0,               
         skill: 18,              
         cdSkill: 18,            
+        reduceDamage: 0,         
+    },
+    '米莉姆（专）':{
+        roleProperties: '暗',    
+        weaponType: '爪',    
+        weaponCoefficient: 3.5,    
+        crit: 16,                 
+        addAtk: 10,               
+        addDef: 16,               
+        addHP: 18,                
+        addHeal: 0,              
+        basicAtk: 198,               
+        basicDef: 24,               
+        basicHeal: 0,               
+        skill: 20,              
+        cdSkill: 10,            
         reduceDamage: 0,         
     },
     '坚定的决议':{

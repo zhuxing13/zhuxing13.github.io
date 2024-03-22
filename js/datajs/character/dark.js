@@ -308,6 +308,24 @@ characterAttributes['杰洛士'] = {
     skill: 10,           
     cdSkill: 0, 
 };
+characterAttributes['米莉姆'] = {
+    roleProperties: '暗',      
+    roleOccupation: '战士',    
+    weaponType: '爪',      
+    weapon2Type: '无',  
+    crit: 0,            
+    addAtk: 62,          
+    addDef: 41,          
+    addHP: 41,           
+    addHeal: 0,         
+    reduceDamage: 0,    
+    basicAtk: 128,        
+    basicDef: 26,        
+    basicHP: 1040,         
+    basicHeal: 0,       
+    skill: 10,           
+    cdSkill: 0, 
+};
 characterAttributes['卡瑞娜∧二星'] = {
     roleProperties: '暗',      
     roleOccupation: '辅助',    

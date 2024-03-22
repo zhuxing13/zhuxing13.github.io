@@ -272,6 +272,24 @@ characterAttributes['安吉'] = {
 };
 // characterAttributes['？？？']
 // characterAttributes['？？？']
+characterAttributes['利姆露'] = {
+    roleProperties: '水',      
+    roleOccupation: '战士',    
+    weaponType: '单手剑',      
+    weapon2Type: '无',  
+    crit: 5,            
+    addAtk: 65,          
+    addDef: 39,          
+    addHP: 40,           
+    addHeal: 0,         
+    reduceDamage: 0,    
+    basicAtk: 142,        
+    basicDef: 38,        
+    basicHP: 1200,         
+    basicHeal: 0,       
+    skill: 4,           
+    cdSkill: 4, 
+};
 characterAttributes['白兽∧二星'] = {
     roleProperties: '水',      
     roleOccupation: '战士',    

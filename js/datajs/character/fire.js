@@ -290,6 +290,24 @@ characterAttributes['波普'] = {
     skill: 6,           
     cdSkill: 0, 
 };
+characterAttributes['朱菜'] = {
+    roleProperties: '火',      
+    roleOccupation: '辅助',    
+    weaponType: '权杖',      
+    weapon2Type: '无',  
+    crit: 0,            
+    addAtk: 52,          
+    addDef: 40,          
+    addHP: 41,           
+    addHeal: 20,         
+    reduceDamage: 0,    
+    basicAtk: 125,        
+    basicDef: 30,        
+    basicHP: 1018,         
+    basicHeal: 1530,       
+    skill: 0,           
+    cdSkill: 0, 
+};
 characterAttributes['埃尔韦拉∧二星'] = {
     roleProperties: '火',      
     roleOccupation: '射手',    

@@ -241,7 +241,7 @@ const rifleWeaponAttributes = {
         cdSkill: 15,            
         reduceDamage: 0,         
     },
-    '神奇激光风暴':{
+    '神奇激光暴风':{
         roleProperties: '光',    
         weaponType: '步枪',    
         weaponCoefficient: 120/23,    

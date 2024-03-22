@@ -209,7 +209,7 @@ const oneWeaponAttributes = {
         cdSkill: 12,            
         reduceDamage: 0,         
     },
-    '米可（专）':{
+    '血吸':{
         roleProperties: '虚',    
         weaponType: '单手剑',    
         weaponCoefficient: 3,    
@@ -225,7 +225,7 @@ const oneWeaponAttributes = {
         cdSkill: 12,            
         reduceDamage: 0,         
     },
-    '安吉（专）':{
+    '荣耀颂歌':{
         roleProperties: '水',    
         weaponType: '单手剑',    
         weaponCoefficient: 3,    
@@ -255,6 +255,22 @@ const oneWeaponAttributes = {
         basicHeal: 0,               
         skill: 8,              
         cdSkill: 8,            
+        reduceDamage: 0,         
+    },
+    '利姆露（专）':{
+        roleProperties: '水',    
+        weaponType: '单手剑',    
+        weaponCoefficient: 3,    
+        crit: 5,                 
+        addAtk: 10,               
+        addDef: 12,               
+        addHP: 14,                
+        addHeal: 0,              
+        basicAtk: 213,               
+        basicDef: 0,               
+        basicHeal: 0,               
+        skill: 10,              
+        cdSkill: 12,            
         reduceDamage: 0,         
     },
     '村雨':{
@@ -321,7 +337,7 @@ const oneWeaponAttributes = {
         cdSkill: 10,            
         reduceDamage: 0,         
     },
-    '莉耶（专）':{
+    '维多利亚':{
         roleProperties: '虚',    
         weaponType: '单手剑',    
         weaponCoefficient: 3,    

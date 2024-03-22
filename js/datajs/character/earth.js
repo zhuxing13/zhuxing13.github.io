@@ -234,6 +234,24 @@ characterAttributes['莫莉安'] = {
     skill: 12,           
     cdSkill: 8, 
 };
+characterAttributes['瑜娜'] = {
+    roleProperties: '土',      
+    roleOccupation: '辅助',    
+    weaponType: '弓',      
+    weapon2Type: '无',  
+    crit: 0,            
+    addAtk: 53,          
+    addDef: 39,          
+    addHP: 42,           
+    addHeal: 24,         
+    reduceDamage: 0,    
+    basicAtk: 120,        
+    basicDef: 34,        
+    basicHP: 1163,         
+    basicHeal: 1200,       
+    skill: 0,           
+    cdSkill: 0, 
+};
 // characterAttributes['？？？']
 // characterAttributes['？？？']
 characterAttributes['玛姆'] = {

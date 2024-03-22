@@ -136,7 +136,7 @@ const rifle2Attributes = {
         cdSkill: 15,            
         reduceDamage: 0,         
     },
-    '神奇激光风暴':{
+    '神奇激光暴风':{
         crit: 5,                 
         addAtk: 10,               
         addDef: 0,               
