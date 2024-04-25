@@ -270,6 +270,24 @@ characterAttributes['安吉'] = {
     skill: 8,           
     cdSkill: 0, 
 };
+characterAttributes['沄'] = {
+    roleProperties: '水',      
+    roleOccupation: '辅助',    
+    weaponType: '单手剑',      
+    weapon2Type: '无',  
+    crit: 0,            
+    addAtk: 63,          
+    addDef: 40,          
+    addHP: 41,           
+    addHeal: 0,         
+    reduceDamage: 0,    
+    basicAtk: 125,        
+    basicDef: 34,        
+    basicHP: 1120,         
+    basicHeal: 0,       
+    skill: 10,           
+    cdSkill: 0, 
+};
 // characterAttributes['？？？']
 // characterAttributes['？？？']
 characterAttributes['利姆露'] = {

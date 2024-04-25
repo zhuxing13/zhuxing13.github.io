@@ -252,6 +252,24 @@ characterAttributes['瑜娜'] = {
     skill: 0,           
     cdSkill: 0, 
 };
+characterAttributes['艾草'] = {
+    roleProperties: '土',      
+    roleOccupation: '射手',    
+    weaponType: '弓',      
+    weapon2Type: '无',  
+    crit: 0,            
+    addAtk: 70,          
+    addDef: 38,          
+    addHP: 39,           
+    addHeal: 0,         
+    reduceDamage: 0,    
+    basicAtk: 150,        
+    basicDef: 31,        
+    basicHP: 989,         
+    basicHeal: 0,       
+    skill: 8,           
+    cdSkill: 5, 
+};
 // characterAttributes['？？？']
 // characterAttributes['？？？']
 characterAttributes['玛姆'] = {
