@@ -18,7 +18,7 @@
         <img src="image/logo_black.png" class="logo">
     </div>
     <h4 align="center" style="margin: 4px;">维护日期:24/3/22</h4>     
-    <h4 align="center" style="margin-top: 4px;">图鉴数据:国服安吉版本  角色数据:韩服米莉姆版本</h4>     
+    <h4 align="center" style="margin-top: 4px;">图鉴数据:国服沄版本  角色数据:韩服艾草版本</h4>     
 
     <button class="button1" id="seeadd1">查看图鉴信息</button>
     <button class="button1" id="seeadd2">查看守护者基地</button>
@@ -41,14 +41,14 @@
                         <td align="center"><b>生命加成(%)</b></td>
                     </tr>
                     <tr><td class="bonusText" align="center"><a>角色收集图鉴</a></td>
-                        <td><input type="number" min="0" max="57.5" id="atk1" value="57.5">/<a id="atk1full" data-atlas>57.5</a></td>
+                        <td><input type="number" min="0" max="58.5" id="atk1" value="58.5">/<a id="atk1full" data-atlas>58.5</a></td>
                         <td><input type="number" min="0" max="28.9" id="def1" value="28.9">/<a id="def1full" data-atlas>28.9</a></td>
                         <td><input type="number" min="0" max="31.8" id="hp1" value="31.8">/<a id="hp1full" data-atlas>31.8</a></td>
                     </tr>
                     <tr><td class="bonusText" align="center"><a>道具羁绊图鉴</a></td>
-                        <td><input type="number" min="0" max="64.7" id="atk2" value="64.7">/<a id="atk2full" data-atlas>64.7</a></td>
+                        <td><input type="number" min="0" max="65.7" id="atk2" value="65.7">/<a id="atk2full" data-atlas>65.7</a></td>
                         <td><input type="number" min="0" max="35.6" id="def2" value="35.6">/<a id="def2full" data-atlas>35.6</a></td>
-                        <td><input type="number" min="0" max="35.6" id="hp2" value="35.6">/<a id="hp2full" data-atlas>35.6</a></td>
+                        <td><input type="number" min="0" max="36.1" id="hp2" value="36.1">/<a id="hp2full" data-atlas>36.1</a></td>
                     </tr>
                     <tr><td class="bonusText" align="center"><a>武器饰品盾牌</a></td>
                         <td><input type="number" min="0" max="10.0" id="atk3" value="10.0">/<a id="atk3full" data-atlas>10.0</a></td>
@@ -274,6 +274,7 @@
                                 <option data-occupation="射手" data-properties="土" value='爱梅莉丝'>爱梅莉丝</option>
                                 <option data-occupation="坦克" data-properties="土" value='莫莉安'>莫莉安</option>
                                 <option data-occupation="辅助" data-properties="土" value='瑜娜'>瑜娜</option>
+                                <option data-occupation="射手" data-properties="土" value='艾草'>艾草</option>
                                 <option data-occupation="辅助" data-properties="土" value='玛姆'>玛姆</option>
                                 <option data-occupation="辅助" data-properties="土" value='青叶∧二星'>青叶∧二星</option>
                                 <option data-occupation="射手" data-properties="土" value='赫卡忒∧二星'>赫卡忒∧二星</option>
@@ -296,6 +297,7 @@
                                 <option data-occupation="辅助" data-properties="水" value='汐雅'>汐雅</option>
                                 <option data-occupation="战士" data-properties="水" value='安吉'>安吉</option>
                                 <option data-occupation="战士" data-properties="水" value='利姆露'>利姆露</option>
+                                <option data-occupation="辅助" data-properties="水" value='沄'>沄</option>
                                 <option data-occupation="战士" data-properties="水" value='白兽∧二星'>白兽∧二星</option>
                                 <option data-occupation="辅助" data-properties="水" value='帕比∧二星'>帕比∧二星</option>
                                 <option data-occupation="射手" data-properties="水" value='瑞秋∧二星'>瑞秋∧二星</option>
@@ -335,6 +337,7 @@
                                 <option value="荣耀颂歌">荣耀颂歌</option>
                                 <option value="达伊之剑">达伊之剑</option>
                                 <option value="利姆露（专）">利姆露（专）</option>
+                                <option value="龙泉剑">龙泉剑</option>
                                 <option value="村雨">村雨</option>
                                 <option value="利贝拉">利贝拉</option>
                                 <option value="沉默">沉默</option>
@@ -430,6 +433,7 @@
                                 <option value="圣母颂">圣母颂</option>
                                 <option value="拜蒙碎片Ⅲ">拜蒙碎片Ⅲ</option>
                                 <option value="瑜娜（专）">瑜娜（专）</option>
+                                <option value="艾草（专）">艾草（专）</option>
                                 <option value="偷袭者">偷袭者</option>
                                 <option value="奥伯伦">奥伯伦</option>
                                 <option value="利贝拉B型">利贝拉B型</option>
@@ -1007,6 +1011,7 @@
     </div>
 
     <div style="display: none;" id="updateLog">
+        <p>24/3/22：当前图鉴更新至国服【安吉版本】（未校对），角色录入至韩服【米莉姆版本】</p>
         <p>24/2/1日志：当前图鉴更新至国服【奥迪尔版本】（已校对），部分标签修正</p>
         <p>24/1/25日志：已录入所有韩服已实装稀有、传奇角色及其专武，【瘟疫医生版本】</p>
         <p>24/1/25日志：优化了属性查看界面</p>
@@ -1027,8 +1032,8 @@
         })
     </script>
     <br>
-    <p>24/3/22：当前图鉴更新至国服【安吉版本】（未校对），角色录入至韩服【米莉姆版本】</p>
-
+    <p>24/3/22：当前图鉴更新至国服【沄版本】（未校对），角色录入至韩服【艾草版本】</p>
+    <p>由于作者近期业务繁忙，角色头像与武器图标后续会补上ψ(._. )></p>
     <p>角色默认满破、满觉醒，装备默认满破、满洗练，伤害减免暂不计入计算，优先取韩服最新数据</p>
     <p>角色与装备的防御数值与实际防御数值并不完全精确（因为kongs图鉴不显示小数），所以在较高等级下会有一定程度的偏差</p>
     <p>如果数据有错误需要反馈或想要对此页面提出建议，请联系：<br>bilibili: space.bilibili.com/495999638 <br> QQ: 1217505768</p>
